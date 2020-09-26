@@ -5,20 +5,20 @@
 #include <math.h>
 
 
-//uwzglêdnianie klas projektu 
-//klasy obiektu wahad³a i obliczanie równañ ruchu metod¹ Rungego – Kutty 4, równañ energii (kinetycznych, potencalnych i ca³kowitych)
+//uwzglÃªdnianie klas projektu 
+//klasy obiektu wahadÂ³a i obliczanie rÃ³wnaÃ± ruchu metodÂ¹ Rungego â€“ Kutty 4, rÃ³wnaÃ± energii (kinetycznych, potencalnych i caÂ³kowitych)
 #include "Wahadla.h"
 #include "Runge.h"
 #include "Energie.h"
 
-//zmiana wartoœci biegunowych na kartezjañskie
+//zmiana wartoÅ“ci biegunowych na kartezjaÃ±skie
 #include "WspKartezjanskie.h"
 
-//zmiana wartoœci rzeczywistych(uzyskanych podczas obliczeñ) na ekranowe/ekranowych na rzeczywiste
+//zmiana wartoÅ“ci rzeczywistych(uzyskanych podczas obliczeÃ±) na ekranowe/ekranowych na rzeczywiste
 #include "Ekran.h"
 
-//klasy z tablicami s³u¿¹ce do wyrysowania wykresów
-#include "TabliceEp.h"  //Ep,Ek,Ec -> oœ y na wykresie
+//klasy z tablicami sÂ³uÂ¿Â¹ce do wyrysowania wykresÃ³w
+#include "TabliceEp.h"  //Ep,Ek,Ec -> oÅ“ y na wykresie
 #include "TabliceEk.h"
 #include "TabliceEc.h"
 
@@ -81,7 +81,7 @@ namespace DPulum {
 
 	protected:
 		/// <summary>
-		/// Wyczyœæ wszystkie u¿ywane zasoby.
+		/// WyczyÅ“Ã¦ wszystkie uÂ¿ywane zasoby.
 		/// </summary>
 		~MyForm()
 		{
@@ -107,7 +107,7 @@ namespace DPulum {
 	private: System::Windows::Forms::ToolStripMenuItem^ animacjeToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ wykresToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ parametryToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ wyjdŸToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ wyjdÅ¸ToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ pomocToolStripMenuItem;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Panel^ panel2;
@@ -333,15 +333,15 @@ private: System::Windows::Forms::Timer^ timer2;
 private: System::Windows::Forms::CheckBox^ checkBox27;
 private: System::Windows::Forms::CheckBox^ checkBox28;
 
-private: System::Windows::Forms::ToolStripMenuItem^ narzêdziaToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ narzÃªdziaToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ wykresToolStripMenuItem1;
-private: System::Windows::Forms::ToolStripMenuItem^ energieUk³aduToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ energieUkÂ³aduToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ energiaPotencjalnaToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ energiaKinetycznaToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ energiaCa³kowitaToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ energiaCaÂ³kowitaToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ legendaToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ podgl¹dPomiarówToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ poka¿WektoryToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ podglÂ¹dPomiarÃ³wToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ pokaÂ¿WektoryToolStripMenuItem;
 private: System::Windows::Forms::CheckBox^ checkBox31;
 private: System::Windows::Forms::CheckBox^ checkBox30;
 private: System::Windows::Forms::CheckBox^ checkBox29;
@@ -349,7 +349,7 @@ private: System::Windows::Forms::ToolStripMenuItem^ rysujToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ przyspieszToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ zwolnijToolStripMenuItem;
 
-private: System::Windows::Forms::ToolStripMenuItem^ legendêToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ legendÃªToolStripMenuItem;
 private: System::Windows::Forms::CheckBox^ checkBox32;
 private: System::Windows::Forms::ToolStripMenuItem^ pomiarToolStripMenuItem;
 private: System::Windows::Forms::CheckBox^ checkBox33;
@@ -361,21 +361,21 @@ private: System::Windows::Forms::ToolStripMenuItem^ widokToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ animacjaToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ belkaToolStripMenuItem1;
 private: System::Windows::Forms::ToolStripMenuItem^ siatkaToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ wahad³aToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ wahadÂ³aToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ pierwszeToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ drugieToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ trzecieToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ czwarteToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ pi¹teToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ szósteToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ siódmeToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ ósmeToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ dziewi¹ToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ piÂ¹teToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ szÃ³steToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ siÃ³dmeToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ Ã³smeToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ dziewiÂ¹ToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ wykresToolStripMenuItem2;
-private: System::Windows::Forms::ToolStripMenuItem^ dziesi¹teToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ dziesiÂ¹teToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^ aplikacjaToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ t³oToolStripMenuItem1;
-private: System::Windows::Forms::ToolStripMenuItem^ wspó³rzêdneToolStripMenuItem1;
+private: System::Windows::Forms::ToolStripMenuItem^ tÂ³oToolStripMenuItem1;
+private: System::Windows::Forms::ToolStripMenuItem^ wspÃ³Â³rzÃªdneToolStripMenuItem1;
 private: System::Windows::Forms::ToolStripMenuItem^ osieToolStripMenuItem;
 
 private: System::Windows::Forms::ToolStripMenuItem^ linkaToolStripMenuItem;
@@ -400,30 +400,6 @@ private: System::Windows::Forms::HScrollBar^ hScrollBar80;
 private: System::Windows::Forms::HScrollBar^ hScrollBar81;
 private: System::Windows::Forms::Label^ label99;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	private: System::ComponentModel::IContainer^ components;
 
 	private:
@@ -434,8 +410,8 @@ private: System::Windows::Forms::Label^ label99;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Metoda wymagana do obs³ugi projektanta — nie nale¿y modyfikowaæ
-		/// jej zawartoœci w edytorze kodu.
+		/// Metoda wymagana do obsÂ³ugi projektanta â€” nie naleÂ¿y modyfikowaÃ¦
+		/// jej zawartoÅ“ci w edytorze kodu.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -451,20 +427,20 @@ private: System::Windows::Forms::Label^ label99;
 			this->animacjeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->wykresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->parametryToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->legendêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->legendÃªToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->pomiarToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->resetToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->wyjdŸToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->narzêdziaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->poka¿WektoryToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->wyjdÅ¸ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->narzÃªdziaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->pokaÂ¿WektoryToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->przyspieszToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->zwolnijToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->podgl¹dPomiarówToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->podglÂ¹dPomiarÃ³wToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->wykresToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->energieUk³aduToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->energieUkÂ³aduToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->energiaPotencjalnaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->energiaKinetycznaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->energiaCa³kowitaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->energiaCaÂ³kowitaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->legendaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->rysujToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->widokToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -472,21 +448,21 @@ private: System::Windows::Forms::Label^ label99;
 			this->belkaToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->linkaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->siatkaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->wahad³aToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->wahadÂ³aToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->pierwszeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->drugieToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->trzecieToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->czwarteToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->pi¹teToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->szósteToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->siódmeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->ósmeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->dziewi¹ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->dziesi¹teToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->piÂ¹teToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->szÃ³steToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->siÃ³dmeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Ã³smeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->dziewiÂ¹ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->dziesiÂ¹teToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->aplikacjaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->t³oToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->tÂ³oToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->wykresToolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->wspó³rzêdneToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->wspÃ³Â³rzÃªdneToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->osieToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->pomocToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
@@ -796,7 +772,7 @@ private: System::Windows::Forms::Label^ label99;
 			// 
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
 				this->plikToolStripMenuItem,
-					this->narzêdziaToolStripMenuItem, this->widokToolStripMenuItem, this->pomocToolStripMenuItem
+					this->narzÃªdziaToolStripMenuItem, this->widokToolStripMenuItem, this->pomocToolStripMenuItem
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
@@ -808,7 +784,7 @@ private: System::Windows::Forms::Label^ label99;
 			// 
 			this->plikToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->zapiszToolStripMenuItem,
-					this->resetToolStripMenuItem, this->wyjdŸToolStripMenuItem
+					this->resetToolStripMenuItem, this->wyjdÅ¸ToolStripMenuItem
 			});
 			this->plikToolStripMenuItem->Name = L"plikToolStripMenuItem";
 			this->plikToolStripMenuItem->Size = System::Drawing::Size(38, 20);
@@ -818,7 +794,7 @@ private: System::Windows::Forms::Label^ label99;
 			// 
 			this->zapiszToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
 				this->animacjeToolStripMenuItem,
-					this->wykresToolStripMenuItem, this->parametryToolStripMenuItem, this->legendêToolStripMenuItem, this->pomiarToolStripMenuItem
+					this->wykresToolStripMenuItem, this->parametryToolStripMenuItem, this->legendÃªToolStripMenuItem, this->pomiarToolStripMenuItem
 			});
 			this->zapiszToolStripMenuItem->Name = L"zapiszToolStripMenuItem";
 			this->zapiszToolStripMenuItem->Size = System::Drawing::Size(118, 22);
@@ -845,12 +821,12 @@ private: System::Windows::Forms::Label^ label99;
 			this->parametryToolStripMenuItem->Text = L"Wyniki";
 			this->parametryToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::ParametryToolStripMenuItem_Click);
 			// 
-			// legendêToolStripMenuItem
+			// legendÃªToolStripMenuItem
 			// 
-			this->legendêToolStripMenuItem->Name = L"legendêToolStripMenuItem";
-			this->legendêToolStripMenuItem->Size = System::Drawing::Size(124, 22);
-			this->legendêToolStripMenuItem->Text = L"Legendê";
-			this->legendêToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::LegendêToolStripMenuItem_Click);
+			this->legendÃªToolStripMenuItem->Name = L"legendÃªToolStripMenuItem";
+			this->legendÃªToolStripMenuItem->Size = System::Drawing::Size(124, 22);
+			this->legendÃªToolStripMenuItem->Text = L"LegendÃª";
+			this->legendÃªToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::LegendÃªToolStripMenuItem_Click);
 			// 
 			// pomiarToolStripMenuItem
 			// 
@@ -866,33 +842,33 @@ private: System::Windows::Forms::Label^ label99;
 			this->resetToolStripMenuItem->Text = L"Reset";
 			this->resetToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::ResetToolStripMenuItem_Click);
 			// 
-			// wyjdŸToolStripMenuItem
+			// wyjdÅ¸ToolStripMenuItem
 			// 
-			this->wyjdŸToolStripMenuItem->Name = L"wyjdŸToolStripMenuItem";
-			this->wyjdŸToolStripMenuItem->Size = System::Drawing::Size(118, 22);
-			this->wyjdŸToolStripMenuItem->Text = L"Zakoñcz";
-			this->wyjdŸToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::WyjdŸToolStripMenuItem_Click);
+			this->wyjdÅ¸ToolStripMenuItem->Name = L"wyjdÅ¸ToolStripMenuItem";
+			this->wyjdÅ¸ToolStripMenuItem->Size = System::Drawing::Size(118, 22);
+			this->wyjdÅ¸ToolStripMenuItem->Text = L"ZakoÃ±cz";
+			this->wyjdÅ¸ToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::WyjdÅ¸ToolStripMenuItem_Click);
 			// 
-			// narzêdziaToolStripMenuItem
+			// narzÃªdziaToolStripMenuItem
 			// 
-			this->narzêdziaToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
-				this->poka¿WektoryToolStripMenuItem,
-					this->podgl¹dPomiarówToolStripMenuItem, this->wykresToolStripMenuItem1
+			this->narzÃªdziaToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->pokaÂ¿WektoryToolStripMenuItem,
+					this->podglÂ¹dPomiarÃ³wToolStripMenuItem, this->wykresToolStripMenuItem1
 			});
-			this->narzêdziaToolStripMenuItem->Name = L"narzêdziaToolStripMenuItem";
-			this->narzêdziaToolStripMenuItem->Size = System::Drawing::Size(70, 20);
-			this->narzêdziaToolStripMenuItem->Text = L"Narzêdzia";
+			this->narzÃªdziaToolStripMenuItem->Name = L"narzÃªdziaToolStripMenuItem";
+			this->narzÃªdziaToolStripMenuItem->Size = System::Drawing::Size(70, 20);
+			this->narzÃªdziaToolStripMenuItem->Text = L"NarzÃªdzia";
 			// 
-			// poka¿WektoryToolStripMenuItem
+			// pokaÂ¿WektoryToolStripMenuItem
 			// 
-			this->poka¿WektoryToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+			this->pokaÂ¿WektoryToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
 				this->przyspieszToolStripMenuItem,
 					this->zwolnijToolStripMenuItem
 			});
-			this->poka¿WektoryToolStripMenuItem->Name = L"poka¿WektoryToolStripMenuItem";
-			this->poka¿WektoryToolStripMenuItem->Size = System::Drawing::Size(175, 22);
-			this->poka¿WektoryToolStripMenuItem->Text = L"Animacja";
-			this->poka¿WektoryToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::Poka¿WektoryToolStripMenuItem_Click);
+			this->pokaÂ¿WektoryToolStripMenuItem->Name = L"pokaÂ¿WektoryToolStripMenuItem";
+			this->pokaÂ¿WektoryToolStripMenuItem->Size = System::Drawing::Size(175, 22);
+			this->pokaÂ¿WektoryToolStripMenuItem->Text = L"Animacja";
+			this->pokaÂ¿WektoryToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::PokaÂ¿WektoryToolStripMenuItem_Click);
 			// 
 			// przyspieszToolStripMenuItem
 			// 
@@ -908,32 +884,32 @@ private: System::Windows::Forms::Label^ label99;
 			this->zwolnijToolStripMenuItem->Text = L"Zwolnij";
 			this->zwolnijToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::ZwolnijToolStripMenuItem_Click);
 			// 
-			// podgl¹dPomiarówToolStripMenuItem
+			// podglÂ¹dPomiarÃ³wToolStripMenuItem
 			// 
-			this->podgl¹dPomiarówToolStripMenuItem->Name = L"podgl¹dPomiarówToolStripMenuItem";
-			this->podgl¹dPomiarówToolStripMenuItem->Size = System::Drawing::Size(175, 22);
-			this->podgl¹dPomiarówToolStripMenuItem->Text = L"Podgl¹d pomiarów";
-			this->podgl¹dPomiarówToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::Podgl¹dPomiarówToolStripMenuItem_Click);
+			this->podglÂ¹dPomiarÃ³wToolStripMenuItem->Name = L"podglÂ¹dPomiarÃ³wToolStripMenuItem";
+			this->podglÂ¹dPomiarÃ³wToolStripMenuItem->Size = System::Drawing::Size(175, 22);
+			this->podglÂ¹dPomiarÃ³wToolStripMenuItem->Text = L"PodglÂ¹d pomiarÃ³w";
+			this->podglÂ¹dPomiarÃ³wToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::PodglÂ¹dPomiarÃ³wToolStripMenuItem_Click);
 			// 
 			// wykresToolStripMenuItem1
 			// 
 			this->wykresToolStripMenuItem1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
-				this->energieUk³aduToolStripMenuItem,
+				this->energieUkÂ³aduToolStripMenuItem,
 					this->legendaToolStripMenuItem, this->rysujToolStripMenuItem
 			});
 			this->wykresToolStripMenuItem1->Name = L"wykresToolStripMenuItem1";
 			this->wykresToolStripMenuItem1->Size = System::Drawing::Size(175, 22);
 			this->wykresToolStripMenuItem1->Text = L"Wykres";
 			// 
-			// energieUk³aduToolStripMenuItem
+			// energieUkÂ³aduToolStripMenuItem
 			// 
-			this->energieUk³aduToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+			this->energieUkÂ³aduToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->energiaPotencjalnaToolStripMenuItem,
-					this->energiaKinetycznaToolStripMenuItem, this->energiaCa³kowitaToolStripMenuItem
+					this->energiaKinetycznaToolStripMenuItem, this->energiaCaÂ³kowitaToolStripMenuItem
 			});
-			this->energieUk³aduToolStripMenuItem->Name = L"energieUk³aduToolStripMenuItem";
-			this->energieUk³aduToolStripMenuItem->Size = System::Drawing::Size(152, 22);
-			this->energieUk³aduToolStripMenuItem->Text = L"Energie uk³adu";
+			this->energieUkÂ³aduToolStripMenuItem->Name = L"energieUkÂ³aduToolStripMenuItem";
+			this->energieUkÂ³aduToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->energieUkÂ³aduToolStripMenuItem->Text = L"Energie ukÂ³adu";
 			// 
 			// energiaPotencjalnaToolStripMenuItem
 			// 
@@ -949,12 +925,12 @@ private: System::Windows::Forms::Label^ label99;
 			this->energiaKinetycznaToolStripMenuItem->Text = L"Energia kinetyczna";
 			this->energiaKinetycznaToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::EnergiaKinetycznaToolStripMenuItem_Click);
 			// 
-			// energiaCa³kowitaToolStripMenuItem
+			// energiaCaÂ³kowitaToolStripMenuItem
 			// 
-			this->energiaCa³kowitaToolStripMenuItem->Name = L"energiaCa³kowitaToolStripMenuItem";
-			this->energiaCa³kowitaToolStripMenuItem->Size = System::Drawing::Size(178, 22);
-			this->energiaCa³kowitaToolStripMenuItem->Text = L"Energia ca³kowita";
-			this->energiaCa³kowitaToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::EnergiaCa³kowitaToolStripMenuItem_Click);
+			this->energiaCaÂ³kowitaToolStripMenuItem->Name = L"energiaCaÂ³kowitaToolStripMenuItem";
+			this->energiaCaÂ³kowitaToolStripMenuItem->Size = System::Drawing::Size(178, 22);
+			this->energiaCaÂ³kowitaToolStripMenuItem->Text = L"Energia caÂ³kowita";
+			this->energiaCaÂ³kowitaToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::EnergiaCaÂ³kowitaToolStripMenuItem_Click);
 			// 
 			// legendaToolStripMenuItem
 			// 
@@ -984,7 +960,7 @@ private: System::Windows::Forms::Label^ label99;
 			// 
 			this->animacjaToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
 				this->belkaToolStripMenuItem1,
-					this->linkaToolStripMenuItem, this->siatkaToolStripMenuItem, this->wahad³aToolStripMenuItem
+					this->linkaToolStripMenuItem, this->siatkaToolStripMenuItem, this->wahadÂ³aToolStripMenuItem
 			});
 			this->animacjaToolStripMenuItem->Name = L"animacjaToolStripMenuItem";
 			this->animacjaToolStripMenuItem->Size = System::Drawing::Size(124, 22);
@@ -1011,17 +987,17 @@ private: System::Windows::Forms::Label^ label99;
 			this->siatkaToolStripMenuItem->Text = L"Siatka";
 			this->siatkaToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::SiatkaToolStripMenuItem_Click);
 			// 
-			// wahad³aToolStripMenuItem
+			// wahadÂ³aToolStripMenuItem
 			// 
-			this->wahad³aToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(10) {
+			this->wahadÂ³aToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(10) {
 				this->pierwszeToolStripMenuItem,
-					this->drugieToolStripMenuItem, this->trzecieToolStripMenuItem, this->czwarteToolStripMenuItem, this->pi¹teToolStripMenuItem,
-					this->szósteToolStripMenuItem, this->siódmeToolStripMenuItem, this->ósmeToolStripMenuItem, this->dziewi¹ToolStripMenuItem, this->dziesi¹teToolStripMenuItem
+					this->drugieToolStripMenuItem, this->trzecieToolStripMenuItem, this->czwarteToolStripMenuItem, this->piÂ¹teToolStripMenuItem,
+					this->szÃ³steToolStripMenuItem, this->siÃ³dmeToolStripMenuItem, this->Ã³smeToolStripMenuItem, this->dziewiÂ¹ToolStripMenuItem, this->dziesiÂ¹teToolStripMenuItem
 			});
-			this->wahad³aToolStripMenuItem->Name = L"wahad³aToolStripMenuItem";
-			this->wahad³aToolStripMenuItem->Size = System::Drawing::Size(120, 22);
-			this->wahad³aToolStripMenuItem->Text = L"Wahad³a";
-			this->wahad³aToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::Wahad³aToolStripMenuItem_Click);
+			this->wahadÂ³aToolStripMenuItem->Name = L"wahadÂ³aToolStripMenuItem";
+			this->wahadÂ³aToolStripMenuItem->Size = System::Drawing::Size(120, 22);
+			this->wahadÂ³aToolStripMenuItem->Text = L"WahadÂ³a";
+			this->wahadÂ³aToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::WahadÂ³aToolStripMenuItem_Click);
 			// 
 			// pierwszeToolStripMenuItem
 			// 
@@ -1051,78 +1027,78 @@ private: System::Windows::Forms::Label^ label99;
 			this->czwarteToolStripMenuItem->Text = L"Czwarte";
 			this->czwarteToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::CzwarteToolStripMenuItem_Click);
 			// 
-			// pi¹teToolStripMenuItem
+			// piÂ¹teToolStripMenuItem
 			// 
-			this->pi¹teToolStripMenuItem->Name = L"pi¹teToolStripMenuItem";
-			this->pi¹teToolStripMenuItem->Size = System::Drawing::Size(124, 22);
-			this->pi¹teToolStripMenuItem->Text = L"Pi¹te";
-			this->pi¹teToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::Pi¹teToolStripMenuItem_Click);
+			this->piÂ¹teToolStripMenuItem->Name = L"piÂ¹teToolStripMenuItem";
+			this->piÂ¹teToolStripMenuItem->Size = System::Drawing::Size(124, 22);
+			this->piÂ¹teToolStripMenuItem->Text = L"PiÂ¹te";
+			this->piÂ¹teToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::PiÂ¹teToolStripMenuItem_Click);
 			// 
-			// szósteToolStripMenuItem
+			// szÃ³steToolStripMenuItem
 			// 
-			this->szósteToolStripMenuItem->Name = L"szósteToolStripMenuItem";
-			this->szósteToolStripMenuItem->Size = System::Drawing::Size(124, 22);
-			this->szósteToolStripMenuItem->Text = L"Szóste";
-			this->szósteToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::SzósteToolStripMenuItem_Click);
+			this->szÃ³steToolStripMenuItem->Name = L"szÃ³steToolStripMenuItem";
+			this->szÃ³steToolStripMenuItem->Size = System::Drawing::Size(124, 22);
+			this->szÃ³steToolStripMenuItem->Text = L"SzÃ³ste";
+			this->szÃ³steToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::SzÃ³steToolStripMenuItem_Click);
 			// 
-			// siódmeToolStripMenuItem
+			// siÃ³dmeToolStripMenuItem
 			// 
-			this->siódmeToolStripMenuItem->Name = L"siódmeToolStripMenuItem";
-			this->siódmeToolStripMenuItem->Size = System::Drawing::Size(124, 22);
-			this->siódmeToolStripMenuItem->Text = L"Siódme";
-			this->siódmeToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::SiódmeToolStripMenuItem_Click);
+			this->siÃ³dmeToolStripMenuItem->Name = L"siÃ³dmeToolStripMenuItem";
+			this->siÃ³dmeToolStripMenuItem->Size = System::Drawing::Size(124, 22);
+			this->siÃ³dmeToolStripMenuItem->Text = L"SiÃ³dme";
+			this->siÃ³dmeToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::SiÃ³dmeToolStripMenuItem_Click);
 			// 
-			// ósmeToolStripMenuItem
+			// Ã³smeToolStripMenuItem
 			// 
-			this->ósmeToolStripMenuItem->Name = L"ósmeToolStripMenuItem";
-			this->ósmeToolStripMenuItem->Size = System::Drawing::Size(124, 22);
-			this->ósmeToolStripMenuItem->Text = L"Ósme";
-			this->ósmeToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::ÓsmeToolStripMenuItem_Click);
+			this->Ã³smeToolStripMenuItem->Name = L"Ã³smeToolStripMenuItem";
+			this->Ã³smeToolStripMenuItem->Size = System::Drawing::Size(124, 22);
+			this->Ã³smeToolStripMenuItem->Text = L"Ã“sme";
+			this->Ã³smeToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::Ã“smeToolStripMenuItem_Click);
 			// 
-			// dziewi¹ToolStripMenuItem
+			// dziewiÂ¹ToolStripMenuItem
 			// 
-			this->dziewi¹ToolStripMenuItem->Name = L"dziewi¹ToolStripMenuItem";
-			this->dziewi¹ToolStripMenuItem->Size = System::Drawing::Size(124, 22);
-			this->dziewi¹ToolStripMenuItem->Text = L"Dziewi¹te";
-			this->dziewi¹ToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::Dziewi¹ToolStripMenuItem_Click);
+			this->dziewiÂ¹ToolStripMenuItem->Name = L"dziewiÂ¹ToolStripMenuItem";
+			this->dziewiÂ¹ToolStripMenuItem->Size = System::Drawing::Size(124, 22);
+			this->dziewiÂ¹ToolStripMenuItem->Text = L"DziewiÂ¹te";
+			this->dziewiÂ¹ToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::DziewiÂ¹ToolStripMenuItem_Click);
 			// 
-			// dziesi¹teToolStripMenuItem
+			// dziesiÂ¹teToolStripMenuItem
 			// 
-			this->dziesi¹teToolStripMenuItem->Name = L"dziesi¹teToolStripMenuItem";
-			this->dziesi¹teToolStripMenuItem->Size = System::Drawing::Size(124, 22);
-			this->dziesi¹teToolStripMenuItem->Text = L"Dziesi¹te";
-			this->dziesi¹teToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::Dziesi¹teToolStripMenuItem_Click);
+			this->dziesiÂ¹teToolStripMenuItem->Name = L"dziesiÂ¹teToolStripMenuItem";
+			this->dziesiÂ¹teToolStripMenuItem->Size = System::Drawing::Size(124, 22);
+			this->dziesiÂ¹teToolStripMenuItem->Text = L"DziesiÂ¹te";
+			this->dziesiÂ¹teToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::DziesiÂ¹teToolStripMenuItem_Click);
 			// 
 			// aplikacjaToolStripMenuItem
 			// 
-			this->aplikacjaToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->t³oToolStripMenuItem1 });
+			this->aplikacjaToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->tÂ³oToolStripMenuItem1 });
 			this->aplikacjaToolStripMenuItem->Name = L"aplikacjaToolStripMenuItem";
 			this->aplikacjaToolStripMenuItem->Size = System::Drawing::Size(124, 22);
 			this->aplikacjaToolStripMenuItem->Text = L"Aplikacja";
 			// 
-			// t³oToolStripMenuItem1
+			// tÂ³oToolStripMenuItem1
 			// 
-			this->t³oToolStripMenuItem1->Name = L"t³oToolStripMenuItem1";
-			this->t³oToolStripMenuItem1->Size = System::Drawing::Size(90, 22);
-			this->t³oToolStripMenuItem1->Text = L"T³o";
-			this->t³oToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::T³oToolStripMenuItem1_Click);
+			this->tÂ³oToolStripMenuItem1->Name = L"tÂ³oToolStripMenuItem1";
+			this->tÂ³oToolStripMenuItem1->Size = System::Drawing::Size(90, 22);
+			this->tÂ³oToolStripMenuItem1->Text = L"TÂ³o";
+			this->tÂ³oToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::TÂ³oToolStripMenuItem1_Click);
 			// 
 			// wykresToolStripMenuItem2
 			// 
 			this->wykresToolStripMenuItem2->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->wspó³rzêdneToolStripMenuItem1,
+				this->wspÃ³Â³rzÃªdneToolStripMenuItem1,
 					this->osieToolStripMenuItem
 			});
 			this->wykresToolStripMenuItem2->Name = L"wykresToolStripMenuItem2";
 			this->wykresToolStripMenuItem2->Size = System::Drawing::Size(124, 22);
 			this->wykresToolStripMenuItem2->Text = L"Wykres";
 			// 
-			// wspó³rzêdneToolStripMenuItem1
+			// wspÃ³Â³rzÃªdneToolStripMenuItem1
 			// 
-			this->wspó³rzêdneToolStripMenuItem1->Name = L"wspó³rzêdneToolStripMenuItem1";
-			this->wspó³rzêdneToolStripMenuItem1->Size = System::Drawing::Size(142, 22);
-			this->wspó³rzêdneToolStripMenuItem1->Text = L"Wspó³rzêdne";
-			this->wspó³rzêdneToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::Wspó³rzêdneToolStripMenuItem1_Click);
+			this->wspÃ³Â³rzÃªdneToolStripMenuItem1->Name = L"wspÃ³Â³rzÃªdneToolStripMenuItem1";
+			this->wspÃ³Â³rzÃªdneToolStripMenuItem1->Size = System::Drawing::Size(142, 22);
+			this->wspÃ³Â³rzÃªdneToolStripMenuItem1->Text = L"WspÃ³Â³rzÃªdne";
+			this->wspÃ³Â³rzÃªdneToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::WspÃ³Â³rzÃªdneToolStripMenuItem1_Click);
 			// 
 			// osieToolStripMenuItem
 			// 
@@ -1176,7 +1152,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(139, 13);
 			this->label10->TabIndex = 22;
-			this->label10->Text = L"Dziesi¹te wahad³o: 10.0 [m]";
+			this->label10->Text = L"DziesiÂ¹te wahadÂ³o: 10.0 [m]";
 			// 
 			// label11
 			// 
@@ -1185,7 +1161,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(142, 13);
 			this->label11->TabIndex = 21;
-			this->label11->Text = L"Dziewi¹te wahad³o: 10.0 [m]";
+			this->label11->Text = L"DziewiÂ¹te wahadÂ³o: 10.0 [m]";
 			// 
 			// label12
 			// 
@@ -1194,7 +1170,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(123, 13);
 			this->label12->TabIndex = 20;
-			this->label12->Text = L"Ósme wahad³o: 10.0 [m]";
+			this->label12->Text = L"Ã“sme wahadÂ³o: 10.0 [m]";
 			// 
 			// label13
 			// 
@@ -1203,7 +1179,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(131, 13);
 			this->label13->TabIndex = 19;
-			this->label13->Text = L"Siódme wahad³o: 10.0 [m]";
+			this->label13->Text = L"SiÃ³dme wahadÂ³o: 10.0 [m]";
 			// 
 			// label14
 			// 
@@ -1212,7 +1188,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(128, 13);
 			this->label14->TabIndex = 18;
-			this->label14->Text = L"Szóste wahad³o: 10.0 [m]";
+			this->label14->Text = L"SzÃ³ste wahadÂ³o: 10.0 [m]";
 			// 
 			// hScrollBar3
 			// 
@@ -1276,7 +1252,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(120, 13);
 			this->label9->TabIndex = 12;
-			this->label9->Text = L"Pi¹te wahad³o: 10.0 [m]";
+			this->label9->Text = L"PiÂ¹te wahadÂ³o: 10.0 [m]";
 			// 
 			// label8
 			// 
@@ -1285,7 +1261,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(134, 13);
 			this->label8->TabIndex = 11;
-			this->label8->Text = L"Czwarte wahad³o: 10.0 [m]";
+			this->label8->Text = L"Czwarte wahadÂ³o: 10.0 [m]";
 			// 
 			// label7
 			// 
@@ -1294,7 +1270,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(131, 13);
 			this->label7->TabIndex = 10;
-			this->label7->Text = L"Trzecie wahad³o: 10.0 [m]";
+			this->label7->Text = L"Trzecie wahadÂ³o: 10.0 [m]";
 			// 
 			// label6
 			// 
@@ -1303,7 +1279,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(127, 13);
 			this->label6->TabIndex = 9;
-			this->label6->Text = L"Drugie wahad³o: 10.0 [m]";
+			this->label6->Text = L"Drugie wahadÂ³o: 10.0 [m]";
 			// 
 			// label5
 			// 
@@ -1312,7 +1288,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(138, 13);
 			this->label5->TabIndex = 8;
-			this->label5->Text = L"Pierwsze wahad³o: 10.0 [m]";
+			this->label5->Text = L"Pierwsze wahadÂ³o: 10.0 [m]";
 			// 
 			// hScrollBar5
 			// 
@@ -1356,7 +1332,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(121, 16);
 			this->label2->TabIndex = 4;
-			this->label2->Text = L"D³ugoœci wahade³";
+			this->label2->Text = L"DÂ³ugoÅ“ci wahadeÂ³";
 			// 
 			// hScrollBar2
 			// 
@@ -1417,7 +1393,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(137, 13);
 			this->label15->TabIndex = 22;
-			this->label15->Text = L"Dziesi¹te wahad³o: 1.0 [kg]";
+			this->label15->Text = L"DziesiÂ¹te wahadÂ³o: 1.0 [kg]";
 			// 
 			// label16
 			// 
@@ -1426,7 +1402,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(140, 13);
 			this->label16->TabIndex = 21;
-			this->label16->Text = L"Dziewi¹te wahad³o: 1.0 [kg]";
+			this->label16->Text = L"DziewiÂ¹te wahadÂ³o: 1.0 [kg]";
 			// 
 			// label17
 			// 
@@ -1435,7 +1411,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(121, 13);
 			this->label17->TabIndex = 20;
-			this->label17->Text = L"Ósme wahad³o: 1.0 [kg]";
+			this->label17->Text = L"Ã“sme wahadÂ³o: 1.0 [kg]";
 			// 
 			// label18
 			// 
@@ -1444,7 +1420,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(129, 13);
 			this->label18->TabIndex = 19;
-			this->label18->Text = L"Siódme wahad³o: 1.0 [kg]";
+			this->label18->Text = L"SiÃ³dme wahadÂ³o: 1.0 [kg]";
 			// 
 			// label19
 			// 
@@ -1453,7 +1429,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label19->Name = L"label19";
 			this->label19->Size = System::Drawing::Size(126, 13);
 			this->label19->TabIndex = 18;
-			this->label19->Text = L"Szóste wahad³o: 1.0 [kg]";
+			this->label19->Text = L"SzÃ³ste wahadÂ³o: 1.0 [kg]";
 			// 
 			// hScrollBar11
 			// 
@@ -1517,7 +1493,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label20->Name = L"label20";
 			this->label20->Size = System::Drawing::Size(118, 13);
 			this->label20->TabIndex = 12;
-			this->label20->Text = L"Pi¹te wahad³o: 1.0 [kg]";
+			this->label20->Text = L"PiÂ¹te wahadÂ³o: 1.0 [kg]";
 			// 
 			// label21
 			// 
@@ -1526,7 +1502,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(132, 13);
 			this->label21->TabIndex = 11;
-			this->label21->Text = L"Czwarte wahad³o: 1.0 [kg]";
+			this->label21->Text = L"Czwarte wahadÂ³o: 1.0 [kg]";
 			// 
 			// label22
 			// 
@@ -1535,7 +1511,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(129, 13);
 			this->label22->TabIndex = 10;
-			this->label22->Text = L"Trzecie wahad³o: 1.0 [kg]";
+			this->label22->Text = L"Trzecie wahadÂ³o: 1.0 [kg]";
 			// 
 			// label23
 			// 
@@ -1544,7 +1520,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label23->Name = L"label23";
 			this->label23->Size = System::Drawing::Size(125, 13);
 			this->label23->TabIndex = 9;
-			this->label23->Text = L"Drugie wahad³o: 1.0 [kg]";
+			this->label23->Text = L"Drugie wahadÂ³o: 1.0 [kg]";
 			// 
 			// label24
 			// 
@@ -1553,7 +1529,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label24->Name = L"label24";
 			this->label24->Size = System::Drawing::Size(136, 13);
 			this->label24->TabIndex = 8;
-			this->label24->Text = L"Pierwsze wahad³o: 1.0 [kg]";
+			this->label24->Text = L"Pierwsze wahadÂ³o: 1.0 [kg]";
 			// 
 			// hScrollBar16
 			// 
@@ -1597,7 +1573,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label25->Name = L"label25";
 			this->label25->Size = System::Drawing::Size(99, 16);
 			this->label25->TabIndex = 4;
-			this->label25->Text = L"Masy wahade³";
+			this->label25->Text = L"Masy wahadeÂ³";
 			// 
 			// hScrollBar19
 			// 
@@ -1658,7 +1634,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label26->Name = L"label26";
 			this->label26->Size = System::Drawing::Size(140, 13);
 			this->label26->TabIndex = 22;
-			this->label26->Text = L"Dziesi¹te wahad³o: 0.0 [rad]";
+			this->label26->Text = L"DziesiÂ¹te wahadÂ³o: 0.0 [rad]";
 			// 
 			// label27
 			// 
@@ -1667,7 +1643,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label27->Name = L"label27";
 			this->label27->Size = System::Drawing::Size(143, 13);
 			this->label27->TabIndex = 21;
-			this->label27->Text = L"Dziewi¹te wahad³o: 0.0 [rad]";
+			this->label27->Text = L"DziewiÂ¹te wahadÂ³o: 0.0 [rad]";
 			// 
 			// label28
 			// 
@@ -1676,7 +1652,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label28->Name = L"label28";
 			this->label28->Size = System::Drawing::Size(124, 13);
 			this->label28->TabIndex = 20;
-			this->label28->Text = L"Ósme wahad³o: 0.0 [rad]";
+			this->label28->Text = L"Ã“sme wahadÂ³o: 0.0 [rad]";
 			// 
 			// label29
 			// 
@@ -1685,7 +1661,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label29->Name = L"label29";
 			this->label29->Size = System::Drawing::Size(132, 13);
 			this->label29->TabIndex = 19;
-			this->label29->Text = L"Siódme wahad³o: 0.0 [rad]";
+			this->label29->Text = L"SiÃ³dme wahadÂ³o: 0.0 [rad]";
 			// 
 			// label30
 			// 
@@ -1694,7 +1670,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label30->Name = L"label30";
 			this->label30->Size = System::Drawing::Size(129, 13);
 			this->label30->TabIndex = 18;
-			this->label30->Text = L"Szóste wahad³o: 0.0 [rad]";
+			this->label30->Text = L"SzÃ³ste wahadÂ³o: 0.0 [rad]";
 			// 
 			// hScrollBar21
 			// 
@@ -1748,7 +1724,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label31->Name = L"label31";
 			this->label31->Size = System::Drawing::Size(121, 13);
 			this->label31->TabIndex = 12;
-			this->label31->Text = L"Pi¹te wahad³o: 0.0 [rad]";
+			this->label31->Text = L"PiÂ¹te wahadÂ³o: 0.0 [rad]";
 			// 
 			// label32
 			// 
@@ -1757,7 +1733,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label32->Name = L"label32";
 			this->label32->Size = System::Drawing::Size(135, 13);
 			this->label32->TabIndex = 11;
-			this->label32->Text = L"Czwarte wahad³o: 0.0 [rad]";
+			this->label32->Text = L"Czwarte wahadÂ³o: 0.0 [rad]";
 			// 
 			// label33
 			// 
@@ -1766,7 +1742,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label33->Name = L"label33";
 			this->label33->Size = System::Drawing::Size(132, 13);
 			this->label33->TabIndex = 10;
-			this->label33->Text = L"Trzecie wahad³o: 0.0 [rad]";
+			this->label33->Text = L"Trzecie wahadÂ³o: 0.0 [rad]";
 			// 
 			// label34
 			// 
@@ -1775,7 +1751,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label34->Name = L"label34";
 			this->label34->Size = System::Drawing::Size(128, 13);
 			this->label34->TabIndex = 9;
-			this->label34->Text = L"Drugie wahad³o: 0.0 [rad]";
+			this->label34->Text = L"Drugie wahadÂ³o: 0.0 [rad]";
 			// 
 			// label35
 			// 
@@ -1784,7 +1760,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label35->Name = L"label35";
 			this->label35->Size = System::Drawing::Size(139, 13);
 			this->label35->TabIndex = 8;
-			this->label35->Text = L"Pierwsze wahad³o: 0.0 [rad]";
+			this->label35->Text = L"Pierwsze wahadÂ³o: 0.0 [rad]";
 			// 
 			// hScrollBar26
 			// 
@@ -1822,7 +1798,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label36->Name = L"label36";
 			this->label36->Size = System::Drawing::Size(211, 16);
 			this->label36->TabIndex = 4;
-			this->label36->Text = L"Po³o¿enia pocz¹tkowe wahade³";
+			this->label36->Text = L"PoÂ³oÂ¿enia poczÂ¹tkowe wahadeÂ³";
 			// 
 			// hScrollBar29
 			// 
@@ -1879,7 +1855,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label38->Name = L"label38";
 			this->label38->Size = System::Drawing::Size(146, 13);
 			this->label38->TabIndex = 21;
-			this->label38->Text = L"Dziewi¹te wahad³o: 0.0 [m/s]";
+			this->label38->Text = L"DziewiÂ¹te wahadÂ³o: 0.0 [m/s]";
 			// 
 			// label39
 			// 
@@ -1888,7 +1864,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label39->Name = L"label39";
 			this->label39->Size = System::Drawing::Size(127, 13);
 			this->label39->TabIndex = 20;
-			this->label39->Text = L"Ósme wahad³o: 0.0 [m/s]";
+			this->label39->Text = L"Ã“sme wahadÂ³o: 0.0 [m/s]";
 			// 
 			// label40
 			// 
@@ -1897,7 +1873,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label40->Name = L"label40";
 			this->label40->Size = System::Drawing::Size(135, 13);
 			this->label40->TabIndex = 19;
-			this->label40->Text = L"Siódme wahad³o: 0.0 [m/s]";
+			this->label40->Text = L"SiÃ³dme wahadÂ³o: 0.0 [m/s]";
 			// 
 			// label41
 			// 
@@ -1906,7 +1882,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label41->Name = L"label41";
 			this->label41->Size = System::Drawing::Size(132, 13);
 			this->label41->TabIndex = 18;
-			this->label41->Text = L"Szóste wahad³o: 0.0 [m/s]";
+			this->label41->Text = L"SzÃ³ste wahadÂ³o: 0.0 [m/s]";
 			// 
 			// hScrollBar31
 			// 
@@ -1960,7 +1936,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label42->Name = L"label42";
 			this->label42->Size = System::Drawing::Size(124, 13);
 			this->label42->TabIndex = 12;
-			this->label42->Text = L"Pi¹te wahad³o: 0.0 [m/s]";
+			this->label42->Text = L"PiÂ¹te wahadÂ³o: 0.0 [m/s]";
 			// 
 			// label43
 			// 
@@ -1969,7 +1945,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label43->Name = L"label43";
 			this->label43->Size = System::Drawing::Size(138, 13);
 			this->label43->TabIndex = 11;
-			this->label43->Text = L"Czwarte wahad³o: 0.0 [m/s]";
+			this->label43->Text = L"Czwarte wahadÂ³o: 0.0 [m/s]";
 			// 
 			// label44
 			// 
@@ -1978,7 +1954,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label44->Name = L"label44";
 			this->label44->Size = System::Drawing::Size(135, 13);
 			this->label44->TabIndex = 10;
-			this->label44->Text = L"Trzecie wahad³o: 0.0 [m/s]";
+			this->label44->Text = L"Trzecie wahadÂ³o: 0.0 [m/s]";
 			// 
 			// label45
 			// 
@@ -1987,7 +1963,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label45->Name = L"label45";
 			this->label45->Size = System::Drawing::Size(131, 13);
 			this->label45->TabIndex = 9;
-			this->label45->Text = L"Drugie wahad³o: 0.0 [m/s]";
+			this->label45->Text = L"Drugie wahadÂ³o: 0.0 [m/s]";
 			// 
 			// label46
 			// 
@@ -1996,7 +1972,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label46->Name = L"label46";
 			this->label46->Size = System::Drawing::Size(142, 13);
 			this->label46->TabIndex = 8;
-			this->label46->Text = L"Pierwsze wahad³o: 0.0 [m/s]";
+			this->label46->Text = L"Pierwsze wahadÂ³o: 0.0 [m/s]";
 			// 
 			// hScrollBar36
 			// 
@@ -2034,7 +2010,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label47->Name = L"label47";
 			this->label47->Size = System::Drawing::Size(209, 16);
 			this->label47->TabIndex = 4;
-			this->label47->Text = L"Prêdkoœci pocz¹tkowe wahade³";
+			this->label47->Text = L"PrÃªdkoÅ“ci poczÂ¹tkowe wahadeÂ³";
 			// 
 			// hScrollBar39
 			// 
@@ -2061,7 +2037,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label37->Name = L"label37";
 			this->label37->Size = System::Drawing::Size(143, 13);
 			this->label37->TabIndex = 22;
-			this->label37->Text = L"Dziesi¹te wahad³o: 0.0 [m/s]";
+			this->label37->Text = L"DziesiÂ¹te wahadÂ³o: 0.0 [m/s]";
 			// 
 			// panel8
 			// 
@@ -2100,7 +2076,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label48->Name = L"label48";
 			this->label48->Size = System::Drawing::Size(119, 13);
 			this->label48->TabIndex = 22;
-			this->label48->Text = L"Dziesi¹te wahad³o: 0.0 ";
+			this->label48->Text = L"DziesiÂ¹te wahadÂ³o: 0.0 ";
 			// 
 			// label49
 			// 
@@ -2109,7 +2085,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label49->Name = L"label49";
 			this->label49->Size = System::Drawing::Size(122, 13);
 			this->label49->TabIndex = 21;
-			this->label49->Text = L"Dziewi¹te wahad³o: 0.0 ";
+			this->label49->Text = L"DziewiÂ¹te wahadÂ³o: 0.0 ";
 			// 
 			// label50
 			// 
@@ -2118,7 +2094,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label50->Name = L"label50";
 			this->label50->Size = System::Drawing::Size(100, 13);
 			this->label50->TabIndex = 20;
-			this->label50->Text = L"Ósme wahad³o: 0.0";
+			this->label50->Text = L"Ã“sme wahadÂ³o: 0.0";
 			// 
 			// label51
 			// 
@@ -2127,7 +2103,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label51->Name = L"label51";
 			this->label51->Size = System::Drawing::Size(111, 13);
 			this->label51->TabIndex = 19;
-			this->label51->Text = L"Siódme wahad³o: 0.0 ";
+			this->label51->Text = L"SiÃ³dme wahadÂ³o: 0.0 ";
 			// 
 			// label52
 			// 
@@ -2136,7 +2112,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label52->Name = L"label52";
 			this->label52->Size = System::Drawing::Size(108, 13);
 			this->label52->TabIndex = 18;
-			this->label52->Text = L"Szóste wahad³o: 0.0 ";
+			this->label52->Text = L"SzÃ³ste wahadÂ³o: 0.0 ";
 			// 
 			// hScrollBar41
 			// 
@@ -2190,7 +2166,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label53->Name = L"label53";
 			this->label53->Size = System::Drawing::Size(97, 13);
 			this->label53->TabIndex = 12;
-			this->label53->Text = L"Pi¹te wahad³o: 0.0";
+			this->label53->Text = L"PiÂ¹te wahadÂ³o: 0.0";
 			// 
 			// label54
 			// 
@@ -2199,7 +2175,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label54->Name = L"label54";
 			this->label54->Size = System::Drawing::Size(111, 13);
 			this->label54->TabIndex = 11;
-			this->label54->Text = L"Czwarte wahad³o: 0.0";
+			this->label54->Text = L"Czwarte wahadÂ³o: 0.0";
 			// 
 			// label55
 			// 
@@ -2208,7 +2184,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label55->Name = L"label55";
 			this->label55->Size = System::Drawing::Size(111, 13);
 			this->label55->TabIndex = 10;
-			this->label55->Text = L"Trzecie wahad³o: 0.0 ";
+			this->label55->Text = L"Trzecie wahadÂ³o: 0.0 ";
 			// 
 			// label56
 			// 
@@ -2217,7 +2193,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label56->Name = L"label56";
 			this->label56->Size = System::Drawing::Size(107, 13);
 			this->label56->TabIndex = 9;
-			this->label56->Text = L"Drugie wahad³o: 0.0 ";
+			this->label56->Text = L"Drugie wahadÂ³o: 0.0 ";
 			// 
 			// label57
 			// 
@@ -2226,7 +2202,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label57->Name = L"label57";
 			this->label57->Size = System::Drawing::Size(118, 13);
 			this->label57->TabIndex = 8;
-			this->label57->Text = L"Pierwsze wahad³o: 0.0 ";
+			this->label57->Text = L"Pierwsze wahadÂ³o: 0.0 ";
 			// 
 			// hScrollBar46
 			// 
@@ -2264,7 +2240,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label58->Name = L"label58";
 			this->label58->Size = System::Drawing::Size(131, 16);
 			this->label58->TabIndex = 4;
-			this->label58->Text = L"T³umienie wahade³";
+			this->label58->Text = L"TÂ³umienie wahadeÂ³";
 			// 
 			// hScrollBar49
 			// 
@@ -2350,7 +2326,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label90->Name = L"label90";
 			this->label90->Size = System::Drawing::Size(119, 13);
 			this->label90->TabIndex = 21;
-			this->label90->Text = L"Dziewi¹te wahad³o: 1.0";
+			this->label90->Text = L"DziewiÂ¹te wahadÂ³o: 1.0";
 			// 
 			// label91
 			// 
@@ -2359,7 +2335,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label91->Name = L"label91";
 			this->label91->Size = System::Drawing::Size(100, 13);
 			this->label91->TabIndex = 20;
-			this->label91->Text = L"Ósme wahad³o: 1.0";
+			this->label91->Text = L"Ã“sme wahadÂ³o: 1.0";
 			// 
 			// label92
 			// 
@@ -2368,7 +2344,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label92->Name = L"label92";
 			this->label92->Size = System::Drawing::Size(108, 13);
 			this->label92->TabIndex = 19;
-			this->label92->Text = L"Siódme wahad³o: 1.0";
+			this->label92->Text = L"SiÃ³dme wahadÂ³o: 1.0";
 			// 
 			// label93
 			// 
@@ -2377,7 +2353,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label93->Name = L"label93";
 			this->label93->Size = System::Drawing::Size(105, 13);
 			this->label93->TabIndex = 18;
-			this->label93->Text = L"Szóste wahad³o: 1.0";
+			this->label93->Text = L"SzÃ³ste wahadÂ³o: 1.0";
 			// 
 			// hScrollBar73
 			// 
@@ -2431,7 +2407,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label94->Name = L"label94";
 			this->label94->Size = System::Drawing::Size(97, 13);
 			this->label94->TabIndex = 12;
-			this->label94->Text = L"Pi¹te wahad³o: 1.0";
+			this->label94->Text = L"PiÂ¹te wahadÂ³o: 1.0";
 			// 
 			// label95
 			// 
@@ -2440,7 +2416,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label95->Name = L"label95";
 			this->label95->Size = System::Drawing::Size(111, 13);
 			this->label95->TabIndex = 11;
-			this->label95->Text = L"Czwarte wahad³o: 1.0";
+			this->label95->Text = L"Czwarte wahadÂ³o: 1.0";
 			// 
 			// label96
 			// 
@@ -2449,7 +2425,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label96->Name = L"label96";
 			this->label96->Size = System::Drawing::Size(108, 13);
 			this->label96->TabIndex = 10;
-			this->label96->Text = L"Trzecie wahad³o: 1.0";
+			this->label96->Text = L"Trzecie wahadÂ³o: 1.0";
 			// 
 			// label97
 			// 
@@ -2458,7 +2434,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label97->Name = L"label97";
 			this->label97->Size = System::Drawing::Size(104, 13);
 			this->label97->TabIndex = 9;
-			this->label97->Text = L"Drugie wahad³o: 1.0";
+			this->label97->Text = L"Drugie wahadÂ³o: 1.0";
 			// 
 			// hScrollBar78
 			// 
@@ -2487,7 +2463,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label98->Name = L"label98";
 			this->label98->Size = System::Drawing::Size(316, 16);
 			this->label98->TabIndex = 4;
-			this->label98->Text = L"Wspó³czynniki sprzê¿enia z kolejnym wahad³em";
+			this->label98->Text = L"WspÃ³Â³czynniki sprzÃªÂ¿enia z kolejnym wahadÂ³em";
 			// 
 			// hScrollBar80
 			// 
@@ -2514,7 +2490,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label99->Name = L"label99";
 			this->label99->Size = System::Drawing::Size(115, 13);
 			this->label99->TabIndex = 22;
-			this->label99->Text = L"Pierwsze wahad³o: 1.0";
+			this->label99->Text = L"Pierwsze wahadÂ³o: 1.0";
 			// 
 			// label70
 			// 
@@ -2523,7 +2499,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label70->Name = L"label70";
 			this->label70->Size = System::Drawing::Size(119, 13);
 			this->label70->TabIndex = 21;
-			this->label70->Text = L"Dziewi¹te wahad³o: 1.0";
+			this->label70->Text = L"DziewiÂ¹te wahadÂ³o: 1.0";
 			// 
 			// label71
 			// 
@@ -2532,7 +2508,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label71->Name = L"label71";
 			this->label71->Size = System::Drawing::Size(100, 13);
 			this->label71->TabIndex = 20;
-			this->label71->Text = L"Ósme wahad³o: 1.0";
+			this->label71->Text = L"Ã“sme wahadÂ³o: 1.0";
 			// 
 			// label72
 			// 
@@ -2541,7 +2517,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label72->Name = L"label72";
 			this->label72->Size = System::Drawing::Size(108, 13);
 			this->label72->TabIndex = 19;
-			this->label72->Text = L"Siódme wahad³o: 1.0";
+			this->label72->Text = L"SiÃ³dme wahadÂ³o: 1.0";
 			// 
 			// label73
 			// 
@@ -2550,7 +2526,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label73->Name = L"label73";
 			this->label73->Size = System::Drawing::Size(105, 13);
 			this->label73->TabIndex = 18;
-			this->label73->Text = L"Szóste wahad³o: 1.0";
+			this->label73->Text = L"SzÃ³ste wahadÂ³o: 1.0";
 			// 
 			// hScrollBar58
 			// 
@@ -2609,7 +2585,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label74->Name = L"label74";
 			this->label74->Size = System::Drawing::Size(97, 13);
 			this->label74->TabIndex = 12;
-			this->label74->Text = L"Pi¹te wahad³o: 1.0";
+			this->label74->Text = L"PiÂ¹te wahadÂ³o: 1.0";
 			// 
 			// label75
 			// 
@@ -2618,7 +2594,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label75->Name = L"label75";
 			this->label75->Size = System::Drawing::Size(111, 13);
 			this->label75->TabIndex = 11;
-			this->label75->Text = L"Czwarte wahad³o: 1.0";
+			this->label75->Text = L"Czwarte wahadÂ³o: 1.0";
 			// 
 			// label76
 			// 
@@ -2627,7 +2603,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label76->Name = L"label76";
 			this->label76->Size = System::Drawing::Size(108, 13);
 			this->label76->TabIndex = 10;
-			this->label76->Text = L"Trzecie wahad³o: 1.0";
+			this->label76->Text = L"Trzecie wahadÂ³o: 1.0";
 			// 
 			// label77
 			// 
@@ -2636,7 +2612,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label77->Name = L"label77";
 			this->label77->Size = System::Drawing::Size(104, 13);
 			this->label77->TabIndex = 9;
-			this->label77->Text = L"Drugie wahad³o: 1.0";
+			this->label77->Text = L"Drugie wahadÂ³o: 1.0";
 			// 
 			// hScrollBar65
 			// 
@@ -2667,7 +2643,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label78->Name = L"label78";
 			this->label78->Size = System::Drawing::Size(316, 16);
 			this->label78->TabIndex = 4;
-			this->label78->Text = L"Wspó³czynniki sprzê¿enia z kolejnym wahad³em";
+			this->label78->Text = L"WspÃ³Â³czynniki sprzÃªÂ¿enia z kolejnym wahadÂ³em";
 			// 
 			// hScrollBar67
 			// 
@@ -2696,7 +2672,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label68->Name = L"label68";
 			this->label68->Size = System::Drawing::Size(115, 13);
 			this->label68->TabIndex = 22;
-			this->label68->Text = L"Pierwsze wahad³o: 1.0";
+			this->label68->Text = L"Pierwsze wahadÂ³o: 1.0";
 			this->label68->Click += gcnew System::EventHandler(this, &MyForm::Label68_Click);
 			// 
 			// panel9
@@ -2824,7 +2800,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label59->Name = L"label59";
 			this->label59->Size = System::Drawing::Size(101, 13);
 			this->label59->TabIndex = 22;
-			this->label59->Text = L"Linka dziewi¹ta: 1.0";
+			this->label59->Text = L"Linka dziewiÂ¹ta: 1.0";
 			// 
 			// label61
 			// 
@@ -2833,7 +2809,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label61->Name = L"label61";
 			this->label61->Size = System::Drawing::Size(90, 13);
 			this->label61->TabIndex = 20;
-			this->label61->Text = L"Linka siódma: 1.0";
+			this->label61->Text = L"Linka siÃ³dma: 1.0";
 			// 
 			// label62
 			// 
@@ -2842,7 +2818,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label62->Name = L"label62";
 			this->label62->Size = System::Drawing::Size(87, 13);
 			this->label62->TabIndex = 19;
-			this->label62->Text = L"Linka szósta: 1.0";
+			this->label62->Text = L"Linka szÃ³sta: 1.0";
 			// 
 			// label63
 			// 
@@ -2851,7 +2827,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label63->Name = L"label63";
 			this->label63->Size = System::Drawing::Size(83, 13);
 			this->label63->TabIndex = 18;
-			this->label63->Text = L"Linka pi¹ta : 1.0";
+			this->label63->Text = L"Linka piÂ¹ta : 1.0";
 			// 
 			// hScrollBar51
 			// 
@@ -2968,7 +2944,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label69->Name = L"label69";
 			this->label69->Size = System::Drawing::Size(107, 16);
 			this->label69->TabIndex = 4;
-			this->label69->Text = L"Sta³e c dla linki";
+			this->label69->Text = L"StaÂ³e c dla linki";
 			// 
 			// hScrollBar59
 			// 
@@ -2997,7 +2973,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label60->Name = L"label60";
 			this->label60->Size = System::Drawing::Size(82, 13);
 			this->label60->TabIndex = 21;
-			this->label60->Text = L"Linka ósma: 1.0";
+			this->label60->Text = L"Linka Ã³sma: 1.0";
 			// 
 			// label1
 			// 
@@ -3009,7 +2985,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(133, 16);
 			this->label1->TabIndex = 10;
-			this->label1->Text = L"Parametry wahade³";
+			this->label1->Text = L"Parametry wahadeÂ³";
 			// 
 			// panel2
 			// 
@@ -3095,7 +3071,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox10->Name = L"checkBox10";
 			this->checkBox10->Size = System::Drawing::Size(89, 17);
 			this->checkBox10->TabIndex = 11;
-			this->checkBox10->Text = L"W³¹cz siatkê";
+			this->checkBox10->Text = L"WÂ³Â¹cz siatkÃª";
 			this->checkBox10->UseVisualStyleBackColor = true;
 			this->checkBox10->Visible = false;
 			this->checkBox10->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox10_CheckedChanged);
@@ -3107,7 +3083,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label82->Name = L"label82";
 			this->label82->Size = System::Drawing::Size(57, 13);
 			this->label82->TabIndex = 10;
-			this->label82->Text = L"Szerokoœæ";
+			this->label82->Text = L"SzerokoÅ“Ã¦";
 			// 
 			// label81
 			// 
@@ -3116,7 +3092,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label81->Name = L"label81";
 			this->label81->Size = System::Drawing::Size(57, 13);
 			this->label81->TabIndex = 9;
-			this->label81->Text = L"Wysokoœæ";
+			this->label81->Text = L"WysokoÅ“Ã¦";
 			// 
 			// hScrollBar70
 			// 
@@ -3158,7 +3134,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label79->Name = L"label79";
 			this->label79->Size = System::Drawing::Size(133, 16);
 			this->label79->TabIndex = 4;
-			this->label79->Text = L"Ustawienia kolorów";
+			this->label79->Text = L"Ustawienia kolorÃ³w";
 			// 
 			// button3
 			// 
@@ -3188,7 +3164,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(74, 20);
 			this->button2->TabIndex = 2;
-			this->button2->Text = L"Kolor t³a";
+			this->button2->Text = L"Kolor tÂ³a";
 			this->button2->UseCompatibleTextRendering = true;
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::Button2_Click);
@@ -3209,7 +3185,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(121, 16);
 			this->label3->TabIndex = 0;
-			this->label3->Text = L"Parametry uk³adu";
+			this->label3->Text = L"Parametry ukÂ³adu";
 			// 
 			// panel3
 			// 
@@ -3235,7 +3211,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox9->Name = L"checkBox9";
 			this->checkBox9->Size = System::Drawing::Size(78, 17);
 			this->checkBox9->TabIndex = 17;
-			this->checkBox9->Text = L"Sprzê¿enie";
+			this->checkBox9->Text = L"SprzÃªÂ¿enie";
 			this->checkBox9->UseVisualStyleBackColor = true;
 			this->checkBox9->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox9_CheckedChanged);
 			// 
@@ -3246,7 +3222,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox7->Name = L"checkBox7";
 			this->checkBox7->Size = System::Drawing::Size(73, 17);
 			this->checkBox7->TabIndex = 15;
-			this->checkBox7->Text = L"T³umienie";
+			this->checkBox7->Text = L"TÂ³umienie";
 			this->checkBox7->UseVisualStyleBackColor = true;
 			this->checkBox7->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox7_CheckedChanged);
 			// 
@@ -3257,7 +3233,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox8->Name = L"checkBox8";
 			this->checkBox8->Size = System::Drawing::Size(73, 17);
 			this->checkBox8->TabIndex = 14;
-			this->checkBox8->Text = L"Prêdkoœci";
+			this->checkBox8->Text = L"PrÃªdkoÅ“ci";
 			this->checkBox8->UseVisualStyleBackColor = true;
 			this->checkBox8->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox8_CheckedChanged);
 			// 
@@ -3268,7 +3244,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox5->Name = L"checkBox5";
 			this->checkBox5->Size = System::Drawing::Size(74, 17);
 			this->checkBox5->TabIndex = 13;
-			this->checkBox5->Text = L"Po³o¿enia";
+			this->checkBox5->Text = L"PoÂ³oÂ¿enia";
 			this->checkBox5->UseVisualStyleBackColor = true;
 			this->checkBox5->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox5_CheckedChanged);
 			// 
@@ -3292,7 +3268,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox3->Name = L"checkBox3";
 			this->checkBox3->Size = System::Drawing::Size(69, 17);
 			this->checkBox3->TabIndex = 11;
-			this->checkBox3->Text = L"D³ugoœci";
+			this->checkBox3->Text = L"DÂ³ugoÅ“ci";
 			this->checkBox3->UseVisualStyleBackColor = true;
 			this->checkBox3->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox3_CheckedChanged);
 			// 
@@ -3303,7 +3279,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox6->Name = L"checkBox6";
 			this->checkBox6->Size = System::Drawing::Size(87, 17);
 			this->checkBox6->TabIndex = 16;
-			this->checkBox6->Text = L"Sprzê¿enie 1";
+			this->checkBox6->Text = L"SprzÃªÂ¿enie 1";
 			this->checkBox6->UseVisualStyleBackColor = true;
 			this->checkBox6->Visible = false;
 			this->checkBox6->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox6_CheckedChanged);
@@ -3327,7 +3303,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox12->Name = L"checkBox12";
 			this->checkBox12->Size = System::Drawing::Size(128, 17);
 			this->checkBox12->TabIndex = 3;
-			this->checkBox12->Text = L"Ustawienia wykresów";
+			this->checkBox12->Text = L"Ustawienia wykresÃ³w";
 			this->checkBox12->UseVisualStyleBackColor = true;
 			this->checkBox12->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox12_CheckedChanged);
 			// 
@@ -3338,7 +3314,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox2->Name = L"checkBox2";
 			this->checkBox2->Size = System::Drawing::Size(110, 17);
 			this->checkBox2->TabIndex = 2;
-			this->checkBox2->Text = L"Parametry uk³adu";
+			this->checkBox2->Text = L"Parametry ukÂ³adu";
 			this->checkBox2->UseVisualStyleBackColor = true;
 			this->checkBox2->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox2_CheckedChanged);
 			// 
@@ -3467,7 +3443,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label85->Name = L"label85";
 			this->label85->Size = System::Drawing::Size(85, 13);
 			this->label85->TabIndex = 3;
-			this->label85->Text = L"Szerokoœæ (oœ x)";
+			this->label85->Text = L"SzerokoÅ“Ã¦ (oÅ“ x)";
 			// 
 			// hScrollBar72
 			// 
@@ -3487,7 +3463,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label84->Name = L"label84";
 			this->label84->Size = System::Drawing::Size(85, 13);
 			this->label84->TabIndex = 1;
-			this->label84->Text = L"Wysokoœæ (oœ y)";
+			this->label84->Text = L"WysokoÅ“Ã¦ (oÅ“ y)";
 			// 
 			// hScrollBar71
 			// 
@@ -3507,7 +3483,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox26->Name = L"checkBox26";
 			this->checkBox26->Size = System::Drawing::Size(126, 17);
 			this->checkBox26->TabIndex = 13;
-			this->checkBox26->Text = L"Dziesi¹tego wahad³a";
+			this->checkBox26->Text = L"DziesiÂ¹tego wahadÂ³a";
 			this->checkBox26->UseVisualStyleBackColor = true;
 			this->checkBox26->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox26_CheckedChanged);
 			// 
@@ -3518,7 +3494,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox25->Name = L"checkBox25";
 			this->checkBox25->Size = System::Drawing::Size(107, 17);
 			this->checkBox25->TabIndex = 12;
-			this->checkBox25->Text = L"Pi¹tego wahad³a";
+			this->checkBox25->Text = L"PiÂ¹tego wahadÂ³a";
 			this->checkBox25->UseVisualStyleBackColor = true;
 			this->checkBox25->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox25_CheckedChanged);
 			// 
@@ -3529,7 +3505,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox21->Name = L"checkBox21";
 			this->checkBox21->Size = System::Drawing::Size(129, 17);
 			this->checkBox21->TabIndex = 11;
-			this->checkBox21->Text = L"Dziewi¹tego wahad³a";
+			this->checkBox21->Text = L"DziewiÂ¹tego wahadÂ³a";
 			this->checkBox21->UseVisualStyleBackColor = true;
 			this->checkBox21->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox21_CheckedChanged);
 			// 
@@ -3540,7 +3516,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox22->Name = L"checkBox22";
 			this->checkBox22->Size = System::Drawing::Size(110, 17);
 			this->checkBox22->TabIndex = 10;
-			this->checkBox22->Text = L"Ósmego wahad³a";
+			this->checkBox22->Text = L"Ã“smego wahadÂ³a";
 			this->checkBox22->UseVisualStyleBackColor = true;
 			this->checkBox22->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox22_CheckedChanged);
 			// 
@@ -3551,7 +3527,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox23->Name = L"checkBox23";
 			this->checkBox23->Size = System::Drawing::Size(118, 17);
 			this->checkBox23->TabIndex = 9;
-			this->checkBox23->Text = L"Siódmego wahad³a";
+			this->checkBox23->Text = L"SiÃ³dmego wahadÂ³a";
 			this->checkBox23->UseVisualStyleBackColor = true;
 			this->checkBox23->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox23_CheckedChanged);
 			// 
@@ -3562,7 +3538,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox24->Name = L"checkBox24";
 			this->checkBox24->Size = System::Drawing::Size(115, 17);
 			this->checkBox24->TabIndex = 8;
-			this->checkBox24->Text = L"Szóstego wahad³a";
+			this->checkBox24->Text = L"SzÃ³stego wahadÂ³a";
 			this->checkBox24->UseVisualStyleBackColor = true;
 			this->checkBox24->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox24_CheckedChanged);
 			// 
@@ -3573,7 +3549,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox17->Name = L"checkBox17";
 			this->checkBox17->Size = System::Drawing::Size(121, 17);
 			this->checkBox17->TabIndex = 7;
-			this->checkBox17->Text = L"Czwartego wahad³a";
+			this->checkBox17->Text = L"Czwartego wahadÂ³a";
 			this->checkBox17->UseVisualStyleBackColor = true;
 			this->checkBox17->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox17_CheckedChanged);
 			// 
@@ -3584,7 +3560,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox18->Name = L"checkBox18";
 			this->checkBox18->Size = System::Drawing::Size(118, 17);
 			this->checkBox18->TabIndex = 6;
-			this->checkBox18->Text = L"Trzeciego wahad³a";
+			this->checkBox18->Text = L"Trzeciego wahadÂ³a";
 			this->checkBox18->UseVisualStyleBackColor = true;
 			this->checkBox18->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox18_CheckedChanged);
 			// 
@@ -3595,7 +3571,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox19->Name = L"checkBox19";
 			this->checkBox19->Size = System::Drawing::Size(114, 17);
 			this->checkBox19->TabIndex = 5;
-			this->checkBox19->Text = L"Drugiego wahad³a";
+			this->checkBox19->Text = L"Drugiego wahadÂ³a";
 			this->checkBox19->UseVisualStyleBackColor = true;
 			this->checkBox19->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox19_CheckedChanged);
 			// 
@@ -3606,7 +3582,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox20->Name = L"checkBox20";
 			this->checkBox20->Size = System::Drawing::Size(125, 17);
 			this->checkBox20->TabIndex = 4;
-			this->checkBox20->Text = L"Pierwszego wahad³a";
+			this->checkBox20->Text = L"Pierwszego wahadÂ³a";
 			this->checkBox20->UseVisualStyleBackColor = true;
 			this->checkBox20->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox20_CheckedChanged);
 			// 
@@ -3617,7 +3593,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox16->Name = L"checkBox16";
 			this->checkBox16->Size = System::Drawing::Size(112, 17);
 			this->checkBox16->TabIndex = 3;
-			this->checkBox16->Text = L"Przestrzeñ fazowa";
+			this->checkBox16->Text = L"PrzestrzeÃ± fazowa";
 			this->checkBox16->UseVisualStyleBackColor = true;
 			this->checkBox16->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox16_CheckedChanged);
 			// 
@@ -3628,7 +3604,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->checkBox15->Name = L"checkBox15";
 			this->checkBox15->Size = System::Drawing::Size(112, 17);
 			this->checkBox15->TabIndex = 2;
-			this->checkBox15->Text = L"Energia ca³kowita";
+			this->checkBox15->Text = L"Energia caÂ³kowita";
 			this->checkBox15->UseVisualStyleBackColor = true;
 			this->checkBox15->CheckedChanged += gcnew System::EventHandler(this, &MyForm::CheckBox15_CheckedChanged);
 			// 
@@ -3663,7 +3639,7 @@ private: System::Windows::Forms::Label^ label99;
 			this->label87->Name = L"label87";
 			this->label87->Size = System::Drawing::Size(145, 16);
 			this->label87->TabIndex = 0;
-			this->label87->Text = L"Ustawienia wykresów";
+			this->label87->Text = L"Ustawienia wykresÃ³w";
 			// 
 			// textBox4
 			// 
@@ -3815,7 +3791,7 @@ private: System::Windows::Forms::Label^ label99;
 
 #pragma endregion
 
-		//Program rozwi¹zuj¹cy równanie ró¿niczkowe ruchu 10 t³umionych wahade³ sprzê¿onych ze sob¹ link¹ 
+		//Program rozwiÂ¹zujÂ¹cy rÃ³wnanie rÃ³Â¿niczkowe ruchu 10 tÂ³umionych wahadeÂ³ sprzÃªÂ¿onych ze sobÂ¹ linkÂ¹ 
 		
 		//zmienne pomocniczne 
 		double i = 0;
@@ -3823,7 +3799,7 @@ private: System::Windows::Forms::Label^ label99;
 
 		String^ path;
 
-		//zmienne zwiekszaj¹ce argument tablicy -> timer.tick
+		//zmienne zwiekszajÂ¹ce argument tablicy -> timer.tick
 		int j = 0;
 		int reset;
 
@@ -3836,29 +3812,29 @@ private: System::Windows::Forms::Label^ label99;
 		//krok czasowy metody RK4
 		double dt = 0.1;
 
-		//wspó³rzêdne punktów do obliczeñ d³ugoœci, ró¿nic amplitud, przesuniêæ czasowych
+		//wspÃ³Â³rzÃªdne punktÃ³w do obliczeÃ± dÂ³ugoÅ“ci, rÃ³Â¿nic amplitud, przesuniÃªÃ¦ czasowych
 		double getmousex1 = 0, getmousey1 = 0, getmousex2 = 0, getmousey2 = 0;
 
 		bool wspolrzedne1 = false, wspolrzedne2 = false;
 
 		int pixelx = 0, pixely = 0;
 
-		//zmienne steruj¹ce ekranem 
+		//zmienne sterujÂ¹ce ekranem 
 		//animacji
-		//oœ x lewo, oœ x prawo, oœ y góra,oœ y dó³
+		//oÅ“ x lewo, oÅ“ x prawo, oÅ“ y gÃ³ra,oÅ“ y dÃ³Â³
 		double xl = -15, xp = 15, yl = -15, yp = 15;
 		
 		//wykresu
-		//wykres oœ x lewo
+		//wykres oÅ“ x lewo
 		double ekranwykxl = -10;
 
-		//wykres oœ x prawo
+		//wykres oÅ“ x prawo
 		double ekranwykxp = 100;
 
-		//wykres oœ y dó³
+		//wykres oÅ“ y dÃ³Â³
 		double ekranwykyd = -90;
 
-		//wykres oœ y góra
+		//wykres oÅ“ y gÃ³ra
 		double ekranwykyg = 700;
 
 		//zmienne pomocniczne do rysowania wykresu
@@ -3867,7 +3843,7 @@ private: System::Windows::Forms::Label^ label99;
 		double	wyd = -90;
 		double wyg = 700;
 
-		//klasy przeliczaj¹ce wartoœci
+		//klasy przeliczajÂ¹ce wartoÅ“ci
 		//pictureBox1 animacja
 		Ekran^ EkranAnimacji = gcnew Ekran(xl, xp, yp, yl);
 
@@ -3877,12 +3853,12 @@ private: System::Windows::Forms::Label^ label99;
 		//pictureBox3 wykres
 		Ekran^ EkranWykresu = gcnew Ekran(wxl,wxp,wyd,wyg);
 
-		//mo¿liwoœæ zmiany gridu, plp pochylenie linii poziomych
+		//moÂ¿liwoÅ“Ã¦ zmiany gridu, plp pochylenie linii poziomych
 		double plp=20.5,plpion= 20;
 
-		//Wahad³a i ich uk³ady
+		//WahadÂ³a i ich ukÂ³ady
 		double xlzmiana1, ylzmiana1, xlzmiana2, ylzmiana2;
-		//Wahad³o pierwsze 2.55 1.1
+		//WahadÂ³o pierwsze 2.55 1.1
 		Wahadla^ PierwszeWah = gcnew Wahadla();
 			Ekran^ EkranPierwszego = gcnew Ekran(xl-2.45, xp-2.45, yp+4.8, yl+4.8);
 
@@ -3913,7 +3889,7 @@ private: System::Windows::Forms::Label^ label99;
 		Wahadla^ DziesiateWah = gcnew Wahadla();
 			Ekran^ EkranDziesiatego = gcnew Ekran(xl + 1.45, xp + 1.45, yp + 6.6, yl + 6.6);
 
-		//tworzenie obiektów pozwalaj¹cych na przypisanie wartoœci metod do zmiennych globalnych (Timer->Rk4)
+		//tworzenie obiektÃ³w pozwalajÂ¹cych na przypisanie wartoÅ“ci metod do zmiennych globalnych (Timer->Rk4)
 		
 		Runge^ RuchPierwszego = gcnew Runge();
 			Runge^ RuchDrugiego = gcnew Runge();
@@ -3926,11 +3902,11 @@ private: System::Windows::Forms::Label^ label99;
 										Runge^ RuchDziewiatego = gcnew Runge();
 											Runge^ RuchDziesiatego = gcnew Runge();
 
-		//obiekt typu WspKartezjanskie -> zamiana wspó³rzêdnych biegunowych na kartezjañskie
+		//obiekt typu WspKartezjanskie -> zamiana wspÃ³Â³rzÃªdnych biegunowych na kartezjaÃ±skie
 		WspKartezjanskie^ PrzeliczBK = gcnew WspKartezjanskie();
 
-		//obiekty wykresów i tablice z wynikami
-		//Poszczególnych wahade³
+		//obiekty wykresÃ³w i tablice z wynikami
+		//PoszczegÃ³lnych wahadeÂ³
 		//energie potencjalne
 		const int WielkoscTablic = 4000;
 
@@ -4015,7 +3991,7 @@ private: System::Windows::Forms::Label^ label99;
 			double* DziesiateWahTabEk1 = new double[ WielkoscTablic];
 			double* DziesiateWahTabEk2 = new double[ WielkoscTablic];
 
-		//energie ca³kowite
+		//energie caÂ³kowite
 		TabliceEc^ PierwszeWahEc = gcnew TabliceEc();
 			double* PierwszeWahTabEc1 = new double[ WielkoscTablic];
 			double* PierwszeWahTabEc2 = new double[ WielkoscTablic];
@@ -4056,7 +4032,7 @@ private: System::Windows::Forms::Label^ label99;
 			double* DziesiateWahTabEc1 = new double[ WielkoscTablic];
 			double* DziesiateWahTabEc2 = new double[ WielkoscTablic];
 
-		//Wspólne energie
+		//WspÃ³lne energie
 		TabliceEp^ AllWahEp = gcnew TabliceEp();
 		double* AllWahTabEp1 = new double[ WielkoscTablic];
 		double* AllWahTabEp2 = new double[ WielkoscTablic];
@@ -4124,7 +4100,7 @@ private: System::Windows::Forms::Label^ label99;
 		double* PrzFazDziesiategoy1 = new double[ WielkoscTablic];
 			double* PrzFazDziesiategoy2 = new double[ WielkoscTablic];
 
-			//zmienne logiczne do w³¹czania obiektów animacji
+			//zmienne logiczne do wÂ³Â¹czania obiektÃ³w animacji
 			bool wlaczLinke = true;
 			bool wlaczPierwszeWah = true;
 			bool wlaczDrugieWah = true;
@@ -4139,7 +4115,7 @@ private: System::Windows::Forms::Label^ label99;
 			
 			bool wlaczOsie = true;
 
-		//zmienna w której przechowywana jest sciezka do zapisu 
+		//zmienna w ktÃ³rej przechowywana jest sciezka do zapisu 
 //Zapis->odczyt sciezki 
 		public: 
 			 static void OdczytPliku()
@@ -4179,7 +4155,7 @@ private: System::Windows::Forms::Label^ label99;
 
 				else
 				{
-					MessageBox::Show("Nie podano œcie¿ki!");
+					MessageBox::Show("Nie podano Å“cieÂ¿ki!");
 					strumien->Close();
 
 				}
@@ -4194,8 +4170,8 @@ private: System::Windows::Forms::Label^ label99;
 
 	}
 private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
-	//pocz¹tkowe parametry wahade³
-	//d³ugoœci	
+	//poczÂ¹tkowe parametry wahadeÂ³
+	//dÂ³ugoÅ“ci	
 		PierwszeWah->length = 10;
 			hScrollBar7->Value = 1000;
 		DrugieWah->length = 9.9;
@@ -4239,7 +4215,7 @@ private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
 		DziesiateWah->mass = 1;
 			hScrollBar14->Value = 100;
 
-	//po³o¿enia y
+	//poÂ³oÂ¿enia y
 		PierwszeWah->nextposy = 2.5;
 			hScrollBar28->Value = 250;
 		DrugieWah->nextposy = 2.5;
@@ -4261,7 +4237,7 @@ private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
 		DziesiateWah->nextposy = 2.5;
 			hScrollBar24->Value = 250;
 
-	//po³o¿enia x
+	//poÂ³oÂ¿enia x
 		PierwszeWah->nextposx = 0;
 		DrugieWah->nextposx = 0;
 		TrzecieWah->nextposx = 0;
@@ -4273,7 +4249,7 @@ private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
 		DziewiateWah->nextposx = 0;
 		DziesiateWah->nextposx = 0;
 
-	//prêdkoœci
+	//prÃªdkoÅ“ci
 		PierwszeWah->nextvelocity = 0;
 			hScrollBar38->Value = 0;
 		DrugieWah->nextvelocity = 0;
@@ -4295,7 +4271,7 @@ private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
 		DziesiateWah->nextvelocity = 0;
 			hScrollBar34->Value = 0;
 
-	//t³umienie
+	//tÂ³umienie
 		PierwszeWah->suppresion = 0.05;
 			hScrollBar48->Value = 5;
 		DrugieWah->suppresion = 0.05;
@@ -4319,7 +4295,7 @@ private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
 
 
 
-				//sprzê¿enie z poprzednim wahad³em
+				//sprzÃªÂ¿enie z poprzednim wahadÂ³em
 			DrugieWah->prevcoupling = 0.1;
 			hScrollBar57->Value = 10;
 			TrzecieWah->prevcoupling = 0.1;
@@ -4339,7 +4315,7 @@ private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
 			DziesiateWah->prevcoupling = 0.1;
 			hScrollBar54->Value = 10;
 
-			//sprzê¿enie z nastêpnym wahad³em
+			//sprzÃªÂ¿enie z nastÃªpnym wahadÂ³em
 			PierwszeWah->nextcoupling = 0.1;
 			hScrollBar63->Value = 10;
 			DrugieWah->nextcoupling = 0.1;
@@ -4359,7 +4335,7 @@ private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
 			DziewiateWah->nextcoupling = 0.1;
 			hScrollBar64->Value = 10;
 
-			//ustawienia wychyleñ pocz¹tkowych
+			//ustawienia wychyleÃ± poczÂ¹tkowych
 			PierwszeWah->wychylenie = PierwszeWah->nextposy;
 			DrugieWah->wychylenie = DrugieWah->nextposy;
 			TrzecieWah->wychylenie = TrzecieWah->nextposy;
@@ -4374,7 +4350,7 @@ private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
 			//ustawienia aplikacji
 			timer1->Interval = 25;
 
-	//pierwszy panel widoczny -> d³ugoœci (najwa¿niejszy parametr przy DP)
+	//pierwszy panel widoczny -> dÂ³ugoÅ“ci (najwaÂ¿niejszy parametr przy DP)
 	panel1->BringToFront();
 		panel5->Visible = false;
 	panel6->Visible = false;
@@ -4413,15 +4389,15 @@ private: System::Void CheckBox1_CheckedChanged(System::Object^ sender, System::E
 }
 private: System::Void ListBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 }
-		 //animacja wahad³a
+		 //animacja wahadÂ³a
 private: System::Void PictureBox1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 	//tworzenie obiektu graficznego
 	Graphics^ grafika = e->Graphics;
-	//wybór koloru
+	//wybÃ³r koloru
 	pictureBox1->BackColor = textBox1->BackColor;
 //	grafika->Clear(tlo);//BlueViolet
 
-	//Dobór kolorów poszczególnych elementów
+	//DobÃ³r kolorÃ³w poszczegÃ³lnych elementÃ³w
 	Pen^ Uklad3d = gcnew Pen(textBox2->BackColor);
 	Pen^ pret = gcnew Pen(System::Drawing::Color::Gray);
 	Pen^ pret2 = gcnew Pen(System::Drawing::Color::DarkGray);
@@ -4431,7 +4407,7 @@ private: System::Void PictureBox1_Paint(System::Object^ sender, System::Windows:
 	//kolory kuli
 	
 
-	//tworzenie pêdzli gradientowych 
+	//tworzenie pÃªdzli gradientowych 
 	//kula pierwsza
 	Point kula1d = Point(EkranPierwszego->SzerEkr(PierwszeWah->x - 1, pictureBox1->Width), EkranPierwszego->WysEkr(-PierwszeWah->y + 1, pictureBox1->Height));
 	Point kula1g = Point(EkranPierwszego->SzerEkr(PierwszeWah->x + 2, pictureBox1->Width), EkranPierwszego->WysEkr(-PierwszeWah->y + 1, pictureBox1->Height));
@@ -4483,7 +4459,7 @@ private: System::Void PictureBox1_Paint(System::Object^ sender, System::Windows:
 
 	LinearGradientBrush^ Kula10 = gcnew LinearGradientBrush(kula10d, kula10g, textBox6->BackColor, textBox7->BackColor);
 
-	//górny bok ceownika
+	//gÃ³rny bok ceownika
 	Point bok1 = Point(EkranAnimacji->SzerEkr(6, pictureBox1->Width), EkranAnimacji->WysEkr(-2, pictureBox1->Height));
 	Point bok2 = Point(EkranAnimacji->SzerEkr(0, pictureBox1->Width), EkranAnimacji->WysEkr(-10, pictureBox1->Height));
 
@@ -4501,7 +4477,7 @@ private: System::Void PictureBox1_Paint(System::Object^ sender, System::Windows:
 
 	if (checkBox10->Checked == true)
 	{
-		//zmienna steruj¹ca funkcj¹ 1/x, rysowanie gridu
+		//zmienna sterujÂ¹ca funkcjÂ¹ 1/x, rysowanie gridu
 		int xzmienna = 2;
 
 		//Grid
@@ -4524,11 +4500,11 @@ private: System::Void PictureBox1_Paint(System::Object^ sender, System::Windows:
 			xzmienna++;
 		}
 	}
-	//œrodek uk³adu
+	//Å“rodek ukÂ³adu
 	//grafika->FillEllipse(Brushes::Red, EkranAnimacji->SzerEkr(0, pictureBox1->Width), EkranAnimacji->WysEkr(0, pictureBox1->Height), 8, 8);
 	
 
-		//linka ³¹cz¹ca wahad³a
+		//linka Â³Â¹czÂ¹ca wahadÂ³a
 	if (wlaczLinke == true)
 	{
 		grafika->DrawLine(linka, EkranPierwszego->SzerEkr(0, pictureBox1->Width), EkranPierwszego->WysEkr(0, pictureBox1->Height), EkranDziesiatego->SzerEkr(0, pictureBox1->Width), EkranDziesiatego->WysEkr(0, pictureBox1->Height));
@@ -4536,7 +4512,7 @@ private: System::Void PictureBox1_Paint(System::Object^ sender, System::Windows:
 
 	if (DziesiateWah->nextposy >= 2 || DziewiateWah->nextposy >= 2 || OsmeWah->nextposy >= 2 || SiodmeWah->nextposy >= 2 || SzosteWah->nextposy >= 2 || PiateWah->nextposy >= 2 || CzwarteWah->nextposy >= 2 || TrzecieWah->nextposy >= 2 || DrugieWah->nextposy >= 2 || PierwszeWah->nextposy >= 2)
 	{
-		//zawieszenie wahade³ - prêt 
+		//zawieszenie wahadeÂ³ - prÃªt 
 		if (checkBox34->Checked == false)
 		{
 			grafika->DrawEllipse(sruba, EkranDziesiatego->SzerEkr(0, pictureBox1->Width), EkranDziesiatego->WysEkr(-0.1, pictureBox1->Height), 7, 7);
@@ -4548,10 +4524,10 @@ private: System::Void PictureBox1_Paint(System::Object^ sender, System::Windows:
 
 
 
-			//ty³
+			//tyÂ³
 			grafika->FillRectangle(Brushes::Gray, EkranAnimacji->SzerEkr(-1.8, pictureBox1->Width), EkranAnimacji->WysEkr(-7.65, pictureBox1->Height), 25, 20);
 
-			//przód
+			//przÃ³d
 			grafika->FillRectangle(Brushes::DimGray, EkranAnimacji->SzerEkr(2, pictureBox1->Width), EkranAnimacji->WysEkr(-5.9, pictureBox1->Height), 25, 20);
 
 			//obramowanie
@@ -4566,8 +4542,8 @@ private: System::Void PictureBox1_Paint(System::Object^ sender, System::Windows:
 		}
 
 	}
-	//rysowanie wahade³
-	//Dziesi¹te wahad³o
+	//rysowanie wahadeÂ³
+	//DziesiÂ¹te wahadÂ³o
 	if (wlaczDziesiateWah == true)
 	{
 		grafika->DrawLine(linka, EkranDziesiatego->SzerEkr(0, pictureBox1->Width), EkranDziesiatego->WysEkr(0, pictureBox1->Height), EkranDziesiatego->SzerEkr(DziesiateWah->x, pictureBox1->Width), EkranDziesiatego->WysEkr(-DziesiateWah->y + 0.2, pictureBox1->Height));
@@ -4575,14 +4551,14 @@ private: System::Void PictureBox1_Paint(System::Object^ sender, System::Windows:
 		grafika->FillEllipse(Kula10, EkranDziesiatego->SzerEkr(DziesiateWah->x - 0.5, pictureBox1->Width), EkranDziesiatego->WysEkr(-DziesiateWah->y, pictureBox1->Height), 23, 23);
 	}
 
-	//Dziewi¹te wahad³o
+	//DziewiÂ¹te wahadÂ³o
 	if (wlaczDziewiateWah == true)
 	{
 		grafika->DrawLine(linka, EkranDziewiatego->SzerEkr(0, pictureBox1->Width), EkranDziewiatego->WysEkr(0, pictureBox1->Height), EkranDziewiatego->SzerEkr(DziewiateWah->x, pictureBox1->Width), EkranDziewiatego->WysEkr(-DziewiateWah->y + 0.2, pictureBox1->Height));
 
 		grafika->FillEllipse(Kula9, EkranDziewiatego->SzerEkr(DziewiateWah->x - 0.5, pictureBox1->Width), EkranDziewiatego->WysEkr(-DziewiateWah->y, pictureBox1->Height), 24, 24);
 	}
-	//Ósme wahad³o
+	//Ã“sme wahadÂ³o
 	if (wlaczOsmeWah == true)
 	{
 		grafika->DrawLine(linka, EkranOsmego->SzerEkr(0, pictureBox1->Width), EkranOsmego->WysEkr(0, pictureBox1->Height), EkranOsmego->SzerEkr(OsmeWah->x, pictureBox1->Width), EkranOsmego->WysEkr(-OsmeWah->y + 0.2, pictureBox1->Height));
@@ -4591,47 +4567,47 @@ private: System::Void PictureBox1_Paint(System::Object^ sender, System::Windows:
 	}
 	if (wlaczSiodmeWah == true)
 	{
-		//Siódme wahad³o
+		//SiÃ³dme wahadÂ³o
 		grafika->DrawLine(linka, EkranSiodmego->SzerEkr(0, pictureBox1->Width), EkranSiodmego->WysEkr(0, pictureBox1->Height), EkranSiodmego->SzerEkr(SiodmeWah->x, pictureBox1->Width), EkranSiodmego->WysEkr(-SiodmeWah->y + 0.2, pictureBox1->Height));
 
 		grafika->FillEllipse(Kula7, EkranSiodmego->SzerEkr(SiodmeWah->x - 0.5, pictureBox1->Width), EkranSiodmego->WysEkr(-SiodmeWah->y, pictureBox1->Height), 26, 26);
 	}
-		//Szóste wahad³o
+		//SzÃ³ste wahadÂ³o
 	if (wlaczSzosteWah == true)
 	{
 		grafika->DrawLine(linka, EkranSzostego->SzerEkr(0, pictureBox1->Width), EkranSzostego->WysEkr(0, pictureBox1->Height), EkranSzostego->SzerEkr(SzosteWah->x, pictureBox1->Width), EkranSzostego->WysEkr(-SzosteWah->y + 0.2, pictureBox1->Height));
 
 		grafika->FillEllipse(Kula6, EkranSzostego->SzerEkr(SzosteWah->x - 0.5, pictureBox1->Width), EkranSzostego->WysEkr(-SzosteWah->y, pictureBox1->Height), 27, 27);
 	}
-	//Pi¹te wahad³o
+	//PiÂ¹te wahadÂ³o
 	if (wlaczPiateWah == true)
 	{
 		grafika->DrawLine(linka, EkranPiatego->SzerEkr(0, pictureBox1->Width), EkranPiatego->WysEkr(0, pictureBox1->Height), EkranPiatego->SzerEkr(PiateWah->x, pictureBox1->Width), EkranPiatego->WysEkr(-PiateWah->y + 0.2, pictureBox1->Height));
 
 		grafika->FillEllipse(Kula5, EkranPiatego->SzerEkr(PiateWah->x - 0.5, pictureBox1->Width), EkranPiatego->WysEkr(-PiateWah->y, pictureBox1->Height), 27, 27);
 	}
-	//Czwarte wahad³o
+	//Czwarte wahadÂ³o
 	if (wlaczCzwarteWah == true)
 	{
 		grafika->DrawLine(linka, EkranCzwartego->SzerEkr(0, pictureBox1->Width), EkranCzwartego->WysEkr(0, pictureBox1->Height), EkranCzwartego->SzerEkr(CzwarteWah->x, pictureBox1->Width), EkranCzwartego->WysEkr(-CzwarteWah->y + 0.2, pictureBox1->Height));
 
 		grafika->FillEllipse(Kula4, EkranCzwartego->SzerEkr(CzwarteWah->x - 0.5, pictureBox1->Width), EkranCzwartego->WysEkr(-CzwarteWah->y, pictureBox1->Height), 28, 28);
 	}
-	//Trzecie wahad³o
+	//Trzecie wahadÂ³o
 	if (wlaczTrzecieWah == true)
 	{
 		grafika->DrawLine(linka, EkranTrzeciego->SzerEkr(0, pictureBox1->Width), EkranTrzeciego->WysEkr(0, pictureBox1->Height), EkranTrzeciego->SzerEkr(TrzecieWah->x, pictureBox1->Width), EkranTrzeciego->WysEkr(-TrzecieWah->y + 0.2, pictureBox1->Height));
 
 		grafika->FillEllipse(Kula3, EkranTrzeciego->SzerEkr(TrzecieWah->x - 0.5, pictureBox1->Width), EkranTrzeciego->WysEkr(-TrzecieWah->y, pictureBox1->Height), 29, 29);
 	}
-	//Drugie wahad³o
+	//Drugie wahadÂ³o
 	if (wlaczDrugieWah == true)
 	{
 		grafika->DrawLine(linka, EkranDrugiego->SzerEkr(0, pictureBox1->Width), EkranDrugiego->WysEkr(0, pictureBox1->Height), EkranDrugiego->SzerEkr(DrugieWah->x, pictureBox1->Width), EkranDrugiego->WysEkr(-DrugieWah->y + 0.2, pictureBox1->Height));
 
 		grafika->FillEllipse(Kula2, EkranDrugiego->SzerEkr(DrugieWah->x - 0.5, pictureBox1->Width), EkranDrugiego->WysEkr(-DrugieWah->y, pictureBox1->Height), 29, 29);
 	}
-	//Pierwsze wahad³o
+	//Pierwsze wahadÂ³o
 	if (wlaczPierwszeWah == true)
 	{
 		grafika->DrawLine(linka, EkranPierwszego->SzerEkr(0, pictureBox1->Width), EkranPierwszego->WysEkr(0, pictureBox1->Height), EkranPierwszego->SzerEkr(PierwszeWah->x, pictureBox1->Width), EkranPierwszego->WysEkr(-PierwszeWah->y + 0.2, pictureBox1->Height));
@@ -4641,7 +4617,7 @@ private: System::Void PictureBox1_Paint(System::Object^ sender, System::Windows:
 
 	if (DziesiateWah->nextposy <= 2 || DziewiateWah->nextposy <= 2 || OsmeWah->nextposy <= 2 || SiodmeWah->nextposy <= 2 || SzosteWah->nextposy <= 2 || PiateWah->nextposy <= 2 || CzwarteWah->nextposy <= 2 || TrzecieWah->nextposy <= 2 || DrugieWah->nextposy <= 2 || PierwszeWah->nextposy <= 2)
 	{
-		//zawieszenie wahade³ - prêt 
+		//zawieszenie wahadeÂ³ - prÃªt 
 		if (checkBox34->Checked == false)
 		{
 		
@@ -4653,10 +4629,10 @@ private: System::Void PictureBox1_Paint(System::Object^ sender, System::Windows:
 			pret->Width = 20;
 			grafika->DrawLine(pret, EkranAnimacji->SzerEkr(2.15, pictureBox1->Width), EkranAnimacji->WysEkr(-5.4, pictureBox1->Height), EkranAnimacji->SzerEkr(-1.55, pictureBox1->Width), EkranAnimacji->WysEkr(-7.2, pictureBox1->Height));
 
-			//ty³
+			//tyÂ³
 			grafika->FillRectangle(Brushes::Gray, EkranAnimacji->SzerEkr(-1.8, pictureBox1->Width), EkranAnimacji->WysEkr(-7.65, pictureBox1->Height), 25, 20);
 
-			//przód
+			//przÃ³d
 			grafika->FillRectangle(Brushes::DimGray, EkranAnimacji->SzerEkr(2, pictureBox1->Width), EkranAnimacji->WysEkr(-5.9, pictureBox1->Height), 25, 20);
 
 			//obramowanie
@@ -4682,39 +4658,39 @@ private: System::Void Label4_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void CheckedListBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 	
 }
-		 //Parametry wahade³ pocz¹tek
-		 //d³ugoœci
+		 //Parametry wahadeÂ³ poczÂ¹tek
+		 //dÂ³ugoÅ“ci
 private: System::Void HScrollBar7_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	PierwszeWah->length = hScrollBar7->Value * 0.01;
-	label5->Text = L"Pierwsze wahad³o: " + PierwszeWah->length.ToString("0.00") + L" [m]";
+	label5->Text = L"Pierwsze wahadÂ³o: " + PierwszeWah->length.ToString("0.00") + L" [m]";
 	PierwszeWah->x = PierwszeWah->length * sin(PierwszeWah->nextposy);
 	PierwszeWah->y = PierwszeWah->length * cos(PierwszeWah->nextposy);
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar6_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DrugieWah->length = hScrollBar6->Value * 0.01;
-	label6->Text = L"Drugie wahad³o: " + DrugieWah->length.ToString("0.00") + L" [m]";
+	label6->Text = L"Drugie wahadÂ³o: " + DrugieWah->length.ToString("0.00") + L" [m]";
 	DrugieWah->x = DrugieWah->length * sin(DrugieWah->nextposy);
 	DrugieWah->y = DrugieWah->length * cos(DrugieWah->nextposy);
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar5_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	TrzecieWah->length = hScrollBar5->Value * 0.01;
-	label7->Text = L"Trzecie wahad³o: " + TrzecieWah->length.ToString("0.00") + L" [m]";
+	label7->Text = L"Trzecie wahadÂ³o: " + TrzecieWah->length.ToString("0.00") + L" [m]";
 	TrzecieWah->x = TrzecieWah->length * sin(TrzecieWah->nextposy);
 	TrzecieWah->y = TrzecieWah->length * cos(TrzecieWah->nextposy);
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar1_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	CzwarteWah->length = hScrollBar1->Value * 0.01;
-	label8->Text = L"Czwarte wahad³o: " + CzwarteWah->length.ToString("0.00") + L" [m]";
+	label8->Text = L"Czwarte wahadÂ³o: " + CzwarteWah->length.ToString("0.00") + L" [m]";
 	CzwarteWah->x = CzwarteWah->length * sin(CzwarteWah->nextposy);
 	CzwarteWah->y = CzwarteWah->length * cos(CzwarteWah->nextposy);
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar2_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	PiateWah->length = hScrollBar2->Value * 0.01;
-	label9->Text = L"Pi¹te wahad³o: " + PiateWah->length.ToString("0.00") + L" [m]";
+	label9->Text = L"PiÂ¹te wahadÂ³o: " + PiateWah->length.ToString("0.00") + L" [m]";
 	PiateWah->x = PiateWah->length * sin(PiateWah->nextposy);
 	PiateWah->y = PiateWah->length * cos(PiateWah->nextposy);
 	pictureBox1->Invalidate();
@@ -4730,21 +4706,21 @@ private: System::Void Panel1_Paint(System::Object^ sender, System::Windows::Form
 }
 private: System::Void HScrollBar8_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SzosteWah->length = hScrollBar8->Value * 0.01;
-	label14->Text = L"Szóste wahad³o: " + SzosteWah->length.ToString("0.00") + L" [m]";
+	label14->Text = L"SzÃ³ste wahadÂ³o: " + SzosteWah->length.ToString("0.00") + L" [m]";
 	SzosteWah->x = SzosteWah->length * sin(SzosteWah->nextposy);
 	SzosteWah->y = SzosteWah->length * cos(SzosteWah->nextposy);
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar10_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziewiateWah->length = hScrollBar10->Value * 0.01;
-	label11->Text = L"Dziewi¹te wahad³o: " + DziewiateWah->length.ToString("0.00") + L" [m]";
+	label11->Text = L"DziewiÂ¹te wahadÂ³o: " + DziewiateWah->length.ToString("0.00") + L" [m]";
 	DziewiateWah->x = DziewiateWah->length * sin(DziewiateWah->nextposy);
 	DziewiateWah->y = DziewiateWah->length * cos(DziewiateWah->nextposy);
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar9_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziesiateWah->length = hScrollBar9->Value * 0.01;
-	label10->Text = L"Dziesi¹te wahad³o: " + DziesiateWah->length.ToString("0.00") + L" [m]";
+	label10->Text = L"DziesiÂ¹te wahadÂ³o: " + DziesiateWah->length.ToString("0.00") + L" [m]";
 	DziesiateWah->x = DziesiateWah->length * sin(DziesiateWah->nextposy);
 	DziesiateWah->y = DziesiateWah->length * cos(DziesiateWah->nextposy);
 	pictureBox1->Invalidate();
@@ -4752,49 +4728,49 @@ private: System::Void HScrollBar9_Scroll(System::Object^ sender, System::Windows
 		 //masy
 private: System::Void HScrollBar18_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	PierwszeWah->mass = hScrollBar18->Value * 0.01;
-	label24->Text = L"Pierwsze wahad³o: " + PierwszeWah->mass.ToString("0.00") + L" [kg]";
+	label24->Text = L"Pierwsze wahadÂ³o: " + PierwszeWah->mass.ToString("0.00") + L" [kg]";
 }
 private: System::Void HScrollBar17_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DrugieWah->mass = hScrollBar17->Value * 0.01;
-	label23->Text = L"Drugie wahad³o: " + DrugieWah->mass.ToString("0.00") + L" [kg]";
+	label23->Text = L"Drugie wahadÂ³o: " + DrugieWah->mass.ToString("0.00") + L" [kg]";
 }
 private: System::Void HScrollBar16_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	TrzecieWah->mass = hScrollBar16->Value * 0.01;
-	label22->Text = L"Trzecie wahad³o: " + TrzecieWah->mass.ToString("0.00") + L" [kg]";
+	label22->Text = L"Trzecie wahadÂ³o: " + TrzecieWah->mass.ToString("0.00") + L" [kg]";
 }
 private: System::Void HScrollBar20_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	CzwarteWah->mass = hScrollBar20->Value * 0.01;
-	label21->Text = L"Czwarte wahad³o: " + CzwarteWah->mass.ToString("0.00") + L" [kg]";
+	label21->Text = L"Czwarte wahadÂ³o: " + CzwarteWah->mass.ToString("0.00") + L" [kg]";
 }
 private: System::Void HScrollBar19_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	PiateWah->mass = hScrollBar19->Value * 0.01;
-	label20->Text = L"Pi¹te wahad³o: " + PiateWah->mass.ToString("0.00") + L" [kg]";
+	label20->Text = L"PiÂ¹te wahadÂ³o: " + PiateWah->mass.ToString("0.00") + L" [kg]";
 }
 private: System::Void HScrollBar13_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SzosteWah->mass = hScrollBar13->Value * 0.01;
-	label19->Text = L"Szóste wahad³o: " + SzosteWah->mass.ToString("0.00") + L" [kg]";
+	label19->Text = L"SzÃ³ste wahadÂ³o: " + SzosteWah->mass.ToString("0.00") + L" [kg]";
 }
 private: System::Void HScrollBar12_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SiodmeWah->mass = hScrollBar12->Value * 0.01;
-	label18->Text = L"Siódme wahad³o: " + SiodmeWah->mass.ToString("0.00") + L" [kg]";
+	label18->Text = L"SiÃ³dme wahadÂ³o: " + SiodmeWah->mass.ToString("0.00") + L" [kg]";
 }
 private: System::Void HScrollBar11_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	OsmeWah->mass = hScrollBar11->Value * 0.01;
-	label17->Text = L"Ósme wahad³o: " + OsmeWah->mass.ToString("0.00") + L" [kg]";
+	label17->Text = L"Ã“sme wahadÂ³o: " + OsmeWah->mass.ToString("0.00") + L" [kg]";
 }
 private: System::Void HScrollBar15_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziewiateWah->mass = hScrollBar15->Value * 0.01;
-		label16->Text = L"Dziewi¹te wahad³o: " + DziewiateWah->mass.ToString("0.00") + L" [kg]";
+		label16->Text = L"DziewiÂ¹te wahadÂ³o: " + DziewiateWah->mass.ToString("0.00") + L" [kg]";
 }
 private: System::Void HScrollBar14_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziesiateWah->mass = hScrollBar14->Value * 0.01;
-		label15->Text = L"Dziesi¹te wahad³o: " + DziesiateWah->mass.ToString("0.00") + L" [kg]";
+		label15->Text = L"DziesiÂ¹te wahadÂ³o: " + DziesiateWah->mass.ToString("0.00") + L" [kg]";
 }
-		 //po³o¿enia
+		 //poÂ³oÂ¿enia
 private: System::Void HScrollBar28_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	PierwszeWah->nextposy = hScrollBar28->Value * 0.01;
 	PierwszeWah->wychylenie = PierwszeWah->nextposy;
-		label35->Text = L"Pierwsze wahad³o: " + PierwszeWah->nextposy.ToString("0.00") + L" [rad]";
+		label35->Text = L"Pierwsze wahadÂ³o: " + PierwszeWah->nextposy.ToString("0.00") + L" [rad]";
 
 		PierwszeWah->x = PierwszeWah->length * sin(PierwszeWah->nextposy);
 		PierwszeWah->y = PierwszeWah->length * cos(PierwszeWah->nextposy);
@@ -4804,7 +4780,7 @@ private: System::Void HScrollBar28_Scroll(System::Object^ sender, System::Window
 private: System::Void HScrollBar27_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DrugieWah->nextposy = hScrollBar27->Value * 0.01;
 	DrugieWah->wychylenie = DrugieWah->nextposy;
-		label34->Text = L"Drugie wahad³o: " + DrugieWah->nextposy.ToString("0.00") + L" [rad]";
+		label34->Text = L"Drugie wahadÂ³o: " + DrugieWah->nextposy.ToString("0.00") + L" [rad]";
 
 		DrugieWah->x = DrugieWah->length * sin(DrugieWah->nextposy);
 		DrugieWah->y = DrugieWah->length * cos(DrugieWah->nextposy);
@@ -4814,7 +4790,7 @@ private: System::Void HScrollBar27_Scroll(System::Object^ sender, System::Window
 private: System::Void HScrollBar26_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	TrzecieWah->nextposy = hScrollBar26->Value * 0.01;
 	TrzecieWah->wychylenie = TrzecieWah->nextposy;
-		label33->Text = L"Trzecie wahad³o: " + TrzecieWah->nextposy.ToString("0.00") + L" [rad]";
+		label33->Text = L"Trzecie wahadÂ³o: " + TrzecieWah->nextposy.ToString("0.00") + L" [rad]";
 
 		TrzecieWah->x = TrzecieWah->length * sin(TrzecieWah->nextposy);
 		TrzecieWah->y = TrzecieWah->length * cos(TrzecieWah->nextposy);
@@ -4824,7 +4800,7 @@ private: System::Void HScrollBar26_Scroll(System::Object^ sender, System::Window
 private: System::Void HScrollBar30_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	CzwarteWah->nextposy = hScrollBar30->Value * 0.01;
 	CzwarteWah->wychylenie = CzwarteWah->nextposy;
-		label32->Text = L"Czwarte wahad³o: " + CzwarteWah->nextposy.ToString("0.00") + L" [rad]";
+		label32->Text = L"Czwarte wahadÂ³o: " + CzwarteWah->nextposy.ToString("0.00") + L" [rad]";
 
 		CzwarteWah->x = CzwarteWah->length * sin(CzwarteWah->nextposy);
 		CzwarteWah->y = CzwarteWah->length * cos(CzwarteWah->nextposy);
@@ -4834,7 +4810,7 @@ private: System::Void HScrollBar30_Scroll(System::Object^ sender, System::Window
 private: System::Void HScrollBar29_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	PiateWah->nextposy = hScrollBar29->Value * 0.01;
 	PiateWah->wychylenie = PiateWah->nextposy;
-		label31->Text = L"Pi¹te wahad³o: " + PiateWah->nextposy.ToString("0.00") + L" [rad]";
+		label31->Text = L"PiÂ¹te wahadÂ³o: " + PiateWah->nextposy.ToString("0.00") + L" [rad]";
 
 		PiateWah->x = PiateWah->length * sin(PiateWah->nextposy);
 		PiateWah->y = PiateWah->length * cos(PiateWah->nextposy);
@@ -4844,7 +4820,7 @@ private: System::Void HScrollBar29_Scroll(System::Object^ sender, System::Window
 private: System::Void HScrollBar23_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SzosteWah->nextposy = hScrollBar23->Value * 0.01;
 	SzosteWah->wychylenie = SzosteWah->nextposy;
-		label30->Text = L"Szóste wahad³o: " + SzosteWah->nextposy.ToString("0.00") + L" [rad]";
+		label30->Text = L"SzÃ³ste wahadÂ³o: " + SzosteWah->nextposy.ToString("0.00") + L" [rad]";
 
 		SzosteWah->x = SzosteWah->length * sin(SzosteWah->nextposy);
 		SzosteWah->y = SzosteWah->length * cos(SzosteWah->nextposy);
@@ -4854,7 +4830,7 @@ private: System::Void HScrollBar23_Scroll(System::Object^ sender, System::Window
 private: System::Void HScrollBar22_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SiodmeWah->nextposy = hScrollBar22->Value * 0.01;
 	SiodmeWah->wychylenie = SiodmeWah->nextposy;
-		label29->Text = L"Siódme wahad³o: " + SiodmeWah->nextposy.ToString("0.00") + L" [rad]";
+		label29->Text = L"SiÃ³dme wahadÂ³o: " + SiodmeWah->nextposy.ToString("0.00") + L" [rad]";
 
 		SiodmeWah->x = SiodmeWah->length * sin(SiodmeWah->nextposy);
 		SiodmeWah->y = SiodmeWah->length * cos(SiodmeWah->nextposy);
@@ -4864,7 +4840,7 @@ private: System::Void HScrollBar22_Scroll(System::Object^ sender, System::Window
 private: System::Void HScrollBar21_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	OsmeWah->nextposy = hScrollBar21->Value * 0.01;
 	OsmeWah->wychylenie = OsmeWah->nextposy;
-		label28->Text = L"Ósme wahad³o: " + OsmeWah->nextposy.ToString("0.00") + L" [rad]";
+		label28->Text = L"Ã“sme wahadÂ³o: " + OsmeWah->nextposy.ToString("0.00") + L" [rad]";
 
 		OsmeWah->x = OsmeWah->length * sin(OsmeWah->nextposy);
 		OsmeWah->y = OsmeWah->length * cos(OsmeWah->nextposy);
@@ -4874,7 +4850,7 @@ private: System::Void HScrollBar21_Scroll(System::Object^ sender, System::Window
 private: System::Void HScrollBar25_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziewiateWah->nextposy = hScrollBar25->Value * 0.01;
 	DziewiateWah->wychylenie = DziewiateWah->nextposy;
-		label27->Text = L"Dziewi¹te wahad³o: " + DziewiateWah->nextposy.ToString("0.00") + L" [rad]";
+		label27->Text = L"DziewiÂ¹te wahadÂ³o: " + DziewiateWah->nextposy.ToString("0.00") + L" [rad]";
 
 		DziewiateWah->x = DziewiateWah->length * sin(DziewiateWah->nextposy);
 		DziewiateWah->y = DziewiateWah->length * cos(DziewiateWah->nextposy);
@@ -4884,136 +4860,136 @@ private: System::Void HScrollBar25_Scroll(System::Object^ sender, System::Window
 private: System::Void HScrollBar24_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziesiateWah->nextposy = hScrollBar24->Value * 0.01;
 	DziesiateWah->wychylenie = DziesiateWah->nextposy;
-		label26->Text = L"Dziesi¹te wahad³o: " + DziesiateWah->nextposy.ToString("0.00") + L" [rad]";
+		label26->Text = L"DziesiÂ¹te wahadÂ³o: " + DziesiateWah->nextposy.ToString("0.00") + L" [rad]";
 
 		DziesiateWah->x = DziesiateWah->length * sin(DziesiateWah->nextposy);
 		DziesiateWah->y = DziesiateWah->length * cos(DziesiateWah->nextposy);
 
 	pictureBox1->Invalidate();
 }
-		 //prêdkoœci
+		 //prÃªdkoÅ“ci
 private: System::Void HScrollBar38_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	PierwszeWah->prevvelocity = hScrollBar38->Value * 0.01;
-	label46->Text = L"Pierwsze wahad³o: " + PierwszeWah->prevvelocity.ToString("0.00") + L" [m/s]";
+	label46->Text = L"Pierwsze wahadÂ³o: " + PierwszeWah->prevvelocity.ToString("0.00") + L" [m/s]";
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar37_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DrugieWah->prevvelocity = hScrollBar37->Value * 0.01;
-	label45->Text = L"Drugie wahad³o: " + DrugieWah->prevvelocity.ToString("0.00") + L" [m/s]";
+	label45->Text = L"Drugie wahadÂ³o: " + DrugieWah->prevvelocity.ToString("0.00") + L" [m/s]";
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar36_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	TrzecieWah->prevvelocity = hScrollBar36->Value * 0.01;
-	label44->Text = L"Trzecie wahad³o: " + TrzecieWah->prevvelocity.ToString("0.00") + L" [m/s]";
+	label44->Text = L"Trzecie wahadÂ³o: " + TrzecieWah->prevvelocity.ToString("0.00") + L" [m/s]";
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar40_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	CzwarteWah->prevvelocity = hScrollBar40->Value * 0.01;
-	label43->Text = L"Czwarte wahad³o: " + CzwarteWah->prevvelocity.ToString("0.00") + L" [m/s]";
+	label43->Text = L"Czwarte wahadÂ³o: " + CzwarteWah->prevvelocity.ToString("0.00") + L" [m/s]";
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar39_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	PiateWah->prevvelocity = hScrollBar39->Value * 0.01;
-	label42->Text = L"Pi¹te wahad³o: " + PiateWah->prevvelocity.ToString("0.00") + L" [m/s]";
+	label42->Text = L"PiÂ¹te wahadÂ³o: " + PiateWah->prevvelocity.ToString("0.00") + L" [m/s]";
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar33_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SzosteWah->prevvelocity = hScrollBar33->Value * 0.01;
-	label41->Text = L"Szóste wahad³o: " + SzosteWah->prevvelocity.ToString("0.00") + L" [m/s]";
+	label41->Text = L"SzÃ³ste wahadÂ³o: " + SzosteWah->prevvelocity.ToString("0.00") + L" [m/s]";
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar32_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SiodmeWah->nextvelocity = hScrollBar32->Value * 0.01;
-	label40->Text = L"Siódme wahad³o: " + SiodmeWah->nextvelocity.ToString("0.00") + L" [m/s]";
+	label40->Text = L"SiÃ³dme wahadÂ³o: " + SiodmeWah->nextvelocity.ToString("0.00") + L" [m/s]";
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar31_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	OsmeWah->prevvelocity = hScrollBar31->Value * 0.01;
-	label39->Text = L"Ósme wahad³o: " + OsmeWah->prevvelocity.ToString("0.00") + L" [m/s]";
+	label39->Text = L"Ã“sme wahadÂ³o: " + OsmeWah->prevvelocity.ToString("0.00") + L" [m/s]";
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar35_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziewiateWah->prevvelocity = hScrollBar35->Value * 0.01;
-	label38->Text = L"Dziewi¹te wahad³o: " + DziewiateWah->prevvelocity.ToString("0.00") + L" [m/s]";
+	label38->Text = L"DziewiÂ¹te wahadÂ³o: " + DziewiateWah->prevvelocity.ToString("0.00") + L" [m/s]";
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar34_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziesiateWah->prevvelocity = hScrollBar34->Value * 0.01;
-	label37->Text = L"Dziesi¹te wahad³o: " + DziesiateWah->prevvelocity.ToString("0.00") + L" [m/s]";
+	label37->Text = L"DziesiÂ¹te wahadÂ³o: " + DziesiateWah->prevvelocity.ToString("0.00") + L" [m/s]";
 
 	pictureBox1->Invalidate();
 }
-		 //t³umienie
+		 //tÂ³umienie
 private: System::Void HScrollBar48_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	PierwszeWah->suppresion = hScrollBar48->Value * 0.01;
-	label57->Text = L"Pierwsze wahad³o: " + PierwszeWah->suppresion.ToString("0.00");
+	label57->Text = L"Pierwsze wahadÂ³o: " + PierwszeWah->suppresion.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar47_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DrugieWah->suppresion = hScrollBar47->Value * 0.01;
-	label56->Text = L"Drugie wahad³o: " + DrugieWah->suppresion.ToString("0.00");
+	label56->Text = L"Drugie wahadÂ³o: " + DrugieWah->suppresion.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar46_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	TrzecieWah->suppresion = hScrollBar46->Value * 0.01;
-	label55->Text = L"Trzecie wahad³o: " + TrzecieWah->suppresion.ToString("0.00");
+	label55->Text = L"Trzecie wahadÂ³o: " + TrzecieWah->suppresion.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar50_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	CzwarteWah->suppresion = hScrollBar50->Value * 0.01;
-	label54->Text = L"Czwarte wahad³o: " + CzwarteWah->suppresion.ToString("0.00");
+	label54->Text = L"Czwarte wahadÂ³o: " + CzwarteWah->suppresion.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar49_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	PiateWah->suppresion = hScrollBar49->Value * 0.01;
-	label53->Text = L"Pi¹te wahad³o: " + PiateWah->suppresion.ToString("0.00");
+	label53->Text = L"PiÂ¹te wahadÂ³o: " + PiateWah->suppresion.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar43_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SzosteWah->suppresion = hScrollBar43->Value * 0.01;
-	label52->Text = L"Szóste wahad³o: " + SzosteWah->suppresion.ToString("0.00");
+	label52->Text = L"SzÃ³ste wahadÂ³o: " + SzosteWah->suppresion.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar42_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SiodmeWah->suppresion = hScrollBar42->Value * 0.01;
-	label51->Text = L"Siódme wahad³o: " + SiodmeWah->suppresion.ToString("0.00");
+	label51->Text = L"SiÃ³dme wahadÂ³o: " + SiodmeWah->suppresion.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar41_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	OsmeWah->suppresion = hScrollBar41->Value * 0.01;
-	label50->Text = L"Ósme wahad³o: " + OsmeWah->suppresion.ToString("0.00");
+	label50->Text = L"Ã“sme wahadÂ³o: " + OsmeWah->suppresion.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar45_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziewiateWah->suppresion = hScrollBar45->Value * 0.01;
-	label49->Text = L"Dziewi¹te wahad³o: " + DziewiateWah->suppresion.ToString("0.00");
+	label49->Text = L"DziewiÂ¹te wahadÂ³o: " + DziewiateWah->suppresion.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar44_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziesiateWah->suppresion = hScrollBar44->Value * 0.01;
-	label48->Text = L"Dziesi¹te wahad³o: " + DziesiateWah->suppresion.ToString("0.00");
+	label48->Text = L"DziesiÂ¹te wahadÂ³o: " + DziesiateWah->suppresion.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
-		 //sprzê¿enie z poprzednim wahad³em
+		 //sprzÃªÂ¿enie z poprzednim wahadÂ³em
 private: System::Void HScrollBar57_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DrugieWah->prevcoupling = hScrollBar57->Value * 0.01;
 	PierwszeWah->nextcoupling = hScrollBar57->Value * 0.01;
@@ -5046,97 +5022,97 @@ private: System::Void HScrollBar59_Scroll(System::Object^ sender, System::Window
 private: System::Void HScrollBar53_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SzosteWah->prevcoupling = hScrollBar53->Value * 0.01;
 	PiateWah->nextcoupling = hScrollBar53->Value * 0.01;
-	label63->Text = L"Pi¹ta linka: " + SzosteWah->prevcoupling.ToString("0.00");
+	label63->Text = L"PiÂ¹ta linka: " + SzosteWah->prevcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar52_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SiodmeWah->prevcoupling = hScrollBar52->Value * 0.01;
 	SzosteWah->nextcoupling = hScrollBar52->Value * 0.01;
-	label62->Text = L"Szósta linka: " + SiodmeWah->prevcoupling.ToString("0.00");
+	label62->Text = L"SzÃ³sta linka: " + SiodmeWah->prevcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar51_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	OsmeWah->prevcoupling = hScrollBar51->Value * 0.01;
 	SiodmeWah->nextcoupling = hScrollBar51->Value * 0.01;
-	label61->Text = L"Siódma linka: " + OsmeWah->prevcoupling.ToString("0.00");
+	label61->Text = L"SiÃ³dma linka: " + OsmeWah->prevcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar55_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziewiateWah->prevcoupling = hScrollBar55->Value * 0.01;
 	OsmeWah->nextcoupling = hScrollBar55->Value * 0.01;
-	label60->Text = L"Ósma linka: " + DziewiateWah->prevcoupling.ToString("0.00");
+	label60->Text = L"Ã“sma linka: " + DziewiateWah->prevcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar54_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziesiateWah->prevcoupling = hScrollBar54->Value * 0.01;
 	DziewiateWah->nextcoupling = hScrollBar54->Value * 0.01;
-	label59->Text = L"Dziewi¹ta linka: " + DziesiateWah->prevcoupling.ToString("0.00");
+	label59->Text = L"DziewiÂ¹ta linka: " + DziesiateWah->prevcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
-		 //wspó³czynnik sprzê¿enia z kolejnym wahad³em
+		 //wspÃ³Â³czynnik sprzÃªÂ¿enia z kolejnym wahadÂ³em
 private: System::Void HScrollBar63_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	PierwszeWah->nextcoupling = hScrollBar63->Value * 0.01;
-	label68->Text = L"Dziesi¹ta linka: " + PierwszeWah->nextcoupling.ToString("0.00");
+	label68->Text = L"DziesiÂ¹ta linka: " + PierwszeWah->nextcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar66_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DrugieWah->nextcoupling = hScrollBar66->Value * 0.01;
-	label77->Text = L"Drugie wahad³o: " + DrugieWah->nextcoupling.ToString("0.00");
+	label77->Text = L"Drugie wahadÂ³o: " + DrugieWah->nextcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar65_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	TrzecieWah->nextcoupling = hScrollBar65->Value * 0.01;
-	label76->Text = L"Trzecie wahad³o: " + TrzecieWah->nextcoupling.ToString("0.00");
+	label76->Text = L"Trzecie wahadÂ³o: " + TrzecieWah->nextcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar68_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	CzwarteWah->nextcoupling = hScrollBar68->Value * 0.01;
-	label75->Text = L"Czwarte wahad³o: " + CzwarteWah->nextcoupling.ToString("0.00");
+	label75->Text = L"Czwarte wahadÂ³o: " + CzwarteWah->nextcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar67_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	PiateWah->nextcoupling = hScrollBar67->Value * 0.01;
-	label74->Text = L"Pi¹te wahad³o: " + PiateWah->nextcoupling.ToString("0.00");
+	label74->Text = L"PiÂ¹te wahadÂ³o: " + PiateWah->nextcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar62_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SzosteWah->nextcoupling = hScrollBar62->Value * 0.01;
-	label73->Text = L"Szóste wahad³o: " + SzosteWah->nextcoupling.ToString("0.00");
+	label73->Text = L"SzÃ³ste wahadÂ³o: " + SzosteWah->nextcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar61_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SiodmeWah->nextcoupling = hScrollBar61->Value * 0.01;
-	label72->Text = L"Siódme wahad³o: " + SiodmeWah->nextcoupling.ToString("0.00");
+	label72->Text = L"SiÃ³dme wahadÂ³o: " + SiodmeWah->nextcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar58_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	OsmeWah->nextcoupling = hScrollBar58->Value * 0.01;
-	label71->Text = L"Ósme wahad³o: " + OsmeWah->nextcoupling.ToString("0.00");
+	label71->Text = L"Ã“sme wahadÂ³o: " + OsmeWah->nextcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar64_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	DziewiateWah->nextcoupling = hScrollBar64->Value * 0.01;
-	label70->Text = L"Dziewi¹te wahad³o: " + DziewiateWah->nextcoupling.ToString("0.00");
+	label70->Text = L"DziewiÂ¹te wahadÂ³o: " + DziewiateWah->nextcoupling.ToString("0.00");
 
 	pictureBox1->Invalidate();
 }
 private: System::Void CheckedListBox1_ItemCheck(System::Object^ sender, System::Windows::Forms::ItemCheckEventArgs^ e) {
 }
 private: System::Void CheckBox3_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
-	//d³ugoœci
+	//dÂ³ugoÅ“ci
 	if (this->checkBox3->Checked == true)
 	{		
 		checkBox5->Checked = false;
@@ -5178,7 +5154,7 @@ private: System::Void CheckBox4_CheckedChanged(System::Object^ sender, System::E
 
 }
 private: System::Void CheckBox5_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
-	//po³o¿enie
+	//poÂ³oÂ¿enie
 	if (this->checkBox5->Checked == true)
 	{
 		checkBox4->Checked = false;
@@ -5199,7 +5175,7 @@ private: System::Void CheckBox5_CheckedChanged(System::Object^ sender, System::E
 	}
 }
 private: System::Void CheckBox8_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
-	//prêdkoœci
+	//prÃªdkoÅ“ci
 	if (this->checkBox8->Checked == true)
 	{
 		checkBox4->Checked = false;
@@ -5219,7 +5195,7 @@ private: System::Void CheckBox8_CheckedChanged(System::Object^ sender, System::E
 	}
 }
 private: System::Void CheckBox7_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
-	//t³umienie
+	//tÂ³umienie
 	if (this->checkBox7->Checked == true)
 	{
 		checkBox4->Checked = false;
@@ -5243,7 +5219,7 @@ private: System::Void CheckBox6_CheckedChanged(System::Object^ sender, System::E
 }
 private: System::Void CheckBox9_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 	
-	//wspó³czynnik sprzê¿enia z poprzednim wahad³em
+	//wspÃ³Â³czynnik sprzÃªÂ¿enia z poprzednim wahadÂ³em
 	if (this->checkBox9->Checked == true)
 	{
 		checkBox5->Checked = false;
@@ -5267,7 +5243,7 @@ private: System::Void Label68_Click(System::Object^ sender, System::EventArgs^ e
 		 
 //ustawienia animacji
 private: System::Void Button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	//textbox1 -> kolor t³a
+	//textbox1 -> kolor tÂ³a
 
 	ColorDialog^ Paleta = gcnew ColorDialog;
 	
@@ -5303,13 +5279,13 @@ private: System::Void Button3_Click(System::Object^ sender, System::EventArgs^ e
 
 }
 private: System::Void HScrollBar69_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
-//wysokoœæ
+//wysokoÅ“Ã¦
 	WysokoscSiatki = hScrollBar69->Value*0.1;
 	
 		pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar70_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
-//szerokoœæ
+//szerokoÅ“Ã¦
 	SzerokoscSiatki = hScrollBar70->Value*0.1;
 	
 		pictureBox1->Invalidate();
@@ -5320,14 +5296,14 @@ private: System::Void CheckBox10_CheckedChanged(System::Object^ sender, System::
 }
 private: System::Void HScrollBar4_Scroll_1(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	SiodmeWah->length = hScrollBar4->Value * 0.01;
-	label13->Text = L"Siódme wahad³o: " + SiodmeWah->length.ToString("0.00") + L" [m]";
+	label13->Text = L"SiÃ³dme wahadÂ³o: " + SiodmeWah->length.ToString("0.00") + L" [m]";
 	SiodmeWah->x = SiodmeWah->length * sin(SiodmeWah->nextposy);
 	SiodmeWah->y = SiodmeWah->length * cos(SiodmeWah->nextposy);
 	pictureBox1->Invalidate();
 }
 private: System::Void HScrollBar3_Scroll_1(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 	OsmeWah->length = hScrollBar3->Value * 0.01;
-	label12->Text = L"Ósme wahad³o: " + OsmeWah->length.ToString("0.00") + L" [m]";
+	label12->Text = L"Ã“sme wahadÂ³o: " + OsmeWah->length.ToString("0.00") + L" [m]";
 	OsmeWah->x = OsmeWah->length * sin(OsmeWah->nextposy);
 	OsmeWah->y = OsmeWah->length * cos(OsmeWah->nextposy);
 	pictureBox1->Invalidate();
@@ -5349,7 +5325,7 @@ private: System::Void Timer1_Tick_1(System::Object^ sender, System::EventArgs^ e
 	//czasy
 	czasp = czask;
 
-	//po³o¿enie x
+	//poÂ³oÂ¿enie x
 	PierwszeWah->prevposx = PierwszeWah->nextposx;
 	DrugieWah->prevposx = DrugieWah->nextposx;
 	TrzecieWah->prevposx = TrzecieWah->nextposx;
@@ -5361,7 +5337,7 @@ private: System::Void Timer1_Tick_1(System::Object^ sender, System::EventArgs^ e
 	DziewiateWah->prevposx = DziewiateWah->nextposx;
 	DziesiateWah->prevposx = DziesiateWah->nextposx;
 
-	//po³o¿enie y
+	//poÂ³oÂ¿enie y
 	PierwszeWah->prevposy = PierwszeWah->nextposy;
 	DrugieWah->prevposy = DrugieWah->nextposy;
 	TrzecieWah->prevposy = TrzecieWah->nextposy;
@@ -5373,7 +5349,7 @@ private: System::Void Timer1_Tick_1(System::Object^ sender, System::EventArgs^ e
 	DziewiateWah->prevposy = DziewiateWah->nextposy;
 	DziesiateWah->prevposy = DziesiateWah->nextposy;
 
-	//prêdkoœci
+	//prÃªdkoÅ“ci
 	PierwszeWah->prevvelocity = PierwszeWah->nextvelocity;
 	DrugieWah->prevvelocity = DrugieWah->nextvelocity;
 	TrzecieWah->prevvelocity = TrzecieWah->nextvelocity;
@@ -5385,7 +5361,7 @@ private: System::Void Timer1_Tick_1(System::Object^ sender, System::EventArgs^ e
 	DziewiateWah->prevvelocity = DziewiateWah->nextvelocity;
 	DziesiateWah->prevvelocity = DziesiateWah->nextvelocity;
 
-	//obliczanie wartoœci nastêpnych prêdkoœci
+	//obliczanie wartoÅ“ci nastÃªpnych prÃªdkoÅ“ci
 	PierwszeWah->nextvelocity = RuchPierwszego->Rk4Ve(PierwszeWah->prevposx, PierwszeWah->prevvelocity);
 	DrugieWah->nextvelocity = RuchDrugiego->Rk4Ve(DrugieWah->prevposx, DrugieWah->prevvelocity);
 	TrzecieWah->nextvelocity = RuchTrzeciego->Rk4Ve(TrzecieWah->prevposx, TrzecieWah->prevvelocity);
@@ -5397,7 +5373,7 @@ private: System::Void Timer1_Tick_1(System::Object^ sender, System::EventArgs^ e
 	DziewiateWah->nextvelocity = RuchDziewiatego->Rk4Ve(DziewiateWah->prevposx, DziewiateWah->prevvelocity);
 	DziesiateWah->nextvelocity = RuchDziesiatego->Rk4Ve(DziesiateWah->prevposx, DziesiateWah->prevvelocity);
 
-	//obliczanie wartoœci zmiany po³o¿enia x i y biegunowych
+	//obliczanie wartoÅ“ci zmiany poÂ³oÂ¿enia x i y biegunowych
 	//testr z k1w
 	PierwszeWah->nextposx = RuchPierwszego->Rk4AcX(PierwszeWah->prevposx, PierwszeWah->prevposy, czasp, PierwszeWah->suppresion, PierwszeWah->length, PierwszeWah->mass, PierwszeWah->nextcoupling, DrugieWah->nextposy, 0, 0);
 	PierwszeWah->nextposy = RuchPierwszego->Rk4AcY();
@@ -5429,7 +5405,7 @@ private: System::Void Timer1_Tick_1(System::Object^ sender, System::EventArgs^ e
 	DziesiateWah->nextposx = RuchDziesiatego->Rk4AcX(DziesiateWah->prevposx, DziesiateWah->prevposy, czasp, DziesiateWah->suppresion, DziesiateWah->length, DziesiateWah->mass, 0,0, DziesiateWah->prevcoupling, DziewiateWah->nextposy);
 	DziesiateWah->nextposy = RuchDziesiatego->Rk4AcY();
 
-	//zmiana wspó³rzêdnych Biegunowych -> Kartezjanskie
+	//zmiana wspÃ³Â³rzÃªdnych Biegunowych -> Kartezjanskie
 	PierwszeWah->x = PrzeliczBK->WspX(PierwszeWah->length, PierwszeWah->nextposy);
 	PierwszeWah->y = PrzeliczBK->WspY(PierwszeWah->length, PierwszeWah->nextposy);
 
@@ -5565,7 +5541,7 @@ private: System::Void Timer1_Tick_1(System::Object^ sender, System::EventArgs^ e
 		DziesiateWahTabEk1[j] = DziesiateWahEk->Ek1;
 		DziesiateWahTabEk2[j] = DziesiateWahEk->Ek2;
 
-		//energia ca³kowita
+		//energia caÂ³kowita
 		PierwszeWahEc->EnergiaCal(PierwszeWahEp->Ep1, PierwszeWahEp->Ep2, PierwszeWahEk->Ek1, PierwszeWahEk->Ek2);
 
 		PierwszeWahTabEc1[j] = PierwszeWahEc->Ec1;
@@ -5616,7 +5592,7 @@ private: System::Void Timer1_Tick_1(System::Object^ sender, System::EventArgs^ e
 		DziesiateWahTabEc1[j] = DziesiateWahEc->Ec1;
 		DziesiateWahTabEc2[j] = DziesiateWahEc->Ec2;
 
-		//Energie potencjalne, kinetyczne, ca³kowite dla wszystkich wahade³ (ca³y uk³ad)
+		//Energie potencjalne, kinetyczne, caÂ³kowite dla wszystkich wahadeÂ³ (caÂ³y ukÂ³ad)
 		AllWahTabEp1[j] = PierwszeWahEp->Ep1 + DrugieWahEp->Ep1 + TrzecieWahEp->Ep1 + CzwarteWahEp->Ep1 + PiateWahEp->Ep1 + SzosteWahEp->Ep1 + SiodmeWahEp->Ep1 + OsmeWahEp->Ep1 + DziewiateWahEp->Ep1 + DziesiateWahEp->Ep1;
 		AllWahTabEp2[j] = PierwszeWahEp->Ep2 + DrugieWahEp->Ep2 + TrzecieWahEp->Ep2 + CzwarteWahEp->Ep2 + PiateWahEp->Ep2 + SzosteWahEp->Ep2 + SiodmeWahEp->Ep2 + OsmeWahEp->Ep2 + DziewiateWahEp->Ep2 + DziesiateWahEp->Ep2;
 
@@ -5681,10 +5657,10 @@ private: System::Void Timer1_Tick_1(System::Object^ sender, System::EventArgs^ e
 
 		//wzrost kroku czasowego;
 		//tablice czasu
-		 //wartoœæ pocz¹tkowa
+		 //wartoÅ“Ã¦ poczÂ¹tkowa
 		time1[j] = czasp;
 
-		//czas timera w ms -> na sekundy (oœ x wykresów)
+		//czas timera w ms -> na sekundy (oÅ“ x wykresÃ³w)
 		krokczasowy = timer1->Interval * 0.001;
 		czask = czasp + krokczasowy;
 		time2[j] = czask;
@@ -5739,7 +5715,7 @@ private: System::Void Timer1_Tick_1(System::Object^ sender, System::EventArgs^ e
 			DziesiateWahTabEk1[z] = 0;
 			DziesiateWahTabEk2[z] = 0;
 
-			//energie ca³kowite
+			//energie caÂ³kowite
 			PierwszeWahTabEc1[z] = 0;
 			PierwszeWahTabEc2[z] = 0;
 			DrugieWahTabEc1[z] = 0;
@@ -5761,7 +5737,7 @@ private: System::Void Timer1_Tick_1(System::Object^ sender, System::EventArgs^ e
 			DziesiateWahTabEc1[z] = 0;
 			DziesiateWahTabEc2[z] = 0;
 
-			//Wspólne energie
+			//WspÃ³lne energie
 			AllWahTabEp1[z] = 0;
 			AllWahTabEp2[z] = 0;
 			AllWahTabEk1[z] = 0;
@@ -5838,8 +5814,8 @@ private: System::Void Timer1_Tick_1(System::Object^ sender, System::EventArgs^ e
 	pictureBox3->Invalidate();
 }
 private: System::Void ResetToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	//pocz¹tkowe parametry wahade³
-		//d³ugoœci	
+	//poczÂ¹tkowe parametry wahadeÂ³
+		//dÂ³ugoÅ“ci	
 	PierwszeWah->length = 10;
 	hScrollBar7->Value = 1000;
 	DrugieWah->length = 9.9;
@@ -5883,7 +5859,7 @@ private: System::Void ResetToolStripMenuItem_Click(System::Object^ sender, Syste
 	DziesiateWah->mass = 1;
 	hScrollBar14->Value = 100;
 
-	//po³o¿enia y
+	//poÂ³oÂ¿enia y
 	PierwszeWah->nextposy = 2.5;
 	hScrollBar28->Value = 250;
 	DrugieWah->nextposy = 2.5;
@@ -5905,7 +5881,7 @@ private: System::Void ResetToolStripMenuItem_Click(System::Object^ sender, Syste
 	DziesiateWah->nextposy = 2.5;
 	hScrollBar24->Value = 250;
 
-	//po³o¿enia x
+	//poÂ³oÂ¿enia x
 	PierwszeWah->nextposx = 0;
 	DrugieWah->nextposx = 0;
 	TrzecieWah->nextposx = 0;
@@ -5917,7 +5893,7 @@ private: System::Void ResetToolStripMenuItem_Click(System::Object^ sender, Syste
 	DziewiateWah->nextposx = 0;
 	DziesiateWah->nextposx = 0;
 
-	//prêdkoœci
+	//prÃªdkoÅ“ci
 	PierwszeWah->nextvelocity = 0;
 	hScrollBar38->Value = 0;
 	DrugieWah->nextvelocity = 0;
@@ -5939,7 +5915,7 @@ private: System::Void ResetToolStripMenuItem_Click(System::Object^ sender, Syste
 	DziesiateWah->nextvelocity = 0;
 	hScrollBar34->Value = 0;
 
-	//t³umienie
+	//tÂ³umienie
 	PierwszeWah->suppresion = 0.05;
 	hScrollBar48->Value = 5;
 	DrugieWah->suppresion = 0.05;
@@ -5963,7 +5939,7 @@ private: System::Void ResetToolStripMenuItem_Click(System::Object^ sender, Syste
 
 
 
-	//sprzê¿enie z poprzednim wahad³em
+	//sprzÃªÂ¿enie z poprzednim wahadÂ³em
 	DrugieWah->prevcoupling = 0.1;
 	hScrollBar57->Value = 10;
 	TrzecieWah->prevcoupling = 0.1;
@@ -5983,7 +5959,7 @@ private: System::Void ResetToolStripMenuItem_Click(System::Object^ sender, Syste
 	DziesiateWah->prevcoupling = 0.1;
 	hScrollBar54->Value = 10;
 
-	//sprzê¿enie z nastêpnym wahad³em
+	//sprzÃªÂ¿enie z nastÃªpnym wahadÂ³em
 	PierwszeWah->nextcoupling = 0.1;
 	hScrollBar63->Value = 10;
 	DrugieWah->nextcoupling = 0.1;
@@ -6003,7 +5979,7 @@ private: System::Void ResetToolStripMenuItem_Click(System::Object^ sender, Syste
 	DziewiateWah->nextcoupling = 0.1;
 	hScrollBar64->Value = 10;
 
-	//ustawienia wychyleñ pocz¹tkowych
+	//ustawienia wychyleÃ± poczÂ¹tkowych
 	PierwszeWah->wychylenie = PierwszeWah->nextposy;
 	DrugieWah->wychylenie = DrugieWah->nextposy;
 	TrzecieWah->wychylenie = TrzecieWah->nextposy;
@@ -6015,7 +5991,7 @@ private: System::Void ResetToolStripMenuItem_Click(System::Object^ sender, Syste
 	DziewiateWah->wychylenie = DziewiateWah->nextposy;
 	DziesiateWah->wychylenie = DziesiateWah->nextposy;
 
-	//reset wykresów
+	//reset wykresÃ³w
 	for (int z = 0; z < WielkoscTablic; z++)
 	{
 		//energie potencjalne
@@ -6062,7 +6038,7 @@ private: System::Void ResetToolStripMenuItem_Click(System::Object^ sender, Syste
 		DziesiateWahTabEk1[z] = 0;
 		DziesiateWahTabEk2[z] = 0;
 
-		//energie ca³kowite
+		//energie caÂ³kowite
 		PierwszeWahTabEc1[z] = 0;
 		PierwszeWahTabEc2[z] = 0;
 		DrugieWahTabEc1[z] = 0;
@@ -6084,7 +6060,7 @@ private: System::Void ResetToolStripMenuItem_Click(System::Object^ sender, Syste
 		DziesiateWahTabEc1[z] = 0;
 		DziesiateWahTabEc2[z] = 0;
 
-		//Wspólne energie
+		//WspÃ³lne energie
 		AllWahTabEp1[z] = 0;
 		AllWahTabEp2[z] = 0;
 		AllWahTabEk1[z] = 0;
@@ -6155,7 +6131,7 @@ private: System::Void ResetToolStripMenuItem_Click(System::Object^ sender, Syste
 	//ustawienia aplikacji
 	timer1->Interval = 25;
 
-	//pierwszy panel widoczny -> d³ugoœci (najwa¿niejszy parametr przy DP)
+	//pierwszy panel widoczny -> dÂ³ugoÅ“ci (najwaÂ¿niejszy parametr przy DP)
 	panel1->BringToFront();
 	panel5->Visible = false;
 	panel6->Visible = false;
@@ -6200,7 +6176,7 @@ private: System::Void PictureBox3_Paint(System::Object^ sender, System::Windows:
 	//tworzenie obiektu graficznego
 	Graphics^ grafika = e->Graphics;
 
-	//wybór koloru
+	//wybÃ³r koloru
 	
 	grafika->Clear(Color::White);
 
@@ -6213,7 +6189,7 @@ private: System::Void PictureBox3_Paint(System::Object^ sender, System::Windows:
 	//Energia kinetyczna
 	Pen^ PenEk = gcnew Pen(System::Drawing::Color::FromArgb(255, 153, 0,0));
 
-	//Energia ca³kowita
+	//Energia caÂ³kowita
 	Pen^ PenEc = gcnew Pen(System::Drawing::Color::FromArgb(255, 51, 0, 0));
 
 	//ustawienia czcionki
@@ -6500,7 +6476,7 @@ private: System::Void PictureBox3_Paint(System::Object^ sender, System::Windows:
 		}
 	}
 
-	//Energia ca³kowita
+	//Energia caÂ³kowita
 	if (checkBox15->Checked == true)
 	{
 
@@ -6607,8 +6583,8 @@ private: System::Void PictureBox3_Paint(System::Object^ sender, System::Windows:
 	//Przestrzenie Faz
 	if (checkBox16->Checked == true)
 	{
-		label86->Text = "(Po³o¿enie ; Przyspieszenie) = (0.0 ; 0.0)";
-		//Przestrzeñ faz
+		label86->Text = "(PoÂ³oÂ¿enie ; Przyspieszenie) = (0.0 ; 0.0)";
+		//PrzestrzeÃ± faz
 		Pen^ PenPrzFaz = gcnew Pen(System::Drawing::Color::Red);
 
 		grafika->Clear(System::Drawing::Color::White);
@@ -6655,8 +6631,8 @@ private: System::Void PictureBox3_Paint(System::Object^ sender, System::Windows:
 			System::Drawing::Font^ CzcionkaPrzFaz = gcnew System::Drawing::Font("Times New Roman", 11);
 			System::Drawing::Font^ indeksgorny = gcnew System::Drawing::Font("Times New Roman", 7);
 
-			e->Graphics->DrawString("Prêdkoœæ [rad/s]", CzcionkaPrzFaz, KCzcionki, EkranWykresu->SzerEkr(wxl, pictureBox3->Width), EkranWykresu->WysEkr(0.95 * wyg, pictureBox3->Height), Format1);
-			e->Graphics->DrawString("Po³o¿enie [rad]", CzcionkaPrzFaz, KCzcionki, EkranWykresu->SzerEkr(0.7 * wxp, pictureBox3->Width), EkranWykresu->WysEkr(0.15 * wyd, pictureBox3->Height), Format2);
+			e->Graphics->DrawString("PrÃªdkoÅ“Ã¦ [rad/s]", CzcionkaPrzFaz, KCzcionki, EkranWykresu->SzerEkr(wxl, pictureBox3->Width), EkranWykresu->WysEkr(0.95 * wyg, pictureBox3->Height), Format1);
+			e->Graphics->DrawString("PoÂ³oÂ¿enie [rad]", CzcionkaPrzFaz, KCzcionki, EkranWykresu->SzerEkr(0.7 * wxp, pictureBox3->Width), EkranWykresu->WysEkr(0.15 * wyd, pictureBox3->Height), Format2);
 
 			e->Graphics->DrawString("0", FontSiatki, KCzcionki, EkranWykresu->SzerEkr(0.04 * wxl, pictureBox3->Width), EkranWykresu->WysEkr(0.02 * wyd, pictureBox3->Height), Format2);
 
@@ -6814,7 +6790,7 @@ private: System::Void Panel13_Paint(System::Object^ sender, System::Windows::For
 	Pen^ Red = gcnew Pen(System::Drawing::Color::Red);
 	Red->Width = 3;
 
-	//wstawiæ foto, improve this s
+	//wstawiÃ¦ foto, improve this s
 	grafika->DrawLine(Red, 125,46,150,46);
 	grafika->DrawLine(Red, 135, 58, 150, 47);
 	grafika->DrawLine(Red, 135, 35, 150, 47);
@@ -6917,7 +6893,7 @@ private: System::Void CheckBox26_CheckedChanged(System::Object^ sender, System::
 	pictureBox3->Invalidate();
 }
 
-//skalowanie wykresów
+//skalowanie wykresÃ³w
 private: System::Void HScrollBar71_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
 
 		if (checkBox16->Checked == true)
@@ -6992,7 +6968,7 @@ private: System::Void PictureBox3_MouseMove(System::Object^ sender, System::Wind
 	
 	if (checkBox16->Checked == true)
 	{
-		label86->Text = L"(Po³o¿enie; Przyspieszenie) = (" + realx.ToString("F2") + L"; " + realy.ToString("F2") + L")"; 
+		label86->Text = L"(PoÂ³oÂ¿enie; Przyspieszenie) = (" + realx.ToString("F2") + L"; " + realy.ToString("F2") + L")"; 
 	}
 	else
 	{
@@ -7002,7 +6978,7 @@ private: System::Void PictureBox3_MouseMove(System::Object^ sender, System::Wind
 }
 private: System::Void WykresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 
-	//tworzenie obiektu graficznego przenosz¹cego informacjê pikselow¹ do bitmapy
+	//tworzenie obiektu graficznego przenoszÂ¹cego informacjÃª pikselowÂ¹ do bitmapy
 	Bitmap^ Obraz = gcnew Bitmap(pictureBox3->Width-5, pictureBox3->Height-5);
 
 	Graphics^ grafika = Graphics::FromImage(Obraz);
@@ -7013,7 +6989,7 @@ private: System::Void WykresToolStripMenuItem_Click(System::Object^ sender, Syst
 
 	grafika->CopyFromScreen(okno.Location, punkt, pictureBox3->Size);
 
-	//pobieranie œcie¿ki do zapisu wykorzystuj¹c funkcje OdczytPliku
+	//pobieranie Å“cieÂ¿ki do zapisu wykorzystujÂ¹c funkcje OdczytPliku
 	Thread^ WatekOdczytu = gcnew Thread(gcnew ThreadStart(OdczytPliku));
 	WatekOdczytu->TrySetApartmentState(ApartmentState::STA);
 
@@ -7036,7 +7012,7 @@ private: System::Void WykresToolStripMenuItem_Click(System::Object^ sender, Syst
 
 	Thread::Sleep(0);
 
-	//usuwanie pliku tymczasowyzapis.txt s³u¿¹cy do przekierowania œcie¿ki odczyt->zapis
+	//usuwanie pliku tymczasowyzapis.txt sÂ³uÂ¿Â¹cy do przekierowania Å“cieÂ¿ki odczyt->zapis
 	if (File::Exists("c:\\users\\public\\pictures\\tymczasowyzapis.txt"))
 	{
 		File::Delete("c:\\users\\public\\pictures\\tymczasowyzapis.txt");
@@ -7089,48 +7065,48 @@ private: System::Void PomocToolStripMenuItem_Click(System::Object^ sender, Syste
 
 	Pomoc->Show();
 
-	//w³aœciwoœci okienka
+	//wÂ³aÅ“ciwoÅ“ci okienka
 	Pomoc->Width = 500;
 		Pomoc->Height = 500;
 
 		Label^ tekstpomocy = gcnew Label();
 		
-		tekstpomocy->Text = "Panel nazwany Parametry wahade³ znajduj¹cy siê po prawej stronie od animacji," + Environment::NewLine +
-			"pozwala na wybór pomiêdzy poszczególnymi parametrami wahade³. Chc¹c rozpocz¹æ symulacje " + Environment::NewLine +
-			"sprzê¿onych wahade³ nale¿y dobraæ parametry dla ka¿dego z nich. Poprzez zaznaczenie checkboxów o nazwie" + Environment::NewLine +
-			"Sprzê¿enie 1  oraz „Sprzê¿enie 2” mo¿liwe bêdzie wybranie odpowiednio sta³ej cn linki po³¹czonej z poprzednim wahad³em" + Environment::NewLine +
-			"i sta³ej cn+1 dla linki po³¹czonej z kolejnym.  Po dobraniu ka¿dego parametru dla wszystkich wahade³ mo¿na" + Environment::NewLine +
-			"nacisn¹æ przycisk „START” do rozpoczêcia symulacji." + Environment::NewLine + Environment::NewLine +
+		tekstpomocy->Text = "Panel nazwany Parametry wahadeÂ³ znajdujÂ¹cy siÃª po prawej stronie od animacji," + Environment::NewLine +
+			"pozwala na wybÃ³r pomiÃªdzy poszczegÃ³lnymi parametrami wahadeÂ³. ChcÂ¹c rozpoczÂ¹Ã¦ symulacje " + Environment::NewLine +
+			"sprzÃªÂ¿onych wahadeÂ³ naleÂ¿y dobraÃ¦ parametry dla kaÂ¿dego z nich. Poprzez zaznaczenie checkboxÃ³w o nazwie" + Environment::NewLine +
+			"SprzÃªÂ¿enie 1  oraz â€žSprzÃªÂ¿enie 2â€ moÂ¿liwe bÃªdzie wybranie odpowiednio staÂ³ej cn linki poÂ³Â¹czonej z poprzednim wahadÂ³em" + Environment::NewLine +
+			"i staÂ³ej cn+1 dla linki poÂ³Â¹czonej z kolejnym.  Po dobraniu kaÂ¿dego parametru dla wszystkich wahadeÂ³ moÂ¿na" + Environment::NewLine +
+			"nacisnÂ¹Ã¦ przycisk â€žSTARTâ€ do rozpoczÃªcia symulacji." + Environment::NewLine + Environment::NewLine +
 
-			"Po zaznaczeniu checkboxu Ustawienia wykresu znajduj¹cego siê pod" + Environment::NewLine +
-			"przyciskiem rozpoczynaj¹cym symulacje, mo¿na dokonaæ wyboru wyrysowania poszczególnych energii wahade³" + Environment::NewLine +
-			"jak i ich przestrzeni fazowej.Pozwala to na dowolne ich porównywanie.Tak jak w poprzednich aplikacjach" + Environment::NewLine +
-			"istnieje tu mo¿liwoœæ skalowania wykresu." + Environment::NewLine + Environment::NewLine +
+			"Po zaznaczeniu checkboxu Ustawienia wykresu znajdujÂ¹cego siÃª pod" + Environment::NewLine +
+			"przyciskiem rozpoczynajÂ¹cym symulacje, moÂ¿na dokonaÃ¦ wyboru wyrysowania poszczegÃ³lnych energii wahadeÂ³" + Environment::NewLine +
+			"jak i ich przestrzeni fazowej.Pozwala to na dowolne ich porÃ³wnywanie.Tak jak w poprzednich aplikacjach" + Environment::NewLine +
+			"istnieje tu moÂ¿liwoÅ“Ã¦ skalowania wykresu." + Environment::NewLine + Environment::NewLine +
 
-			"W panelu Parametry uk³adu jest mo¿liwoœæ zmiany kolorystyki animacji." + Environment::NewLine +
-			"Kule rysowane s¹ funkcj¹ liniowego gradientu dziêki temu mo¿na dobraæ dwa kolory dla wahade³." + Environment::NewLine +
-			"Tak¿e mo¿na zmieniaæ kolor siatki jak i t³a animacji.W tej zak³adce mo¿na równie¿ dostosowaæ szerokoœæ jak i wysokoœæ rysowanej na animacji siatki. " + Environment::NewLine +
-			"Menu sk³ada siê z kilku czêœci.Zak³adka Plik wi¹¿e siê z restartowaniem parametrów aplikacji, zamkniêciem jej " + Environment::NewLine +
-			"oraz zapisu poszczególnych okien, wyników, wykonanych pomiarów jak i automatycznie utworzonej legendy. " + Environment::NewLine +
-			"Legenda dostosowujê siê do wybranych na wykresie energii.W kolejnej zak³adce Narzêdzia znajduj¹ siê dodatkowe funkcje programu." + Environment::NewLine +
-			"Animacja w której mo¿na zwiêkszaæ lub zmniejszaæ interwa³ timera.„Podgl¹d pomiarów”, który wyœwietla aktualne wyniki dla uk³adu i poszczególnych wahade³." + Environment::NewLine +
-			"Nastêpnie znajduj¹ siê narzêdzia dotycz¹ce wykresu : wyœwietlanie energii kinetycznej, potencjalnej i ca³kowitej dla ca³ego uk³adu, która jest liczona " + Environment::NewLine +
-			"jako suma wyników energii dla poszczególnych wahade³, wyœwietlanie legendy  oraz mo¿liwoœæ dokonania pomiaru.W zak³adce „Widok” mo¿na wy³¹czyæ / w³¹czyæ " + Environment::NewLine +
-			"wyœwietlanie poszczególnych elementów programów takich jak : animacja(belki, linki, siatki i poszczególnych wahade³), t³o aplikacji, wspó³rzêdnych i osi wykresu." + Environment::NewLine +
-			"Ka¿de wahad³o ma swój uk³ad odniesienia przesuniêty wzglêdem uk³adu pierwszego wahad³a.Równania RK4 obliczane jest dla ka¿dego wahad³a uwzglêdniaj¹c" + Environment::NewLine +
-			"pozycjê poprzedniego.Krok h dla algorytmu RK4 wynosi 0, 1. W³aœciwoœæ Interval dla timera ustawiona zosta³a na 25 milisekund." + Environment::NewLine +
-			"Na samym koñcu wyliczone wartoœci k¹tazamieniane s¹ na wspó³rzêdne biegunowe."
+			"W panelu Parametry ukÂ³adu jest moÂ¿liwoÅ“Ã¦ zmiany kolorystyki animacji." + Environment::NewLine +
+			"Kule rysowane sÂ¹ funkcjÂ¹ liniowego gradientu dziÃªki temu moÂ¿na dobraÃ¦ dwa kolory dla wahadeÂ³." + Environment::NewLine +
+			"TakÂ¿e moÂ¿na zmieniaÃ¦ kolor siatki jak i tÂ³a animacji.W tej zakÂ³adce moÂ¿na rÃ³wnieÂ¿ dostosowaÃ¦ szerokoÅ“Ã¦ jak i wysokoÅ“Ã¦ rysowanej na animacji siatki. " + Environment::NewLine +
+			"Menu skÂ³ada siÃª z kilku czÃªÅ“ci.ZakÂ³adka Plik wiÂ¹Â¿e siÃª z restartowaniem parametrÃ³w aplikacji, zamkniÃªciem jej " + Environment::NewLine +
+			"oraz zapisu poszczegÃ³lnych okien, wynikÃ³w, wykonanych pomiarÃ³w jak i automatycznie utworzonej legendy. " + Environment::NewLine +
+			"Legenda dostosowujÃª siÃª do wybranych na wykresie energii.W kolejnej zakÂ³adce NarzÃªdzia znajdujÂ¹ siÃª dodatkowe funkcje programu." + Environment::NewLine +
+			"Animacja w ktÃ³rej moÂ¿na zwiÃªkszaÃ¦ lub zmniejszaÃ¦ interwaÂ³ timera.â€žPodglÂ¹d pomiarÃ³wâ€, ktÃ³ry wyÅ“wietla aktualne wyniki dla ukÂ³adu i poszczegÃ³lnych wahadeÂ³." + Environment::NewLine +
+			"NastÃªpnie znajdujÂ¹ siÃª narzÃªdzia dotyczÂ¹ce wykresu : wyÅ“wietlanie energii kinetycznej, potencjalnej i caÂ³kowitej dla caÂ³ego ukÂ³adu, ktÃ³ra jest liczona " + Environment::NewLine +
+			"jako suma wynikÃ³w energii dla poszczegÃ³lnych wahadeÂ³, wyÅ“wietlanie legendy  oraz moÂ¿liwoÅ“Ã¦ dokonania pomiaru.W zakÂ³adce â€žWidokâ€ moÂ¿na wyÂ³Â¹czyÃ¦ / wÂ³Â¹czyÃ¦ " + Environment::NewLine +
+			"wyÅ“wietlanie poszczegÃ³lnych elementÃ³w programÃ³w takich jak : animacja(belki, linki, siatki i poszczegÃ³lnych wahadeÂ³), tÂ³o aplikacji, wspÃ³Â³rzÃªdnych i osi wykresu." + Environment::NewLine +
+			"KaÂ¿de wahadÂ³o ma swÃ³j ukÂ³ad odniesienia przesuniÃªty wzglÃªdem ukÂ³adu pierwszego wahadÂ³a.RÃ³wnania RK4 obliczane jest dla kaÂ¿dego wahadÂ³a uwzglÃªdniajÂ¹c" + Environment::NewLine +
+			"pozycjÃª poprzedniego.Krok h dla algorytmu RK4 wynosi 0, 1. WÂ³aÅ“ciwoÅ“Ã¦ Interval dla timera ustawiona zostaÂ³a na 25 milisekund." + Environment::NewLine +
+			"Na samym koÃ±cu wyliczone wartoÅ“ci kÂ¹tazamieniane sÂ¹ na wspÃ³Â³rzÃªdne biegunowe."
 			+ Environment::NewLine + Environment::NewLine +
-			"Autor: £ukasz Nowicki WIMiFT Fizyka Techniczna" + Environment::NewLine +
-			"Politechnika Poznañska 2020";
+			"Autor: Â£ukasz Nowicki WIMiFT Fizyka Techniczna" + Environment::NewLine +
+			"Politechnika PoznaÃ±ska 2020";
 			
 		tekstpomocy->Location = System::Drawing::Point(10, 10);
 		tekstpomocy->AutoSize = true;
 		
 		Pomoc->Controls->Add(tekstpomocy);
 }
-private: System::Void WyjdŸToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	//zakoñcz
+private: System::Void WyjdÅ¸ToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	//zakoÃ±cz
 	Application::Exit();
 }
 private: System::Void AnimacjeToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -7171,11 +7147,11 @@ private: System::Void AnimacjeToolStripMenuItem_Click(System::Object^ sender, Sy
 	
 }
 private: System::Void ParametryToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	//zapis parametrów
+	//zapis parametrÃ³w
 
 	Pomiar^ WynikiEnergii = gcnew Pomiar();
 
-	//pobieranie œcie¿ki do zapisu wykorzystuj¹c funkcje OdczytPliku
+	//pobieranie Å“cieÂ¿ki do zapisu wykorzystujÂ¹c funkcje OdczytPliku
 	Thread^ WatekOdczytu = gcnew Thread(gcnew ThreadStart(OdczytPliku));
 	WatekOdczytu->TrySetApartmentState(ApartmentState::STA);
 
@@ -7191,184 +7167,184 @@ private: System::Void ParametryToolStripMenuItem_Click(System::Object^ sender, S
 
 	StreamWriter^ pliksciezki = gcnew StreamWriter(odczytSciezki->ReadLine());
 
-	pliksciezki->Write("Pomiary wahade³ dla zadanych parametrów: "+
+	pliksciezki->Write("Pomiary wahadeÂ³ dla zadanych parametrÃ³w: "+
 		Environment::NewLine +
-		"\r\nWyniki uzyskane dla ca³ego uk³adu:"+
-			"\r\nEnergia ca³kowita uk³adu:" + WynikiEnergii->Average(AllWahTabEc1, j) +
-				"\r\nEnergia potencjalna uk³adu:" + WynikiEnergii->Average(AllWahTabEp1, j) +
-					"\r\nEnergia kinetyczna uk³adu:" + WynikiEnergii->Average(AllWahTabEk1, j) +
+		"\r\nWyniki uzyskane dla caÂ³ego ukÂ³adu:"+
+			"\r\nEnergia caÂ³kowita ukÂ³adu:" + WynikiEnergii->Average(AllWahTabEc1, j) +
+				"\r\nEnergia potencjalna ukÂ³adu:" + WynikiEnergii->Average(AllWahTabEp1, j) +
+					"\r\nEnergia kinetyczna ukÂ³adu:" + WynikiEnergii->Average(AllWahTabEk1, j) +
 		
 		Environment::NewLine +
-		"\r\nPierwsze wahad³o: " +
-			"\r\nD³ugoœæ: " + PierwszeWah->length + "[m]" +
+		"\r\nPierwsze wahadÂ³o: " +
+			"\r\nDÂ³ugoÅ“Ã¦: " + PierwszeWah->length + "[m]" +
 				"\r\nMasa: " + PierwszeWah->mass + "[kg]"+
 					"\r\nWychylenie: " + PierwszeWah->nextposy + "[rad]"+
-						"\r\nT³umienie: " + PierwszeWah->suppresion +
+						"\r\nTÂ³umienie: " + PierwszeWah->suppresion +
 
 		Environment::NewLine +
 		"\r\nUzyskane wyniki: " +
-			"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(PierwszeWahTabEc1, j) + "[J]" +
-				"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(PierwszeWahTabEp1, j) + "[J]" +
+			"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(PierwszeWahTabEc1, j) + "[J]" +
+				"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(PierwszeWahTabEp1, j) + "[J]" +
 					"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(PierwszeWahTabEp1, j) + "[J]" +
 						"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(PierwszeWahTabEp1, j) + "[J]" +
-							"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(PierwszeWahTabEk1, j) + "[J]" +
+							"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(PierwszeWahTabEk1, j) + "[J]" +
 								"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(PierwszeWahTabEk1, j) + "[J]" +
 									"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(PierwszeWahTabEk1, j) + "[J]" +	
-										"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazPierwszegoy1,j) + "[rad/s]"+
+										"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazPierwszegoy1,j) + "[rad/s]"+
 
 		Environment::NewLine +
-		"\r\nDrugie wahad³o: " +
-			"\r\nD³ugoœæ: " + DrugieWah->length + "[m]" +
+		"\r\nDrugie wahadÂ³o: " +
+			"\r\nDÂ³ugoÅ“Ã¦: " + DrugieWah->length + "[m]" +
 				"\r\nMasa: " + DrugieWah->mass + "[kg]" +
 					"\r\nWychylenie: " + DrugieWah->nextposy  + "[rad]" +
-						"\r\nT³umienie: " + DrugieWah->suppresion +
+						"\r\nTÂ³umienie: " + DrugieWah->suppresion +
 			
 		Environment::NewLine +
 		"\r\nUzyskane wyniki: " +
-			"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(DrugieWahTabEc1, j) + "[J]" +
-				"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(DrugieWahTabEp1, j) + "[J]" +
+			"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(DrugieWahTabEc1, j) + "[J]" +
+				"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(DrugieWahTabEp1, j) + "[J]" +
 					"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(DrugieWahTabEp1, j) + "[J]" +
 						"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(DrugieWahTabEp1, j) + "[J]" +
-							"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(DrugieWahTabEk1, j) + "[J]" +
+							"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(DrugieWahTabEk1, j) + "[J]" +
 								"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(DrugieWahTabEk1, j) + "[J]" +
 									"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(DrugieWahTabEk1, j) + "[J]" +
-										"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazDrugiegoy1, j) + "[rad/s]" +
+										"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazDrugiegoy1, j) + "[rad/s]" +
 		Environment::NewLine +
-		"\r\nTrzecie wahad³o: " +
-			"\r\nD³ugoœæ: " + TrzecieWah->length + "[m]" +
+		"\r\nTrzecie wahadÂ³o: " +
+			"\r\nDÂ³ugoÅ“Ã¦: " + TrzecieWah->length + "[m]" +
 				"\r\nMasa: " + TrzecieWah->mass + "[kg]" +
 					"\r\nWychylenie: " + TrzecieWah->nextposy + "[rad]" +
-						"\r\nT³umienie: " + TrzecieWah->suppresion + 
+						"\r\nTÂ³umienie: " + TrzecieWah->suppresion + 
 			
 		Environment::NewLine +
 		"\r\nUzyskane wyniki: " +
-			"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(TrzecieWahTabEc1, j) + "[J]" +
-				"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(TrzecieWahTabEp1, j) + "[J]" +
+			"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(TrzecieWahTabEc1, j) + "[J]" +
+				"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(TrzecieWahTabEp1, j) + "[J]" +
 					"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(TrzecieWahTabEp1, j) + "[J]" +
 						"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(TrzecieWahTabEp1, j) + "[J]" +
-							"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(TrzecieWahTabEk1, j) + "[J]" +
+							"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(TrzecieWahTabEk1, j) + "[J]" +
 								"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(TrzecieWahTabEk1, j) + "[J]" +
 									"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(TrzecieWahTabEk1, j) + "[J]" +
-										"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazTrzeciegoy1, j) + "[rad/s]" +
+										"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazTrzeciegoy1, j) + "[rad/s]" +
 		Environment::NewLine +
-		"\r\nCzwarte wahad³o: " +
-			"\r\nD³ugoœæ: " + CzwarteWah->length + "[m]" +
+		"\r\nCzwarte wahadÂ³o: " +
+			"\r\nDÂ³ugoÅ“Ã¦: " + CzwarteWah->length + "[m]" +
 				"\r\nMasa: " + CzwarteWah->mass + "[kg]" +
 					"\r\nWychylenie: " + CzwarteWah->nextposy  + "[rad]" +
-						"\r\nT³umienie: " + CzwarteWah->suppresion +
+						"\r\nTÂ³umienie: " + CzwarteWah->suppresion +
 		
 		Environment::NewLine +
 		"\r\nUzyskane wyniki: " +
-			"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(CzwarteWahTabEc1, j) + "[J]" +
-				"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(CzwarteWahTabEp1, j) + "[J]" +
+			"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(CzwarteWahTabEc1, j) + "[J]" +
+				"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(CzwarteWahTabEp1, j) + "[J]" +
 					"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(CzwarteWahTabEp1, j) + "[J]" +
 						"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(CzwarteWahTabEp1, j) + "[J]" +
-							"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(CzwarteWahTabEk1, j) + "[J]" +
+							"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(CzwarteWahTabEk1, j) + "[J]" +
 								"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(CzwarteWahTabEk1, j) + "[J]" +
 									"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(CzwarteWahTabEk1, j) + "[J]" +
-										"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazCzwartegoy1, j) + "[rad/s]" +
+										"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazCzwartegoy1, j) + "[rad/s]" +
 		
 		Environment::NewLine +
-		"\r\nPiate wahad³o: " +
-			"\r\nD³ugoœæ: " + PiateWah->length + "[m]" +
+		"\r\nPiate wahadÂ³o: " +
+			"\r\nDÂ³ugoÅ“Ã¦: " + PiateWah->length + "[m]" +
 				"\r\nMasa: " + PiateWah->mass + "[kg]" +
 					"\r\nWychylenie: " + PiateWah->nextposy  + "[rad]" +
-						"\r\nT³umienie: " + PiateWah->suppresion +
+						"\r\nTÂ³umienie: " + PiateWah->suppresion +
 			
 		Environment::NewLine +
 		"\r\nUzyskane wyniki: " +
-			"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(PiateWahTabEc1, j) + "[J]" +
-				"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(PiateWahTabEp1, j) + "[J]" +
+			"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(PiateWahTabEc1, j) + "[J]" +
+				"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(PiateWahTabEp1, j) + "[J]" +
 					"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(PiateWahTabEp1, j) + "[J]" +
 						"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(PiateWahTabEp1, j) + "[J]" +
-							"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(PiateWahTabEk1, j) + "[J]" +
+							"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(PiateWahTabEk1, j) + "[J]" +
 								"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(PiateWahTabEk1, j) + "[J]" +
 									"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(PiateWahTabEk1, j) + "[J]" +
-										"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazPiategoy1, j) + "[rad/s]" +	
+										"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazPiategoy1, j) + "[rad/s]" +	
 		Environment::NewLine +
-		"\r\nSzoste wahad³o: " +
-			"\r\nD³ugoœæ: " + SzosteWah->length + "[m]" +
+		"\r\nSzoste wahadÂ³o: " +
+			"\r\nDÂ³ugoÅ“Ã¦: " + SzosteWah->length + "[m]" +
 				"\r\nMasa: " + SzosteWah->mass + "[kg]" +
 					"\r\nWychylenie: " + SzosteWah->nextposy  + "[rad]" +
-						"\r\nT³umienie: " + SzosteWah->suppresion +
+						"\r\nTÂ³umienie: " + SzosteWah->suppresion +
 		
 		Environment::NewLine +
 		"\r\nUzyskane wyniki: " +
-			"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(SzosteWahTabEc1, j) + "[J]" +
-				"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(SzosteWahTabEp1, j) + "[J]" +
+			"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(SzosteWahTabEc1, j) + "[J]" +
+				"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(SzosteWahTabEp1, j) + "[J]" +
 					"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(SzosteWahTabEp1, j) + "[J]" +
 						"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(SzosteWahTabEp1, j) + "[J]" +
-							"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(SzosteWahTabEk1, j) + "[J]" +
+							"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(SzosteWahTabEk1, j) + "[J]" +
 								"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(SzosteWahTabEk1, j) + "[J]" +
 									"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(SzosteWahTabEk1, j) + "[J]" +
-										"\r\nMaksymalna prêdkoœæ:: " + WynikiEnergii->Max(PrzFazSzostegoy1, j) + "[rad/s]" +
+										"\r\nMaksymalna prÃªdkoÅ“Ã¦:: " + WynikiEnergii->Max(PrzFazSzostegoy1, j) + "[rad/s]" +
 		Environment::NewLine +
-		"\r\nSiodme wahad³o: " +
-			"\r\nD³ugoœæ: " + SiodmeWah->length + "[m]" +
+		"\r\nSiodme wahadÂ³o: " +
+			"\r\nDÂ³ugoÅ“Ã¦: " + SiodmeWah->length + "[m]" +
 				"\r\nMasa: " + SiodmeWah->mass + "[kg]" +
 					"\r\nWychylenie: " + SiodmeWah->nextposy  + "[rad]" +
-						"\r\nT³umienie: " + SiodmeWah->suppresion +
+						"\r\nTÂ³umienie: " + SiodmeWah->suppresion +
 			
 		Environment::NewLine +
 					"\r\nUzyskane wyniki: " +
-						"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(SiodmeWahTabEc1, j) + "[J]" +
-							"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(SiodmeWahTabEp1, j) + "[J]" +
+						"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(SiodmeWahTabEc1, j) + "[J]" +
+							"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(SiodmeWahTabEp1, j) + "[J]" +
 								"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(SiodmeWahTabEp1, j) + "[J]" +
 									"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(SiodmeWahTabEp1, j) + "[J]" +
-										"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(SiodmeWahTabEk1, j) + "[J]" +
+										"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(SiodmeWahTabEk1, j) + "[J]" +
 											"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(SiodmeWahTabEk1, j) + "[J]" +
 												"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(SiodmeWahTabEk1, j) + "[J]" +
-													"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazSiodmegoy1, j) + "[rad/s]" +
+													"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazSiodmegoy1, j) + "[rad/s]" +
 		Environment::NewLine +
-		"\r\nOsme wahad³o: " +
-			"\r\nD³ugoœæ: " + OsmeWah->length + "[m]" +
+		"\r\nOsme wahadÂ³o: " +
+			"\r\nDÂ³ugoÅ“Ã¦: " + OsmeWah->length + "[m]" +
 				"\r\nMasa: " + OsmeWah->mass + "[kg]" +
 					"\r\nWychylenie: " + OsmeWah->nextposy  + "[rad]" +
-						"\r\nT³umienie: " + OsmeWah->suppresion +
+						"\r\nTÂ³umienie: " + OsmeWah->suppresion +
 			
 		Environment::NewLine +
 			"\r\nUzyskane wyniki: " +
-				"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(OsmeWahTabEc1, j) + "[J]" +
-					"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(OsmeWahTabEp1, j) + "[J]" +
+				"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(OsmeWahTabEc1, j) + "[J]" +
+					"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(OsmeWahTabEp1, j) + "[J]" +
 						"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(OsmeWahTabEp1, j) + "[J]" +
 							"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(OsmeWahTabEp1, j) + "[J]" +
-								"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(OsmeWahTabEk1, j) + "[J]" +
+								"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(OsmeWahTabEk1, j) + "[J]" +
 									"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(OsmeWahTabEk1, j) + "[J]" +
 										"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(OsmeWahTabEk1, j) + "[J]" +
-											"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazOsmegoy1, j) + "[rad/s]" +
+											"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazOsmegoy1, j) + "[rad/s]" +
 		Environment::NewLine +
-		"\r\nDziewiate wahad³o: " +
-			"\r\nD³ugoœæ: " + DziewiateWah->length + "[m]" +
+		"\r\nDziewiate wahadÂ³o: " +
+			"\r\nDÂ³ugoÅ“Ã¦: " + DziewiateWah->length + "[m]" +
 				"\r\nMasa: " + DziewiateWah->mass + "[kg]" +
 					"\r\nWychylenie: " + DziewiateWah->nextposy + "[rad]" +
-						"\r\nT³umienie: " + DziewiateWah->suppresion +
+						"\r\nTÂ³umienie: " + DziewiateWah->suppresion +
 		
 		Environment::NewLine +
 			"\r\nUzyskane wyniki: " +
-				"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(DziewiateWahTabEc1, j) + "[J]" +
-					"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(DziewiateWahTabEp1, j) + "[J]" +
+				"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(DziewiateWahTabEc1, j) + "[J]" +
+					"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(DziewiateWahTabEp1, j) + "[J]" +
 						"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(DziewiateWahTabEp1, j) + "[J]" +
 							"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(DziewiateWahTabEp1, j) + "[J]" +
-								"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(DziewiateWahTabEk1, j) + "[J]" +
+								"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(DziewiateWahTabEk1, j) + "[J]" +
 									"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(DziewiateWahTabEk1, j) + "[J]" +
 										"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(DziewiateWahTabEk1, j) + "[J]" +
-											"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazDziewiategoy1, j) + "[rad/s]" +
+											"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazDziewiategoy1, j) + "[rad/s]" +
 		Environment::NewLine +
-		"\r\nDziesiate wahad³o: " +
-			"\r\nD³ugoœæ: " + DziesiateWah->length + "[m]" +
+		"\r\nDziesiate wahadÂ³o: " +
+			"\r\nDÂ³ugoÅ“Ã¦: " + DziesiateWah->length + "[m]" +
 				"\r\nMasa: " + DziesiateWah->mass + "[kg]" +
 					"\r\nWychylenie: " + DziesiateWah->nextposy + "[rad]" +
-						"\r\nT³umienie: " + DziesiateWah->suppresion +
+						"\r\nTÂ³umienie: " + DziesiateWah->suppresion +
 		Environment::NewLine +
 			"\r\nUzyskane wyniki: " +
-				"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(DziesiateWahTabEc1, j) + "[J]" +
-					"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(DziesiateWahTabEp1, j) + "[J]" +
+				"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(DziesiateWahTabEc1, j) + "[J]" +
+					"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(DziesiateWahTabEp1, j) + "[J]" +
 						"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(DziesiateWahTabEp1, j) + "[J]" +
 							"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(DziesiateWahTabEp1, j) + "[J]" +
-								"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(DziesiateWahTabEk1, j) + "[J]" +
+								"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(DziesiateWahTabEk1, j) + "[J]" +
 									"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(DziesiateWahTabEk1, j) + "[J]" +
 										"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(DziesiateWahTabEk1, j) + "[J]" +
-											"\r\nMaksymalna prêdkoœæ:: " + WynikiEnergii->Max(PrzFazDziesiategoy1, j) + "[rad/s]" +
+											"\r\nMaksymalna prÃªdkoÅ“Ã¦:: " + WynikiEnergii->Max(PrzFazDziesiategoy1, j) + "[rad/s]" +
 				Environment::NewLine
 				);
 	
@@ -7381,7 +7357,7 @@ private: System::Void ParametryToolStripMenuItem_Click(System::Object^ sender, S
 
 	Thread::Sleep(0);
 
-	//usuwanie pliku tymczasowyzapis.txt s³u¿¹cy do przekierowania œcie¿ki odczyt->zapis
+	//usuwanie pliku tymczasowyzapis.txt sÂ³uÂ¿Â¹cy do przekierowania Å“cieÂ¿ki odczyt->zapis
 	if (File::Exists("c:\\users\\public\\pictures\\tymczasowyzapis.txt"))
 	{
 		File::Delete("c:\\users\\public\\pictures\\tymczasowyzapis.txt");
@@ -7390,11 +7366,11 @@ private: System::Void ParametryToolStripMenuItem_Click(System::Object^ sender, S
 
 }
 private: System::Void Timer2_Tick_1(System::Object^ sender, System::EventArgs^ e) {
-/*	//opisaæ
+/*	//opisaÃ¦
 	//zapis animacji
-	//do odwrotu readline zmienia siê z timerem w pliku tymczasowym i dodaje frame do enkodera, a wiec moze usuwac na biezaco?
+	//do odwrotu readline zmienia siÃª z timerem w pliku tymczasowym i dodaje frame do enkodera, a wiec moze usuwac na biezaco?
 
-			//tworzenie obiektu graficznego przenosz¹cego informacjê pikselow¹ do bitmapy ze wzrostem nazwy œcie¿ki
+			//tworzenie obiektu graficznego przenoszÂ¹cego informacjÃª pikselowÂ¹ do bitmapy ze wzrostem nazwy Å“cieÂ¿ki
 	GifBitmapEncoder^ Enkoder = gcnew GifBitmapEncoder();
 
 	Bitmap^ Obraz = gcnew Bitmap(pictureBox1->Width - 2, pictureBox1->Height - 2);
@@ -7413,7 +7389,7 @@ private: System::Void Timer2_Tick_1(System::Object^ sender, System::EventArgs^ e
 	//if (File::Exists("c:\\users\\public\\pictures\\tymczasowyzapis.txt"))
 //	{
 		
-		//pobieranie œcie¿ki do zapisu wykorzystuj¹c funkcje OdczytPliku
+		//pobieranie Å“cieÂ¿ki do zapisu wykorzystujÂ¹c funkcje OdczytPliku
 		//FileStream^ Odczyt = gcnew FileStream("c:\\users\\public\\pictures\\tymczasowyzapis.txt", FileMode::Open);
 	//	StreamReader^ odczytSciezki = gcnew StreamReader(Odczyt);
 
@@ -7515,7 +7491,7 @@ private: System::Void EnergiaKinetycznaToolStripMenuItem_Click(System::Object^ s
 		checkBox14->Checked = true;
 	}
 }
-private: System::Void EnergiaCa³kowitaToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void EnergiaCaÂ³kowitaToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (checkBox31->Checked == true)
 	{
 		checkBox31->Checked = false;
@@ -7546,7 +7522,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 	int pozycjaY = 0;
 
-	//zliczanie elementów
+	//zliczanie elementÃ³w
 	if (checkBox13->Checked == true)
 	{
 
@@ -7680,7 +7656,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 		}
 	}
 
-	//Energia ca³kowita
+	//Energia caÂ³kowita
 	if (checkBox15->Checked == true)
 	{
 
@@ -7832,7 +7808,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 	}
 
-	//ustawienia wielkoœci form Legendy
+	//ustawienia wielkoÅ“ci form Legendy
 		//zliczanie = 5;
 	Legenda->Size = System::Drawing::Size(350, (zliczanie + 2) * 40);
 
@@ -7842,11 +7818,11 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 		beetweenHeight = Legenda->Height / (zliczanie + 2);
 	}
 
-	//dodawanie poszczególnych oznaczeñ legendy
+	//dodawanie poszczegÃ³lnych oznaczeÃ± legendy
 	//Energia potencjalna
 	if (checkBox13->Checked == true)
 	{
-		//pierwsze wahad³o
+		//pierwsze wahadÂ³o
 		if (checkBox20->Checked == true)
 		{
 
@@ -7862,7 +7838,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia potencjalna pierwszego wahad³a";
+			labelEpPWah->Text = "Energia potencjalna pierwszego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -7871,7 +7847,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//drugie wahad³o
+		//drugie wahadÂ³o
 
 		if (checkBox19->Checked == true)
 		{
@@ -7888,7 +7864,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia potencjalna drugiego wahad³a";
+			labelEpPWah->Text = "Energia potencjalna drugiego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -7897,7 +7873,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//trzecie wahad³o
+		//trzecie wahadÂ³o
 		if (checkBox18->Checked == true)
 		{
 
@@ -7914,7 +7890,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia potencjalna trzeciego wahad³a";
+			labelEpPWah->Text = "Energia potencjalna trzeciego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -7923,7 +7899,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//czwarte wahad³o
+		//czwarte wahadÂ³o
 		if (checkBox17->Checked == true)
 		{
 
@@ -7940,7 +7916,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia potencjalna czwartego wahad³a";
+			labelEpPWah->Text = "Energia potencjalna czwartego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -7949,7 +7925,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//piate wahad³o
+		//piate wahadÂ³o
 		if (checkBox25->Checked == true)
 		{
 
@@ -7966,7 +7942,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPierwszegoWah = gcnew Label;
 			labelEpPierwszegoWah->Font = FontLegendy;
-			labelEpPierwszegoWah->Text = "Energia potencjalna pi¹tego wahad³a";
+			labelEpPierwszegoWah->Text = "Energia potencjalna piÂ¹tego wahadÂ³a";
 			labelEpPierwszegoWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPierwszegoWah->AutoSize = true;
 
@@ -7975,7 +7951,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//szoste wahad³o
+		//szoste wahadÂ³o
 		if (checkBox24->Checked == true)
 		{
 
@@ -7992,7 +7968,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia potencjalna szóstego wahad³a";
+			labelEpPWah->Text = "Energia potencjalna szÃ³stego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8001,7 +7977,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//siodme wahad³o
+		//siodme wahadÂ³o
 		if (checkBox23->Checked == true)
 		{
 
@@ -8018,7 +7994,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia potencjalna siódmego wahad³a";
+			labelEpPWah->Text = "Energia potencjalna siÃ³dmego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8027,7 +8003,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//osme wahad³o
+		//osme wahadÂ³o
 		if (checkBox22->Checked == true)
 		{
 
@@ -8044,7 +8020,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia potencjalna ósmego wahad³a";
+			labelEpPWah->Text = "Energia potencjalna Ã³smego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8053,7 +8029,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//dziewiate wahad³o
+		//dziewiate wahadÂ³o
 		if (checkBox21->Checked == true)
 		{
 
@@ -8070,7 +8046,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia potencjalna dziewi¹tego wahad³a";
+			labelEpPWah->Text = "Energia potencjalna dziewiÂ¹tego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8079,7 +8055,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//dziesiate wahad³o
+		//dziesiate wahadÂ³o
 		if (checkBox26->Checked == true)
 		{
 
@@ -8096,7 +8072,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia potencjalna dziesi¹tego wahad³a";
+			labelEpPWah->Text = "Energia potencjalna dziesiÂ¹tego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8105,7 +8081,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 			Legenda->Controls->Add(labelEpPWah);
 		}
 
-		//ca³y uk³ad
+		//caÂ³y ukÂ³ad
 		if (checkBox29->Checked == true)
 		{
 
@@ -8122,7 +8098,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia potencjalna ca³oœci uk³adu";
+			labelEpPWah->Text = "Energia potencjalna caÂ³oÅ“ci ukÂ³adu";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8136,7 +8112,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 	//energia kinetyczna
 	if (checkBox14->Checked == true)
 	{
-		//pierwsze wahad³o
+		//pierwsze wahadÂ³o
 		if (checkBox20->Checked == true)
 		{
 
@@ -8152,7 +8128,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia kinetyczna pierwszego wahad³a";
+			labelEpPWah->Text = "Energia kinetyczna pierwszego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8161,7 +8137,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//drugie wahad³o
+		//drugie wahadÂ³o
 
 		if (checkBox19->Checked == true)
 		{
@@ -8178,7 +8154,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia kinetyczna drugiego wahad³a";
+			labelEpPWah->Text = "Energia kinetyczna drugiego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8187,7 +8163,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//trzecie wahad³o
+		//trzecie wahadÂ³o
 		if (checkBox18->Checked == true)
 		{
 
@@ -8204,7 +8180,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia kinetyczna trzeciego wahad³a";
+			labelEpPWah->Text = "Energia kinetyczna trzeciego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8213,7 +8189,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//czwarte wahad³o
+		//czwarte wahadÂ³o
 		if (checkBox17->Checked == true)
 		{
 
@@ -8230,7 +8206,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia kinetyczna czwartego wahad³a";
+			labelEpPWah->Text = "Energia kinetyczna czwartego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8239,7 +8215,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//piate wahad³o
+		//piate wahadÂ³o
 		if (checkBox25->Checked == true)
 		{
 
@@ -8256,7 +8232,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPierwszegoWah = gcnew Label;
 			labelEpPierwszegoWah->Font = FontLegendy;
-			labelEpPierwszegoWah->Text = "Energia kinetyczna pi¹tego wahad³a";
+			labelEpPierwszegoWah->Text = "Energia kinetyczna piÂ¹tego wahadÂ³a";
 			labelEpPierwszegoWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPierwszegoWah->AutoSize = true;
 
@@ -8265,7 +8241,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//szoste wahad³o
+		//szoste wahadÂ³o
 		if (checkBox24->Checked == true)
 		{
 
@@ -8282,7 +8258,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia kinetyczna szóstego wahad³a";
+			labelEpPWah->Text = "Energia kinetyczna szÃ³stego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8291,7 +8267,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//siodme wahad³o
+		//siodme wahadÂ³o
 		if (checkBox23->Checked == true)
 		{
 
@@ -8308,7 +8284,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia kinetyczna siódmego wahad³a";
+			labelEpPWah->Text = "Energia kinetyczna siÃ³dmego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8317,7 +8293,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//osme wahad³o
+		//osme wahadÂ³o
 		if (checkBox22->Checked == true)
 		{
 
@@ -8334,7 +8310,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia kinetyczna ósmego wahad³a";
+			labelEpPWah->Text = "Energia kinetyczna Ã³smego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8343,7 +8319,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//dziewiate wahad³o
+		//dziewiate wahadÂ³o
 		if (checkBox21->Checked == true)
 		{
 
@@ -8360,7 +8336,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia kinetyczna dziewi¹tego wahad³a";
+			labelEpPWah->Text = "Energia kinetyczna dziewiÂ¹tego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8369,7 +8345,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//dziesiate wahad³o
+		//dziesiate wahadÂ³o
 		if (checkBox26->Checked == true)
 		{
 
@@ -8386,7 +8362,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia kinetyczna dziesi¹tego wahad³a";
+			labelEpPWah->Text = "Energia kinetyczna dziesiÂ¹tego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8395,7 +8371,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 			Legenda->Controls->Add(labelEpPWah);
 		}
 
-		//Ek uk³adu
+		//Ek ukÂ³adu
 		if (checkBox30->Checked == true)
 		{
 
@@ -8412,7 +8388,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia kinetyczna ca³oœci uk³adu";
+			labelEpPWah->Text = "Energia kinetyczna caÂ³oÅ“ci ukÂ³adu";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8423,10 +8399,10 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 	}
 
-	//energia ca³kowita
+	//energia caÂ³kowita
 	if (checkBox15->Checked == true)
 	{
-		//pierwsze wahad³o
+		//pierwsze wahadÂ³o
 		if (checkBox20->Checked == true)
 		{
 
@@ -8442,7 +8418,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia ca³kowita pierwszego wahad³a";
+			labelEpPWah->Text = "Energia caÂ³kowita pierwszego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8451,7 +8427,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//drugie wahad³o
+		//drugie wahadÂ³o
 
 		if (checkBox19->Checked == true)
 		{
@@ -8468,7 +8444,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia ca³kowita drugiego wahad³a";
+			labelEpPWah->Text = "Energia caÂ³kowita drugiego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8477,7 +8453,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//trzecie wahad³o
+		//trzecie wahadÂ³o
 		if (checkBox18->Checked == true)
 		{
 
@@ -8494,7 +8470,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia ca³kowita trzeciego wahad³a";
+			labelEpPWah->Text = "Energia caÂ³kowita trzeciego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8503,7 +8479,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//czwarte wahad³o
+		//czwarte wahadÂ³o
 		if (checkBox17->Checked == true)
 		{
 
@@ -8520,7 +8496,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia ca³kowita czwartego wahad³a";
+			labelEpPWah->Text = "Energia caÂ³kowita czwartego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8529,7 +8505,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//piate wahad³o
+		//piate wahadÂ³o
 		if (checkBox25->Checked == true)
 		{
 
@@ -8546,7 +8522,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPierwszegoWah = gcnew Label;
 			labelEpPierwszegoWah->Font = FontLegendy;
-			labelEpPierwszegoWah->Text = "Energia ca³kowita pi¹tego wahad³a";
+			labelEpPierwszegoWah->Text = "Energia caÂ³kowita piÂ¹tego wahadÂ³a";
 			labelEpPierwszegoWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPierwszegoWah->AutoSize = true;
 
@@ -8555,7 +8531,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//szoste wahad³o
+		//szoste wahadÂ³o
 		if (checkBox24->Checked == true)
 		{
 
@@ -8572,7 +8548,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia ca³kowita szóstego wahad³a";
+			labelEpPWah->Text = "Energia caÂ³kowita szÃ³stego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8581,7 +8557,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//siodme wahad³o
+		//siodme wahadÂ³o
 		if (checkBox23->Checked == true)
 		{
 
@@ -8598,7 +8574,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia ca³kowita siódmego wahad³a";
+			labelEpPWah->Text = "Energia caÂ³kowita siÃ³dmego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8607,7 +8583,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//osme wahad³o
+		//osme wahadÂ³o
 		if (checkBox22->Checked == true)
 		{
 
@@ -8624,7 +8600,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia ca³kowita ósmego wahad³a";
+			labelEpPWah->Text = "Energia caÂ³kowita Ã³smego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8633,7 +8609,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//dziewiate wahad³o
+		//dziewiate wahadÂ³o
 		if (checkBox21->Checked == true)
 		{
 
@@ -8650,7 +8626,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia ca³kowita dziewi¹tego wahad³a";
+			labelEpPWah->Text = "Energia caÂ³kowita dziewiÂ¹tego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8659,7 +8635,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//dziesiate wahad³o
+		//dziesiate wahadÂ³o
 		if (checkBox26->Checked == true)
 		{
 
@@ -8676,7 +8652,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia ca³kowita dziesi¹tego wahad³a";
+			labelEpPWah->Text = "Energia caÂ³kowita dziesiÂ¹tego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8685,7 +8661,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 			Legenda->Controls->Add(labelEpPWah);
 		}
 
-		//ca³kowita wahad³o
+		//caÂ³kowita wahadÂ³o
 		if (checkBox31->Checked == true)
 		{
 
@@ -8702,7 +8678,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Energia ca³kowita ca³oœci uk³adu";
+			labelEpPWah->Text = "Energia caÂ³kowita caÂ³oÅ“ci ukÂ³adu";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8713,10 +8689,10 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 	}
 
-	//Przestrzeñ faz
+	//PrzestrzeÃ± faz
 	if (checkBox16->Checked == true)
 	{
-		//pierwsze wahad³o
+		//pierwsze wahadÂ³o
 		if (checkBox20->Checked == true)
 		{
 
@@ -8732,7 +8708,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Przestrzeñ fazowa pierwszego wahad³a";
+			labelEpPWah->Text = "PrzestrzeÃ± fazowa pierwszego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8741,7 +8717,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//drugie wahad³o
+		//drugie wahadÂ³o
 
 		if (checkBox19->Checked == true)
 		{
@@ -8758,7 +8734,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Przestrzeñ fazowa drugiego wahad³a";
+			labelEpPWah->Text = "PrzestrzeÃ± fazowa drugiego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8767,7 +8743,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//trzecie wahad³o
+		//trzecie wahadÂ³o
 		if (checkBox18->Checked == true)
 		{
 
@@ -8784,7 +8760,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Przestrzeñ fazowa trzeciego wahad³a";
+			labelEpPWah->Text = "PrzestrzeÃ± fazowa trzeciego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8793,7 +8769,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//czwarte wahad³o
+		//czwarte wahadÂ³o
 		if (checkBox17->Checked == true)
 		{
 
@@ -8810,7 +8786,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Przestrzeñ fazowa czwartego wahad³a";
+			labelEpPWah->Text = "PrzestrzeÃ± fazowa czwartego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8819,7 +8795,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//piate wahad³o
+		//piate wahadÂ³o
 		if (checkBox25->Checked == true)
 		{
 
@@ -8836,7 +8812,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPierwszegoWah = gcnew Label;
 			labelEpPierwszegoWah->Font = FontLegendy;
-			labelEpPierwszegoWah->Text = "Przestrzeñ fazowa pi¹tego wahad³a";
+			labelEpPierwszegoWah->Text = "PrzestrzeÃ± fazowa piÂ¹tego wahadÂ³a";
 			labelEpPierwszegoWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPierwszegoWah->AutoSize = true;
 
@@ -8845,7 +8821,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//szoste wahad³o
+		//szoste wahadÂ³o
 		if (checkBox24->Checked == true)
 		{
 
@@ -8862,7 +8838,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Przestrzeñ fazowa szóstego wahad³a";
+			labelEpPWah->Text = "PrzestrzeÃ± fazowa szÃ³stego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8871,7 +8847,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//siodme wahad³o
+		//siodme wahadÂ³o
 		if (checkBox23->Checked == true)
 		{
 
@@ -8888,7 +8864,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Przestrzeñ fazowa siódmego wahad³a";
+			labelEpPWah->Text = "PrzestrzeÃ± fazowa siÃ³dmego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8897,7 +8873,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//osme wahad³o
+		//osme wahadÂ³o
 		if (checkBox22->Checked == true)
 		{
 
@@ -8914,7 +8890,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Przestrzeñ fazowa ósmego wahad³a";
+			labelEpPWah->Text = "PrzestrzeÃ± fazowa Ã³smego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8923,7 +8899,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//dziewiate wahad³o
+		//dziewiate wahadÂ³o
 		if (checkBox21->Checked == true)
 		{
 
@@ -8940,7 +8916,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Przestrzeñ fazowa dziewi¹tego wahad³a";
+			labelEpPWah->Text = "PrzestrzeÃ± fazowa dziewiÂ¹tego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8949,7 +8925,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		}
 
-		//dziesiate wahad³o
+		//dziesiate wahadÂ³o
 		if (checkBox26->Checked == true)
 		{
 
@@ -8966,7 +8942,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 			Label^ labelEpPWah = gcnew Label;
 			labelEpPWah->Font = FontLegendy;
-			labelEpPWah->Text = "Przestrzeñ fazowa dziesi¹tego wahad³a";
+			labelEpPWah->Text = "PrzestrzeÃ± fazowa dziesiÂ¹tego wahadÂ³a";
 			labelEpPWah->Location = System::Drawing::Point(25, pozycjaY - 5);
 			labelEpPWah->AutoSize = true;
 
@@ -8983,14 +8959,14 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 	if (checkBox33->Checked == true)
 	{
 
-		//tworzenie obiektu graficznego przenosz¹cego informacjê pikselow¹ do bitmapy
+		//tworzenie obiektu graficznego przenoszÂ¹cego informacjÃª pikselowÂ¹ do bitmapy
 		Bitmap^ Obraz = gcnew Bitmap(Legenda->Width, Legenda->Height);
 
 		System::Drawing::Rectangle okno = System::Drawing::Rectangle(0,0,350, (zliczanie + 2) * 40);
 
 		Legenda->DrawToBitmap(Obraz, okno);
 
-		//pobieranie œcie¿ki do zapisu wykorzystuj¹c funkcje OdczytPliku
+		//pobieranie Å“cieÂ¿ki do zapisu wykorzystujÂ¹c funkcje OdczytPliku
 
 		Thread^ WatekOdczytu = gcnew Thread(gcnew ThreadStart(OdczytPliku));
 		WatekOdczytu->TrySetApartmentState(ApartmentState::STA);
@@ -9014,7 +8990,7 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 
 		Thread::Sleep(0);
 
-		//usuwanie pliku tymczasowyzapis.txt s³u¿¹cy do przekierowania œcie¿ki odczyt->zapis
+		//usuwanie pliku tymczasowyzapis.txt sÂ³uÂ¿Â¹cy do przekierowania Å“cieÂ¿ki odczyt->zapis
 		if (File::Exists("c:\\users\\public\\pictures\\tymczasowyzapis.txt"))
 		{
 			File::Delete("c:\\users\\public\\pictures\\tymczasowyzapis.txt");
@@ -9029,17 +9005,17 @@ private: System::Void LegendaToolStripMenuItem_Click(System::Object^ sender, Sys
 	zliczanie = 0;
 	iloscAktywnych = 0;
 }
-private: System::Void Podgl¹dPomiarówToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void PodglÂ¹dPomiarÃ³wToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	
 	Form^ PodgladPomiarow = gcnew Form;
-		PodgladPomiarow->Text = "Podgl¹d pomiarów";
+		PodgladPomiarow->Text = "PodglÂ¹d pomiarÃ³w";
 			PodgladPomiarow->Icon = System::Drawing::SystemIcons::Information;
 
 	PodgladPomiarow->Show();
 	//currentargTablicy -> aktualny krok Timera ( j )
 	Pomiar^ WynikiEnergii = gcnew Pomiar();
 
-	//w³aœciwoœci okienka
+	//wÂ³aÅ“ciwoÅ“ci okienka
 	PodgladPomiarow->Width = 1000;
 	PodgladPomiarow->Height = 950;
 
@@ -9055,65 +9031,65 @@ private: System::Void Podgl¹dPomiarówToolStripMenuItem_Click(System::Object^ sen
 
 	Pomiary->Font = FontLabel;
 
-	Pomiary->Text = "Pomiary wahade³ dla zadanych parametrów: " +
+	Pomiary->Text = "Pomiary wahadeÂ³ dla zadanych parametrÃ³w: " +
 		Environment::NewLine +
-			"\r\nWyniki uzyskane dla ca³ego uk³adu:" +
-				"\r\nEnergia ca³kowita uk³adu:" + WynikiEnergii->Average(AllWahTabEc1, j) +
-					"\r\nEnergia potencjalna uk³adu:" + WynikiEnergii->Average(AllWahTabEp1, j) +
-						"\r\nEnergia kinetyczna uk³adu:" + WynikiEnergii->Average(AllWahTabEk1, j) +
+			"\r\nWyniki uzyskane dla caÂ³ego ukÂ³adu:" +
+				"\r\nEnergia caÂ³kowita ukÂ³adu:" + WynikiEnergii->Average(AllWahTabEc1, j) +
+					"\r\nEnergia potencjalna ukÂ³adu:" + WynikiEnergii->Average(AllWahTabEp1, j) +
+						"\r\nEnergia kinetyczna ukÂ³adu:" + WynikiEnergii->Average(AllWahTabEk1, j) +
 
 		Environment::NewLine +
-			"\r\nPierwsze wahad³o: " +
-				"\r\nD³ugoœæ: " + PierwszeWah->length + "[m]" +
+			"\r\nPierwsze wahadÂ³o: " +
+				"\r\nDÂ³ugoÅ“Ã¦: " + PierwszeWah->length + "[m]" +
 					"\r\nMasa: " + PierwszeWah->mass + "[kg]" +
 						"\r\nWychylenie: " + PierwszeWah->nextposy + "[rad]" +
-							"\r\nT³umienie: " + PierwszeWah->suppresion +
+							"\r\nTÂ³umienie: " + PierwszeWah->suppresion +
 
 		Environment::NewLine +
 			"\r\nUzyskane wyniki: " +
-				"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(PierwszeWahTabEc1, j) + "[J]" +
-					"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(PierwszeWahTabEp1, j) + "[J]" +
+				"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(PierwszeWahTabEc1, j) + "[J]" +
+					"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(PierwszeWahTabEp1, j) + "[J]" +
 						"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(PierwszeWahTabEp1, j) + "[J]" +
 							"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(PierwszeWahTabEp1, j) + "[J]" +
-								"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(PierwszeWahTabEk1, j) + "[J]" +
+								"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(PierwszeWahTabEk1, j) + "[J]" +
 									"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(PierwszeWahTabEk1, j) + "[J]" +
 										"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(PierwszeWahTabEk1, j) + "[J]" +
-											"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazPierwszegoy1, j) + "[rad/s]" +
+											"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazPierwszegoy1, j) + "[rad/s]" +
 
 		Environment::NewLine +
-			"\r\nDrugie wahad³o: " +
-				"\r\nD³ugoœæ: " + DrugieWah->length + "[m]" +
+			"\r\nDrugie wahadÂ³o: " +
+				"\r\nDÂ³ugoÅ“Ã¦: " + DrugieWah->length + "[m]" +
 					"\r\nMasa: " + DrugieWah->mass + "[kg]" +
 						"\r\nWychylenie: " + DrugieWah->nextposy + "[rad]" +
-							"\r\nT³umienie: " + DrugieWah->suppresion +
+							"\r\nTÂ³umienie: " + DrugieWah->suppresion +
 
 		Environment::NewLine +
 			"\r\nUzyskane wyniki: " +
-				"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(DrugieWahTabEc1, j) + "[J]" +
-					"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(DrugieWahTabEp1, j) + "[J]" +
+				"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(DrugieWahTabEc1, j) + "[J]" +
+					"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(DrugieWahTabEp1, j) + "[J]" +
 						"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(DrugieWahTabEp1, j) + "[J]" +
 							"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(DrugieWahTabEp1, j) + "[J]" +
-								"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(DrugieWahTabEk1, j) + "[J]" +
+								"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(DrugieWahTabEk1, j) + "[J]" +
 									"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(DrugieWahTabEk1, j) + "[J]" +
 										"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(DrugieWahTabEk1, j) + "[J]" +
-											"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazDrugiegoy1, j) + "[rad/s]" +
+											"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazDrugiegoy1, j) + "[rad/s]" +
 		Environment::NewLine +
-			"\r\nTrzecie wahad³o: " +
-				"\r\nD³ugoœæ: " + TrzecieWah->length + "[m]" +
+			"\r\nTrzecie wahadÂ³o: " +
+				"\r\nDÂ³ugoÅ“Ã¦: " + TrzecieWah->length + "[m]" +
 					"\r\nMasa: " + TrzecieWah->mass + "[kg]" +
 						"\r\nWychylenie: " + TrzecieWah->nextposy + "rad" +
-							"\r\nT³umienie: " + TrzecieWah->suppresion +
+							"\r\nTÂ³umienie: " + TrzecieWah->suppresion +
 
 		Environment::NewLine +
 			"\r\nUzyskane wyniki: " +
-				"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(TrzecieWahTabEc1, j) + "[J]" +
-					"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(TrzecieWahTabEp1, j) + "[J]" +
+				"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(TrzecieWahTabEc1, j) + "[J]" +
+					"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(TrzecieWahTabEp1, j) + "[J]" +
 						"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(TrzecieWahTabEp1, j) + "[J]" +
 							"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(TrzecieWahTabEp1, j) + "[J]" +
-								"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(TrzecieWahTabEk1, j) + "[J]" +
+								"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(TrzecieWahTabEk1, j) + "[J]" +
 									"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(TrzecieWahTabEk1, j) + "[J]" +
 										"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(TrzecieWahTabEk1, j) + "[J]" +
-											"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazTrzeciegoy1, j) + "[rad/s]" +
+											"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazTrzeciegoy1, j) + "[rad/s]" +
 		Environment::NewLine;
 
 
@@ -9124,72 +9100,72 @@ private: System::Void Podgl¹dPomiarówToolStripMenuItem_Click(System::Object^ sen
 			Pomiary2->AutoSize = true;
 	
 			Pomiary2->Text =
-				"\r\nCzwarte wahad³o: " +
-					"\r\nD³ugoœæ: " + CzwarteWah->length + "[m]" +
+				"\r\nCzwarte wahadÂ³o: " +
+					"\r\nDÂ³ugoÅ“Ã¦: " + CzwarteWah->length + "[m]" +
 						"\r\nMasa: " + CzwarteWah->mass + "[kg]" +
 							"\r\nWychylenie: " + CzwarteWah->nextposy + "[rad]" +
-								"\r\nT³umienie: " + CzwarteWah->suppresion +
+								"\r\nTÂ³umienie: " + CzwarteWah->suppresion +
 	
 				Environment::NewLine +
 					"\r\nUzyskane wyniki: " +
-						"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(CzwarteWahTabEc1, j) + "[J]" +
-							"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(CzwarteWahTabEp1, j) + "[J]" +
+						"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(CzwarteWahTabEc1, j) + "[J]" +
+							"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(CzwarteWahTabEp1, j) + "[J]" +
 								"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(CzwarteWahTabEp1, j) + "[J]" +
 									"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(CzwarteWahTabEp1, j) + "[J]" +
-										"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(CzwarteWahTabEk1, j) + "[J]" +
+										"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(CzwarteWahTabEk1, j) + "[J]" +
 											"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(CzwarteWahTabEk1, j) + "[J]" +
 												"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(CzwarteWahTabEk1, j) + "[J]" +
-													"\r\nMaksymalna prêdkoœæ:: " + WynikiEnergii->Max(PrzFazCzwartegoy1, j) + "[rad/s]" +
-														"\r\nPiate wahad³o: " +
-															"\r\nD³ugoœæ: " + PiateWah->length + "[m]" +
+													"\r\nMaksymalna prÃªdkoÅ“Ã¦:: " + WynikiEnergii->Max(PrzFazCzwartegoy1, j) + "[rad/s]" +
+														"\r\nPiate wahadÂ³o: " +
+															"\r\nDÂ³ugoÅ“Ã¦: " + PiateWah->length + "[m]" +
 																"\r\nMasa: " + PiateWah->mass + "[kg]" +
 																	"\r\nWychylenie: " + PiateWah->nextposy + "[rad]" +
-																		"\r\nT³umienie: " + PiateWah->suppresion +
+																		"\r\nTÂ³umienie: " + PiateWah->suppresion +
 
 				Environment::NewLine +
 					"\r\nUzyskane wyniki: " +
-						"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(PiateWahTabEc1, j) + "[J]" +
-							"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(PiateWahTabEp1, j) + "[J]" +
+						"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(PiateWahTabEc1, j) + "[J]" +
+							"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(PiateWahTabEp1, j) + "[J]" +
 								"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(PiateWahTabEp1, j) + "[J]" +
 									"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(PiateWahTabEp1, j) + "[J]" +
-										"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(PiateWahTabEk1, j) + "[J]" +
+										"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(PiateWahTabEk1, j) + "[J]" +
 											"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(PiateWahTabEk1, j) + "[J]" +
 												"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(PiateWahTabEk1, j) + "[J]" +
-													"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazPiategoy1, j) + "[rad/s]" +
+													"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazPiategoy1, j) + "[rad/s]" +
 				Environment::NewLine +
-					"\r\nSzoste wahad³o: " +
-						"\r\nD³ugoœæ: " + SzosteWah->length + "[m]" +
+					"\r\nSzoste wahadÂ³o: " +
+						"\r\nDÂ³ugoÅ“Ã¦: " + SzosteWah->length + "[m]" +
 							"\r\nMasa: " + SzosteWah->mass + "[kg]" +
 								"\r\nWychylenie: " + SzosteWah->nextposy  + "[rad]" +
-									"\r\nT³umienie: " + SzosteWah->suppresion +
+									"\r\nTÂ³umienie: " + SzosteWah->suppresion +
 
 				Environment::NewLine +
 					"\r\nUzyskane wyniki: " +
-						"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(SzosteWahTabEc1, j) + "[J]" +
-							"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(SzosteWahTabEp1, j) + "[J]" +
+						"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(SzosteWahTabEc1, j) + "[J]" +
+							"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(SzosteWahTabEp1, j) + "[J]" +
 								"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(SzosteWahTabEp1, j) + "[J]" +
 									"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(SzosteWahTabEp1, j) + "[J]" +
-										"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(SzosteWahTabEk1, j) + "[J]" +
+										"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(SzosteWahTabEk1, j) + "[J]" +
 											"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(SzosteWahTabEk1, j) + "[J]" +
 												"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(SzosteWahTabEk1, j) + "[J]" +
-													"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazSzostegoy1, j) + "[rad/s]" +
+													"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazSzostegoy1, j) + "[rad/s]" +
 				Environment::NewLine +
-					"\r\nSiodme wahad³o: " +
-						"\r\nD³ugoœæ: " + SiodmeWah->length + "[m]" +
+					"\r\nSiodme wahadÂ³o: " +
+						"\r\nDÂ³ugoÅ“Ã¦: " + SiodmeWah->length + "[m]" +
 							"\r\nMasa: " + SiodmeWah->mass + "[kg]" +
 								"\r\nWychylenie: " + SiodmeWah->nextposy + "[rad]" +
-									"\r\nT³umienie: " + SiodmeWah->suppresion +
+									"\r\nTÂ³umienie: " + SiodmeWah->suppresion +
 
 				Environment::NewLine +
 					"\r\nUzyskane wyniki: " +
-						"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(SiodmeWahTabEc1, j) + "[J]" +
-							"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(SiodmeWahTabEp1, j) + "[J]" +
+						"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(SiodmeWahTabEc1, j) + "[J]" +
+							"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(SiodmeWahTabEp1, j) + "[J]" +
 								"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(SiodmeWahTabEp1, j) + "[J]" +
 									"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(SiodmeWahTabEp1, j) + "[J]" +
-										"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(SiodmeWahTabEk1, j) + "[J]" +
+										"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(SiodmeWahTabEk1, j) + "[J]" +
 											"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(SiodmeWahTabEk1, j) + "[J]" +
 												"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(SiodmeWahTabEk1, j) + "[J]" +
-													"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazSiodmegoy1, j) + "[rad/s]" +
+													"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazSiodmegoy1, j) + "[rad/s]" +
 				Environment::NewLine;
 
 
@@ -9199,56 +9175,56 @@ private: System::Void Podgl¹dPomiarówToolStripMenuItem_Click(System::Object^ sen
 				Pomiary3->Location = System::Drawing::Point(600, 15);
 					Pomiary3->AutoSize = true;
 
-			Pomiary3->Text = "\r\nOsme wahad³o: " +
-				"\r\nD³ugoœæ: " + OsmeWah->length + "[m]" +
+			Pomiary3->Text = "\r\nOsme wahadÂ³o: " +
+				"\r\nDÂ³ugoÅ“Ã¦: " + OsmeWah->length + "[m]" +
 					"\r\nMasa: " + OsmeWah->mass + "[kg]" +
 						"\r\nWychylenie: " + OsmeWah->nextposy  + "[rad]" +
-							"\r\nT³umienie: " + OsmeWah->suppresion +
+							"\r\nTÂ³umienie: " + OsmeWah->suppresion +
 
 				Environment::NewLine +
 					"\r\nUzyskane wyniki: " +
-						"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(OsmeWahTabEc1, j) + "[J]" +
-							"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(OsmeWahTabEp1, j) + "[J]" +
+						"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(OsmeWahTabEc1, j) + "[J]" +
+							"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(OsmeWahTabEp1, j) + "[J]" +
 								"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(OsmeWahTabEp1, j) + "[J]" +
 									"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(OsmeWahTabEp1, j) + "[J]" +
-										"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(OsmeWahTabEk1, j) + "[J]" +
+										"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(OsmeWahTabEk1, j) + "[J]" +
 											"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(OsmeWahTabEk1, j) + "[J]" +
 												"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(OsmeWahTabEk1, j) + "[J]" +
-													"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazOsmegoy1, j) + "[rad/s]"+
+													"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazOsmegoy1, j) + "[rad/s]"+
 				Environment::NewLine +
-					"\r\nDziewiate wahad³o: " +
-						"\r\nD³ugoœæ: " + DziewiateWah->length + "[m]" +
+					"\r\nDziewiate wahadÂ³o: " +
+						"\r\nDÂ³ugoÅ“Ã¦: " + DziewiateWah->length + "[m]" +
 							"\r\nMasa: " + DziewiateWah->mass + "[kg]" +
 								"\r\nWychylenie: " + DziewiateWah->nextposy+ "[rad]" +
-									"\r\nT³umienie: " + DziewiateWah->suppresion +
+									"\r\nTÂ³umienie: " + DziewiateWah->suppresion +
 
 			Environment::NewLine +
 				"\r\nUzyskane wyniki: " +
-					"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(DziewiateWahTabEc1, j) + "[J]" +
-						"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(DziewiateWahTabEp1, j) + "[J]" +
+					"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(DziewiateWahTabEc1, j) + "[J]" +
+						"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(DziewiateWahTabEp1, j) + "[J]" +
 							"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(DziewiateWahTabEp1, j) + "[J]" +
 								"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(DziewiateWahTabEp1, j) + "[J]" +
-									"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(DziewiateWahTabEk1, j) + "[J]" +
+									"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(DziewiateWahTabEk1, j) + "[J]" +
 										"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(DziewiateWahTabEk1, j) + "[J]" +
 											"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(DziewiateWahTabEk1, j) + "[J]" +
-												"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazDziewiategoy1, j) + "[rad/s]" +
+												"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazDziewiategoy1, j) + "[rad/s]" +
 			Environment::NewLine +
-				"\r\nDziesiate wahad³o: " +
-					"\r\nD³ugoœæ: " + DziesiateWah->length + "[m]" +
+				"\r\nDziesiate wahadÂ³o: " +
+					"\r\nDÂ³ugoÅ“Ã¦: " + DziesiateWah->length + "[m]" +
 						"\r\nMasa: " + DziesiateWah->mass + "[kg]" +
 							"\r\nWychylenie: " + DziesiateWah->nextposy  + "[rad]" +
-								"\r\nT³umienie: " + DziesiateWah->suppresion +
+								"\r\nTÂ³umienie: " + DziesiateWah->suppresion +
 		
 			Environment::NewLine +
 				"\r\nUzyskane wyniki: " +
-					"\r\nEnergia ca³kowita: " + WynikiEnergii->Average(DziesiateWahTabEc1, j) + "[J]" +
-						"\r\nŒrednia energia potencjalna: " + WynikiEnergii->Average(DziesiateWahTabEp1, j) + "[J]" +
+					"\r\nEnergia caÂ³kowita: " + WynikiEnergii->Average(DziesiateWahTabEc1, j) + "[J]" +
+						"\r\nÅ’rednia energia potencjalna: " + WynikiEnergii->Average(DziesiateWahTabEp1, j) + "[J]" +
 							"\r\nMaksymalna energia potencjalna: " + WynikiEnergii->Max(DziesiateWahTabEp1, j) + "[J]" +
 								"\r\nMinimalna energia potencjalna: " + WynikiEnergii->Min(DziesiateWahTabEp1, j) + "[J]" +
-									"\r\nŒrednia energia kinetyczna: " + WynikiEnergii->Average(DziesiateWahTabEk1, j) + "[J]" +
+									"\r\nÅ’rednia energia kinetyczna: " + WynikiEnergii->Average(DziesiateWahTabEk1, j) + "[J]" +
 										"\r\nMaksymalna energia kinetyczna: " + WynikiEnergii->Max(DziesiateWahTabEk1, j) + "[J]" +
 											"\r\nMinimalna energia kinetyczna: " + WynikiEnergii->Min(DziesiateWahTabEk1, j) + "[J]" +
-												"\r\nMaksymalna prêdkoœæ: " + WynikiEnergii->Max(PrzFazDziesiategoy1, j) + "[rad/s]" +
+												"\r\nMaksymalna prÃªdkoÅ“Ã¦: " + WynikiEnergii->Max(PrzFazDziesiategoy1, j) + "[rad/s]" +
 			Environment::NewLine;
 			
 PodgladPomiarow->Controls->Add(Pomiary);
@@ -9256,7 +9232,7 @@ PodgladPomiarow->Controls->Add(Pomiary);
 		PodgladPomiarow->Controls->Add(Pomiary3);
 
 }
-private: System::Void Poka¿WektoryToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void PokaÂ¿WektoryToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void CheckBox28_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 }
@@ -9281,7 +9257,7 @@ private: System::Void ZwolnijToolStripMenuItem_Click(System::Object^ sender, Sys
 	timer1->Interval += changeInterval;
 }
 
-private: System::Void LegendêToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void LegendÃªToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 
 		checkBox33->Checked = true;
 		
@@ -9294,7 +9270,7 @@ private: System::Void CheckBox32_CheckedChanged_1(System::Object^ sender, System
 private: System::Void PomiarToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	//zapisz pomiar
 
-	//pobieranie œcie¿ki do zapisu wykorzystuj¹c funkcje OdczytPliku
+	//pobieranie Å“cieÂ¿ki do zapisu wykorzystujÂ¹c funkcje OdczytPliku
 	Thread^ WatekOdczytu = gcnew Thread(gcnew ThreadStart(OdczytPliku));
 	WatekOdczytu->TrySetApartmentState(ApartmentState::STA);
 
@@ -9310,7 +9286,7 @@ private: System::Void PomiarToolStripMenuItem_Click(System::Object^ sender, Syst
 
 		StreamWriter^ pliksciezki = gcnew StreamWriter(odczytSciezki->ReadLine());
 
-		pliksciezki->Write("Pomiary wykresów: " +
+		pliksciezki->Write("Pomiary wykresÃ³w: " +
 			Environment::NewLine +
 			label89->Text+
 			Environment::NewLine
@@ -9325,7 +9301,7 @@ private: System::Void PomiarToolStripMenuItem_Click(System::Object^ sender, Syst
 
 	Thread::Sleep(0);
 
-	//usuwanie pliku tymczasowyzapis.txt s³u¿¹cy do przekierowania œcie¿ki odczyt->zapis
+	//usuwanie pliku tymczasowyzapis.txt sÂ³uÂ¿Â¹cy do przekierowania Å“cieÂ¿ki odczyt->zapis
 	if (File::Exists("c:\\users\\public\\pictures\\tymczasowyzapis.txt"))
 	{
 		File::Delete("c:\\users\\public\\pictures\\tymczasowyzapis.txt");
@@ -9381,7 +9357,7 @@ private: System::Void PictureBox3_MouseClick(System::Object^ sender, System::Win
 					przesuniecieFazowe = getmousex2 - getmousex1;
 				}
 
-				label89->Text = "Obliczenia-> Róznica miêdzy punktami osi x: " + przesuniecieFazowe.ToString("0.000") + "   " + "Róznica miêdzy punktami osi y: " + Amplituda.ToString("0.000");
+				label89->Text = "Obliczenia-> RÃ³znica miÃªdzy punktami osi x: " + przesuniecieFazowe.ToString("0.000") + "   " + "RÃ³znica miÃªdzy punktami osi y: " + Amplituda.ToString("0.000");
 
 			wspolrzedne2 = true;
 		}
@@ -9400,7 +9376,7 @@ private: System::Void PictureBox3_MouseClick(System::Object^ sender, System::Win
 	}
 
 }
-private: System::Void Poka¿WektoryToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void PokaÂ¿WektoryToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
 	
 }
 private: System::Void BelkaToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -9416,10 +9392,10 @@ private: System::Void BelkaToolStripMenuItem_Click(System::Object^ sender, Syste
 	pictureBox1->Invalidate();
 }
 
-private: System::Void Wspó³rzêdneToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void WspÃ³Â³rzÃªdneToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 
 }
-private: System::Void Dziewi¹ToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void DziewiÂ¹ToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (wlaczDziewiateWah == true)
 	{
 		wlaczDziewiateWah = false;
@@ -9430,7 +9406,7 @@ private: System::Void Dziewi¹ToolStripMenuItem_Click(System::Object^ sender, Sys
 	}
 	pictureBox1->Invalidate();
 }
-private: System::Void T³oToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void TÂ³oToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
 
 	ColorDialog^ Paleta = gcnew ColorDialog;
 
@@ -9467,7 +9443,7 @@ private: System::Void SiatkaToolStripMenuItem_Click(System::Object^ sender, Syst
 	}
 	pictureBox1->Invalidate();
 }
-private: System::Void Wahad³aToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void WahadÂ³aToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void PierwszeToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (wlaczPierwszeWah == true)
@@ -9513,7 +9489,7 @@ private: System::Void CzwarteToolStripMenuItem_Click(System::Object^ sender, Sys
 	}
 	pictureBox1->Invalidate();
 }
-private: System::Void Pi¹teToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void PiÂ¹teToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (wlaczPiateWah == true)
 	{
 		wlaczPiateWah = false;
@@ -9524,7 +9500,7 @@ private: System::Void Pi¹teToolStripMenuItem_Click(System::Object^ sender, Syste
 	}
 	pictureBox1->Invalidate();
 }
-private: System::Void SzósteToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void SzÃ³steToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (wlaczSzosteWah == true)
 	{
 		wlaczSzosteWah = false;
@@ -9535,7 +9511,7 @@ private: System::Void SzósteToolStripMenuItem_Click(System::Object^ sender, Syst
 	}
 	pictureBox1->Invalidate();
 }
-private: System::Void SiódmeToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void SiÃ³dmeToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (wlaczSiodmeWah == true)
 	{
 		wlaczSiodmeWah = false;
@@ -9546,7 +9522,7 @@ private: System::Void SiódmeToolStripMenuItem_Click(System::Object^ sender, Syst
 	}
 	pictureBox1->Invalidate();
 }
-private: System::Void ÓsmeToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void Ã“smeToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (wlaczOsmeWah == true)
 	{
 		wlaczOsmeWah = false;
@@ -9557,7 +9533,7 @@ private: System::Void ÓsmeToolStripMenuItem_Click(System::Object^ sender, System
 	}
 	pictureBox1->Invalidate();
 }
-private: System::Void Dziesi¹teToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void DziesiÂ¹teToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (wlaczDziesiateWah == true)
 	{
 		wlaczDziesiateWah = false;
@@ -9580,7 +9556,7 @@ private: System::Void LinkaToolStripMenuItem_Click(System::Object^ sender, Syste
 
 	pictureBox1->Invalidate();
 }
-private: System::Void Wspó³rzêdneToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void WspÃ³Â³rzÃªdneToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (label86->Visible == true)
 	{
 		label86->Visible = false;
@@ -9605,58 +9581,6 @@ private: System::Void OsieToolStripMenuItem_Click(System::Object^ sender, System
 	pictureBox3->Invalidate();
 }
 
-private: System::Void HScrollBar85_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
-	//label109
-	//PierwszeWah->wychylenie = hScrollBar85->Value * 0.01;
-	//label109->Text = L"Pierwsze wahad³o: " + PierwszeWah->wychylenie.ToString("0.00") + L" [rad]";
-}
-private: System::Void HScrollBar88_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
-	//107
-	//DrugieWah->wychylenie = hScrollBar88->Value * 0.01;
-	//label107->Text = L"Drugie wahad³o: " + DrugieWah->wychylenie.ToString("0.00") + L" [rad]";
-}
-private: System::Void HScrollBar87_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
-	//106
-	//TrzecieWah->wychylenie = hScrollBar87->Value * 0.01;
-	//label106->Text = L"Trzecie wahad³o: " + TrzecieWah->wychylenie.ToString("0.00") + L" [rad]";
-}
-private: System::Void HScrollBar90_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
-	//105
-	//CzwarteWah->wychylenie = hScrollBar90->Value * 0.01;
-	//label105->Text = L"Czwarte wahad³o: " + CzwarteWah->wychylenie.ToString("0.00") + L" [rad]";
-}
-private: System::Void HScrollBar89_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
-	//104
-	//PiateWah->wychylenie = hScrollBar89->Value * 0.01;
-	//label104->Text = L"Piate wahad³o: " + PiateWah->wychylenie.ToString("0.00") + L" [rad]";
-}
-private: System::Void HScrollBar84_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
-//103
-	//SzosteWah->wychylenie = hScrollBar84->Value * 0.01;
-	//label103->Text = L"Szóste wahad³o: " + SzosteWah->wychylenie.ToString("0.00") + L" [rad]";
-}
-private: System::Void HScrollBar83_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
-	//102
-	//SiodmeWah->wychylenie = hScrollBar83->Value * 0.01;
-	//label102->Text = L"Siódme wahad³o: " + SiodmeWah->wychylenie.ToString("0.00") + L" [rad]";
-}
-private: System::Void HScrollBar82_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
-	//101
-	//OsmeWah->wychylenie = hScrollBar82->Value * 0.01;
-	//label101->Text = L"Ósme wahad³o: " + OsmeWah->wychylenie.ToString("0.00") + L" [rad]";
-}
-private: System::Void HScrollBar86_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
-	//100
-	//DziewiateWah->wychylenie = hScrollBar86->Value * 0.01;
-	//label100->Text = L"Dziewiate wahad³o: " + DziewiateWah->wychylenie.ToString("0.00") + L" [rad]";
-}
-private: System::Void CheckBox35_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 
-}
-private: System::Void HScrollBar91_Scroll(System::Object^ sender, System::Windows::Forms::ScrollEventArgs^ e) {
-
-}
-private: System::Void Panel3_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
-}
 };
 }
